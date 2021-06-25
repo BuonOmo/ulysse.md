@@ -1,0 +1,9 @@
+baseurl: ""
+highlighter: pygments
+mardown: redcarpet
+name: Ulysse Buonomo
+url: https://ulysse.md
+exclude:
+  - Makefile
+  - README.md
+  - TODO.md
