@@ -1,6 +1,5 @@
 baseurl: ""
-highlighter: pygments
-mardown: redcarpet
+highlighter: rouge
 name: Ulysse Buonomo
 url: https://ulysse.md
 exclude:
