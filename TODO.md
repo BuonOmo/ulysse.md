@@ -8,6 +8,7 @@
 
 # Most Wanted
 
+- [ ] 404 page
 - [ ] integrate description to main page
 - [ ] add description only posts
 - [ ] CSS improvments
