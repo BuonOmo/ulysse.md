@@ -8,6 +8,8 @@
 
 # Most Wanted
 
+- [ ] integrate description to main page
+- [ ] add description only posts
 - [ ] CSS improvments
   - Markdown like posts
   - color syntax (see tool on my PR for ruby-hacking-guide)

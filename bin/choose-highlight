@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+function apply_style {
+	pygmentize -S $1 -f html -a .highlight > css/syntax.css
+}
+
+while read -r style; do
+	echo $style
+	apply_style $style
+	read -qs && echo $style >> t.preselection
+done < <(pygmentize -L styles | awk -F'[ :]' '/^\* / { print $2 }')
