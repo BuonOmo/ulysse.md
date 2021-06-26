@@ -1,3 +1,8 @@
 #!/usr/bin/env zsh
 
 gem install jekyll
+cat <<-TEXT > .git/hooks/pre-commit
+	#!/bin/sh
+	./bin/pre-commit
+TEXT
+chmod +x .git/hooks/pre-commit

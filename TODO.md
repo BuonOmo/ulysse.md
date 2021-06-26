@@ -1,13 +1,15 @@
 # Prio
 
-- [ ] Footer
+- [x] Footer
 - [ ] Meta tags
-- [ ] Self editing humans.txt (see gullysound.fr)
-- [ ] tabs, no spaces
-- [ ] noopener noreferrer
+- [x] Self editing humans.txt (see gullysound.fr)
+- [x] tabs, no spaces
+- [x] noopener noreferrer
+- [ ] Navigate back from article
 
 # Most Wanted
 
+- [ ] email address
 - [ ] 404 page
 - [ ] integrate description to main page
 - [ ] add description only posts

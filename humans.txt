@@ -1,0 +1,8 @@
+/* AUTHOR */
+	developper: Ulysse Buonomo
+	contact: buonomo.ulysse [at] gmail.com
+	twitter: @ulyssebn
+	from: Grenoble, Rhone-Alpe, France
+
+/* SITE */
+	last update: 2019-02-13

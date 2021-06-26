@@ -3,6 +3,11 @@ h5 {
 	font-size: 130%;
 }
 
+h1::before {
+	content: '#';
+	margin-right: 0.6rem;
+}
+
 img {
 	max-width: 100%;
 	box-shadow: 0 0 10px #555;
@@ -23,7 +28,7 @@ hr {
 	width: 700px;
 	margin: 2em auto 1em auto;
 	line-height: 1.5em;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
+	font-family: monospace, serif;
 	font-size: 18px;
 }
 
@@ -75,7 +80,7 @@ a {
 	color: #aaa;
 	font-size: 80%;
 	float: right;
-	width: 100px;
+	/* width: 100px; */
 }
 
 .post-content {
@@ -105,7 +110,7 @@ h3 {
 .date {
 	color: #aaa;
 	font-size: 15px;
-	border-bottom: 1px #c5c5c5 solid;
+	/* border-bottom: 1px #c5c5c5 solid; */
 	padding-bottom: 20px;
 	text-align: right;
 }

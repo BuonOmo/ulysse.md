@@ -4,11 +4,6 @@ title: Use variables in pure SQL
 author: Ulysse
 ---
 
-{{ page.title }}
-================
-
-<p class="date">{{ page.date | date: "%B %e, %Y" }} — {{ page.author }}</p>
-
 Here's the hack:
 
 ```sql
