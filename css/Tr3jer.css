@@ -92,7 +92,6 @@ a {
  */
 #post {
 	position: relative;
-	word-break: break-all;
 	min-height: 300px;
 	color: #2f2f2f;
 	font-size: 17px;
@@ -103,7 +102,6 @@ a {
 h2,
 h3 {
 	font-size: 35px;
-	word-break: break-all;
 	line-height: 1.5;
 }
 
@@ -132,7 +130,6 @@ blockquote {
 /* standard */
 #post pre {
 	/* font-family: Consolas, "DejaVu Sans Mono", "Lucida Console", Monaco, Andale Mono, "MS Gothic", monospace; */
-	font-size: 13px;
 	padding: 0 0.4em;
 	overflow: auto;
 	margin: 1em 0;

@@ -1,0 +1,7 @@
+code.highlighter-rouge {
+	word-break: keep-all;
+}
+code.highlighter-rouge::before,
+code.highlighter-rouge::after {
+	content: '`'
+}

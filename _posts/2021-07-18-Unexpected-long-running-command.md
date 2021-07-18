@@ -18,7 +18,7 @@ with `docker-compose`. And I found some work-arounds to make sure I can better m
 # Use notifications
 
 The great [terminal-notifier](https://github.com/julienXX/terminal-notifier) is a good way to
-address that issue: simple add `; terminal-notifier -message done` to the end of a command
+address that issue: just add `; terminal-notifier -message done` to the end of a command
 you expect will take a long time, and you'll be alerted as soon as the job is done.
 
 If you like that solution, here's a way to type less characters for this technique:
