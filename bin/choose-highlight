@@ -1,5 +1,10 @@
 #!/usr/bin/env zsh
 
+set -e
+
+[[ -f "selection" ]] || pygmentize -L styles | awk -F'[ :]' '/^\* / { print $2 }' > selection
+mv selection old-selection
+
 function apply_style {
 	pygmentize -S $1 -f html -a .highlight > css/syntax.css
 }
@@ -7,5 +12,6 @@ function apply_style {
 while read -r style; do
 	echo $style
 	apply_style $style
-	read -qs && echo $style >> t.preselection
-done < <(pygmentize -L styles | awk -F'[ :]' '/^\* / { print $2 }')
+	read -qs && echo $style >> selection
+done < <(cat old-selection)
+rm old-selection
