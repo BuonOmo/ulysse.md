@@ -31,3 +31,13 @@ code.highlighter-rouge
 		font-size: 0.9rem
 		padding-bottom: 1.3rem
 		text-align: right
+
+pre.highlight
+	&::before, &::after
+		content: '```'
+		display: block
+		font-family: 'JetBrains Mono', monospace
+	&::before
+		margin-bottom: -0.9rem
+	&::after
+		margin-top: 0.3rem
