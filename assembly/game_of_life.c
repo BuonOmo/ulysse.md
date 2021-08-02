@@ -20,79 +20,97 @@ extern "C" {
 
 typedef struct {
     int height;
+    int board_height;
+    int board_width;
     int width;
+    int pixel;
     bool **board;
+    unsigned int *data;
 } game_of_life;
 
-game_of_life game[GAMES];
-int started_games = 0;
-unsigned int *data[GAMES];
+game_of_life *games[GAMES];
 
-void EMSCRIPTEN_KEEPALIVE start(int height, int width, int seed, int index);
+void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index);
 unsigned int* EMSCRIPTEN_KEEPALIVE render(int index);
 
-game_of_life init(int height, int width);
-void clear(game_of_life);
+game_of_life *init(int height, int width, int pixel);
+void clear(game_of_life*);
 #ifdef TERMINAL
 void show(game_of_life);
 #endif
 void step(game_of_life);
+void reset(game_of_life);
 
 int neighbors(int h, int w, game_of_life);
 
-void EMSCRIPTEN_KEEPALIVE start(int height, int width, int seed, int index) {
+void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index) {
     srand(seed * index);
-    if (game[index].board) clear(game[index]);
-    game[index] = init(height / PIXEL, width / PIXEL);
-    if (!data[index]) data[index] = malloc(height*width*sizeof(unsigned int));
+    if (!games[index]) games[index] = init(height, width, pixel);
+    reset(*games[index]);
 }
 
 unsigned int* EMSCRIPTEN_KEEPALIVE render(int index) {
-    step(game[index]);
-    for (int i = 0; i < game[index].height; i++) {
-        for (int j = 0; j < game[index].width; j++) {
-            for (int k = 0; k < PIXEL; k++)
-            {
-                for (int l = 0; l < PIXEL; l++)
-                {
-                    data[index][(i * PIXEL + l) * game[index].width * PIXEL + j * PIXEL + k] = game[index].board[i][j] ? ALIVE_COLOR : DEAD_COLOR;
-                }
-            }
-
+    game_of_life game = *games[index];
+    step(game);
+    for (int i = 0; i < game.height; i++) {
+        int iw = i * game.width;
+        for (int j = 0; j < game.width; j++) {
+            game.data[iw + j] = game.board[i / game.pixel][j / game.pixel] ? ALIVE_COLOR : DEAD_COLOR;
         }
     }
-	return data[index];
+	return &(game.data)[0];
 }
 
-game_of_life init(int height, int width) {
-    game_of_life game;
+game_of_life *init(int height, int width, int pixel) {
+    game_of_life *game;
     bool **board;
+    int board_height;
+    int board_width;
 
-    board = malloc(height*sizeof(bool*));
-    for (int i = 0; i < height; i++) {
-        board[i] = malloc(width*sizeof(bool));
-        for (int j = 0; j < width; j++) {
-            board[i][j] = rand() & 1;
-        }
-    }
-    game = (game_of_life){.height = height, .width = width, .board = board};
+    board_height = height / pixel;
+    board_width = width / pixel;
+
+
+    board = malloc(board_height*sizeof(bool*));
+    for (int i = 0; i < board_height; i++)
+        board[i] = malloc(board_width*sizeof(bool));
+    game = malloc(sizeof(game_of_life));
+    *game = (game_of_life){
+        .height = height,
+        .width = width,
+        .board_height = board_height,
+        .board_width = board_width,
+        .pixel = pixel,
+        .board = board,
+        .data = malloc(height*width*sizeof(unsigned int))
+    };
     return game;
 }
 
-void clear(game_of_life game) {
-    for (int i = 0; i < game.height; i++) free(game.board[i]);
-    free(game.board);
+
+void clear(game_of_life *game) {
+    for (int i = 0; i < game->board_height; i++) free(game->board[i]);
+    free(game->board);
+    free(game);
+}
+
+void reset(game_of_life game) {
+    for (int i = 0; i < game.board_height; i++) {
+        for (int j = 0; j < game.board_width; j++) {
+            game.board[i][j] = rand() & 1;
+        }
+    }
 }
 
 void step(game_of_life game) {
-    int neighbors_count[game.height][game.width];
-    for (int i = 0; i < game.height; i++) {
-        for (int j = 0; j < game.width; j++) {
+    int neighbors_count[game.board_height][game.board_width];
+    for (int i = 0; i < game.board_height; i++) {
+        for (int j = 0; j < game.board_width; j++) {
             neighbors_count[i][j] = neighbors(i, j, game);
         }
     }
-    for (int i = 0; i < game.height; i++) {
-        for (int j = 0; j < game.width; j++) {
+    for (int i = 0; i < game.board_height; i++) {
+        for (int j = 0; j < game.board_width; j++) {
             switch(neighbors_count[i][j]) {
                 case 2:
                     game.board[i][j] = game.board[i][j];
