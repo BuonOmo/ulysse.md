@@ -1,0 +1,88 @@
+==================================================================
+https://keybase.io/ulysse
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ulysse.md
+  * I am ulysse (https://keybase.io/ulysse) on keybase.
+  * I have a public key with fingerprint 7B66 AA1E 5ECD 1845 0C3B  2C52 8C79 6898 AE05 6C59
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120db5498dfe367e6e88c4807e657b3bde7ec94e7b65f464175a51c223d0bbc9b710a",
+      "fingerprint": "7b66aa1e5ecd18450c3b2c528c796898ae056c59",
+      "host": "keybase.io",
+      "key_id": "8c796898ae056c59",
+      "kid": "01015489e38179934fca4d7a2f3260ad040fe2fffcd266b7bf7ae1d1212fe9ee6fcf0a",
+      "uid": "d97e609b03de7506d4be3bee29f24319",
+      "username": "ulysse"
+    },
+    "merkle_root": {
+      "ctime": 1627914454,
+      "hash_meta": "c01ec6e01b5a328f39bbee4c3543bcc31499a200f05626b277354c5d3495a14a",
+      "seqno": 20489346
+    },
+    "revoke": {
+      "sig_ids": [
+        "0b09c15e9f5bd62ff159f02758b68729e327d76a7e159a12a74523864c65f2e20f"
+      ]
+    },
+    "service": {
+      "hostname": "ulysse.md",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1627914464,
+  "expire_in": 157680000,
+  "prev": "09f35d2199e6d3b231c1fc9e4701a0ef7dc9d7a664c228f111c52e42ef1cf406",
+  "seqno": 24,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMP+AnicbVNrbFRFFN5Sukp5WCAIvkAuiIZHMzN37mOWh4AEDIWWH2AEgeXeuTPt
+bbd76+627FLaQGpNeZQYEAUpAhZTlEfQAvKQCKVYEFDQgikllletAhFauyhFg3Mb
+SdQ4f+7cme+c833fOVPbM9GTnLAylrVuV1JgdsKpmlC+x3jUc7lQMh0rJvkKpRzW
++WEBi4Uj/hzbknwSgAhYpoKJbnEmqxpTma5TrAOxUzRTNi2mMUow00xV4VjFUFMM
+BVKEZAuYJiWmBoEhjZS4HcxkobyQHYyItAKtGgZkCqMW1LECqGwiqiCdakTViW4w
+oKhUISIwywm7EYKcaYRZqu2IM/Hj76T3P/iHvAFUsE6YrEONEBlzamBLMxCXkQoM
+C2DAGeKcUwupqqmZXDMYtCCCiDPCmMop7+Sd35nOIkIvICaQhV4FqBY2mWwyhghH
+WIZu3fwwCwWNXCbQ+YFYOMykopFSLgvlBJg/5DgR11oasV0AVJFGIMYKFvKMcJY/
+l0UMEUcBZFRlAJqKISOdy8QUNTCVFSyblMoQE2IgALgQi1QTaZq4oYolY6IYELt0
+w+z1oCP5EBDaZawKCiFW4OQwt3rYzhSuhSXfaxIwAaFQYYQrpqUKH6BCOECaopuq
+riFhG9IsTTU0Ji4MiAwNK0jWVUxFlxFDgEvzitxqoQKbdiZ32/Qv+am5luCTF3Ii
+DnUC4jgrEskL+1xXIrE8F7eQmf6/M/hNO2iJCRERBSwUtp2gcEkg/2OYKgxj0Tw7
+xPy2i1A0VQdiuXVYgdt2wmXFQpAQplpipGRIIaeEYQ1AAzCuWZSIKVCFECQMhhCK
+oWMYMQ4px0D9h4OiVMTIFDmFbUEjkh8SDa05OrerJyHZ403q4j4dT3K3lIcPatq3
+KZ5ln2TvOl737mx5j1b6xpCUO0tjYFiPtm3rYidOba0sferND2tnzpoCyzPm5iiq
+fn3YrOiy6m6vlJYfa71ROuGZVWt4/7SWdO1yR1Kxd+K4Y283xiISz2y9c7l4U2rj
+ueiW6rHxihvpZccXn/ngwrm2scsnl1Wubipvjn635If3hx+CZGIgHgj8vnnx/B21
+dU+2x99pyvil+e7ANefv3zm5slgeFc+41sHGtHk7qnfGT8zwlxLf/XkJ1w9sPV64
+c0PJmmhh94vtg2X7Be/+LkPbszc7K4u6FRX0273hrYX9ny1b2l6CnT86NrXY3RNq
+zI2BHYYzsHzdrfeaT6atmj8ofWbfz4v7DBoCvq46evNBdv3+JcN7rc3+9UrG0494
+yxPV+sdzV7TO8Yw5v766IaUhfuhYYEJVx/KdCx6sbzr7WMlzX12rOHy76vBHN25G
+Wwp6rT1Y1ro3czJ/onXT9o0V5sUTp/ZXzTz65e3x31yd+hNomltyJn7JKF5/pLbh
+iwvTp7YsGX03O/V+j0k9K+s2ru4TmPTbvX2f7vY9nzZl3+lIxtR6PauSn8bV07bU
+421nt4P0K1tGB+f0Hv9zcnE6xr1HXBhc1xAdXrNowIHF2Qd2TF/+cUPbi5MOLisd
+gK/3XpD0Uluve94ZjZ/1bezaPGXog7TEEa8mSn/2tL0ZtN+Ym5cGVyR5907Ys+jq
+rcjecUdeHvXj97V/Aa2KCLs=
+=G/T6
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ulysse
+
+==================================================================
