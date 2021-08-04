@@ -74,7 +74,7 @@ void show(game_of_life);
 void step(game_of_life);
 void fill_random(game_of_life);
 void empty(game_of_life);
-int insert_rle(game_of_life, int h, int w, int height, int width, char *rle); // 1 error, 0 ok
+int insert_rle(game_of_life, int h, int w, int height, int width, const char *rle); // 1 error, 0 ok
 
 int neighbors(int h, int w, game_of_life);
 
@@ -161,7 +161,7 @@ void empty(game_of_life game) {
     }
 }
 
-int insert_rle(game_of_life game, int h_init, int w_init, int height, int width, char *rle) {
+int insert_rle(game_of_life game, int h_init, int w_init, int height, int width, const char *rle) {
     char numbuff[100];
     int numbuff_index = 0;
     int to_insert = 1;
