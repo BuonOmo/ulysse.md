@@ -84,9 +84,11 @@ void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int 
     if (!games[index]) games[index] = init(height, width, pixel, is_tor);
     switch (pattern) {
         case 'g':
+            empty(*games[index]);
             if (P48_LWSS_GUN(*games[index], 2, 2)) fill_random(*games[index]);
             break;
         case 's':
+            empty(*games[index]);
             if (PI_SHIP(*games[index], height / pixel - 40, 0)) fill_random(*games[index]);
             break;
         case 'r':
