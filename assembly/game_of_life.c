@@ -62,7 +62,7 @@ typedef struct {
 game_of_life *games[GAMES];
 
 #ifndef TERMINAL
-void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index, bool is_tor);
+void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index, bool is_tor, char pattern);
 unsigned int* EMSCRIPTEN_KEEPALIVE render(int index);
 #endif
 
@@ -79,15 +79,20 @@ int insert_rle(game_of_life, int h, int w, int height, int width, char *rle); //
 int neighbors(int h, int w, game_of_life);
 
 #ifndef TERMINAL
-void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index, bool is_tor) {
+void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index, bool is_tor, char pattern) {
     srand(seed * index);
     if (!games[index]) games[index] = init(height, width, pixel, is_tor);
-    if (is_tor) {
-        // fill_random(*games[index]);
-        empty(*games[index]);
-        if (PI_SHIP(*games[index], height / pixel - 40, 0)) fill_random(*games[index]);
-    } else {
-        fill_random(*games[index]);
+    switch (pattern) {
+        case 'g':
+            if (P48_LWSS_GUN(*games[index], 2, 2)) fill_random(*games[index]);
+            break;
+        case 's':
+            if (PI_SHIP(*games[index], height / pixel - 40, 0)) fill_random(*games[index]);
+            break;
+        case 'r':
+        default:
+            fill_random(*games[index]);
+            break;
     }
 }
 
