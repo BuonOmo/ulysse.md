@@ -55,17 +55,18 @@ typedef struct {
     int width;
     int pixel;
     bool **board;
+    bool is_tor;
     unsigned int *data;
 } game_of_life;
 
 game_of_life *games[GAMES];
 
 #ifndef TERMINAL
-void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index);
+void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index, bool is_tor);
 unsigned int* EMSCRIPTEN_KEEPALIVE render(int index);
 #endif
 
-game_of_life *init(int height, int width, int pixel);
+game_of_life *init(int height, int width, int pixel, bool is_tor);
 void clear(game_of_life*);
 #ifdef TERMINAL
 void show(game_of_life);
@@ -78,10 +79,10 @@ int insert_rle(game_of_life, int h, int w, int height, int width, char *rle); //
 int neighbors(int h, int w, game_of_life);
 
 #ifndef TERMINAL
-void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index) {
+void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index, bool is_tor) {
     srand(seed * index);
-    if (!games[index]) games[index] = init(height, width, pixel);
-    if (height > 800) {
+    if (!games[index]) games[index] = init(height, width, pixel, is_tor);
+    if (is_tor) {
         // fill_random(*games[index]);
         empty(*games[index]);
         if (PI_SHIP(*games[index], height / pixel - 40, 0)) fill_random(*games[index]);
@@ -103,7 +104,7 @@ unsigned int* EMSCRIPTEN_KEEPALIVE render(int index) {
 }
 #endif
 
-game_of_life *init(int height, int width, int pixel) {
+game_of_life *init(int height, int width, int pixel, bool is_tor) {
     game_of_life *game;
     bool **board;
     int board_height;
@@ -124,6 +125,7 @@ game_of_life *init(int height, int width, int pixel) {
         .board_width = board_width,
         .pixel = pixel,
         .board = board,
+        .is_tor = is_tor,
         .data = malloc(height*width*sizeof(unsigned int))
     };
     return game;
@@ -252,18 +254,34 @@ void show(game_of_life game) {
 
 int neighbors(int h, int w, game_of_life game) {
     int count = 0;
-    if (h > 0) {
-        if (w > 0) count += game.board[h - 1][w - 1];
-        count += game.board[h - 1][w];
-        if (w < game.width - 1) count += game.board[h - 1][w + 1];
+
+    if (game.is_tor) {
+#define H(delta) ((h + (delta) + game.board_height) % game.board_height)
+#define W(delta) ((w + (delta) + game.board_width) % game.board_width)
+        count += game.board[H(-1)][W(-1)];
+        count += game.board[H(-1)][W(+1)];
+        count += game.board[H(+1)][W(-1)];
+        count += game.board[H(+1)][W(+1)];
+        count += game.board[H(-1)][w];
+        count += game.board[H(+1)][w];
+        count += game.board[h][W(-1)];
+        count += game.board[h][W(+1)];
+#undef H
+#undef W
+    } else {
+        if (h > 0) {
+            if (w > 0) count += game.board[h - 1][w - 1];
+            count += game.board[h - 1][w];
+            if (w < game.width - 1) count += game.board[h - 1][w + 1];
+        }
+        if (h < game.height - 1) {
+            if (w > 0) count += game.board[h + 1][w - 1];
+            count += game.board[h + 1][w];
+            if (w < game.width - 1) count += game.board[h + 1][w + 1];
+        }
+        if (w > 0) count += game.board[h][w - 1];
+        if (w < game.width - 1) count += game.board[h][w + 1];
     }
-    if (h < game.height - 1) {
-        if (w > 0) count += game.board[h + 1][w - 1];
-        count += game.board[h + 1][w];
-        if (w < game.width - 1) count += game.board[h + 1][w + 1];
-    }
-    if (w > 0) count += game.board[h][w - 1];
-    if (w < game.width - 1) count += game.board[h][w + 1];
     return count;
 }
 
@@ -272,7 +290,7 @@ int main()
 {
     srand(time(NULL));
     game_of_life *game;
-    game = init(60, 101, 1);
+    game = init(60, 101, 1, false);
     if (PI_SHIP(*game, 29, 2)) abort();
 
 	int rounds = 1000;
