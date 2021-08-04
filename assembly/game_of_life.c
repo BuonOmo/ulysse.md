@@ -256,31 +256,40 @@ int neighbors(int h, int w, game_of_life game) {
     int count = 0;
 
     if (game.is_tor) {
-#define H(delta) ((h + (delta) + game.board_height) % game.board_height)
-#define W(delta) ((w + (delta) + game.board_width) % game.board_width)
-        count += game.board[H(-1)][W(-1)];
-        count += game.board[H(-1)][W(+1)];
-        count += game.board[H(+1)][W(-1)];
-        count += game.board[H(+1)][W(+1)];
-        count += game.board[H(-1)][w];
-        count += game.board[H(+1)][w];
-        count += game.board[h][W(-1)];
-        count += game.board[h][W(+1)];
-#undef H
-#undef W
+#define COUNT(hdim, wdim) do {                       \
+count += game.board                                  \
+    [(hdim + game.board_height) % game.board_height] \
+    [(wdim + game.board_width) % game.board_width];  \
+} while(0)
+
+        COUNT(h - 1, w - 1);
+        COUNT(h - 1, w + 1);
+        COUNT(h + 1, w - 1);
+        COUNT(h + 1, w + 1);
+        COUNT(h - 1, w);
+        COUNT(h + 1, w);
+        COUNT(h, w - 1);
+        COUNT(h, w + 1);
+
+#undef COUNT
     } else {
-        if (h > 0) {
-            if (w > 0) count += game.board[h - 1][w - 1];
-            count += game.board[h - 1][w];
-            if (w < game.width - 1) count += game.board[h - 1][w + 1];
-        }
-        if (h < game.height - 1) {
-            if (w > 0) count += game.board[h + 1][w - 1];
-            count += game.board[h + 1][w];
-            if (w < game.width - 1) count += game.board[h + 1][w + 1];
-        }
-        if (w > 0) count += game.board[h][w - 1];
-        if (w < game.width - 1) count += game.board[h][w + 1];
+#define COUNT(hdim, wdim) do {            \
+count += (                                \
+    hdim < 0 || hdim >= game.board_height \
+ || wdim < 0 || wdim >= game.board_width  \
+ ) ? 0 : game.board[hdim][wdim];          \
+} while(0)
+
+        COUNT(h - 1, w - 1);
+        COUNT(h - 1, w + 1);
+        COUNT(h + 1, w - 1);
+        COUNT(h + 1, w + 1);
+        COUNT(h - 1, w);
+        COUNT(h + 1, w);
+        COUNT(h, w - 1);
+        COUNT(h, w + 1);
+
+#undef COUNT
     }
     return count;
 }
