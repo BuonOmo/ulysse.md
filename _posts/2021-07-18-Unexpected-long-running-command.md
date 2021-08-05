@@ -2,6 +2,11 @@
 layout: post
 title: Unexpected long running command
 author: Ulysse
+meta:
+  description: |
+    TL;DR: time matters in your terminal, so just print it, you’ll gain
+    productivity!
+  image: https://raw.githubusercontent.com/BuonOmo/zsh-command-time/main/demo.gif
 ---
 
 When we're coding, we are often forced to take a break due to some `npm install`, `make test` or
