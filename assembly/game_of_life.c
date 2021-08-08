@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
+#include <math.h>
 #ifdef TERMINAL
 #include <stdio.h>
 #include <time.h>
@@ -13,13 +14,13 @@
 extern "C" {
 #endif
 
-#define PIXEL 5
-#define GAMES 10
+#define MAX_GAMES 10
+#define DEBUG_BUFFER_SIZE 1000
 
-#define color(R, G, B, A) (R | G << 8 | B << 16 | A << 24)
+#define RGBA(R, G, B, A) (R | G << 8 | B << 16 | A << 24)
 
-#define ALIVE_COLOR color(0xda, 0x09, 0xff, 0xff)
-#define DEAD_COLOR color(0, 0, 0, 0)
+#define ALIVE_COLOR RGBA(0xda, 0x09, 0xff, 0xff)
+#define DEAD_COLOR RGBA(0, 0, 0, 0)
 
 #define BLOCK(game, h, w) insert_rle(game, h, w, 2, 2, "2o$2o!")
 // https://www.conwaylife.com/wiki/Pi_ship_1
@@ -48,6 +49,7 @@ extern "C" {
 "3ob2ob4obob2o4b3o5b3o7bo2bo$4o3b2o10bo8bo2bo3bo3b2obo20bo$6bo3b9o10bobob2ob2o3bo2bo18b6obo$2o4bobob7o2b3o6b2ob2obobo"\
 "b2obob2o17bo7bo$2o3b2ob2o2b4o2bo2bo18bobo20b3ob3o$8bo2bo7b2o19bobo8b2ob2o9bobo$5b2obobobo28bo7b2obobob2o$6bo4bo32b2o"\
 "3bo7bo3b2o$6bob3o33bo4b3o3b3o4bo$7b2o32b2obo17bob2o$41b2ob2o15b2ob2o!")
+
 typedef struct {
     int height;
     int board_height;
@@ -59,7 +61,14 @@ typedef struct {
     unsigned int *data;
 } game_of_life;
 
-game_of_life *games[GAMES];
+game_of_life *games[MAX_GAMES];
+
+typedef struct {
+    unsigned size;
+    char buffer[DEBUG_BUFFER_SIZE];
+} debugger;
+
+debugger dbg;
 
 #ifndef TERMINAL
 void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index, bool is_tor, char pattern);
@@ -77,9 +86,32 @@ void empty(game_of_life);
 int insert_rle(game_of_life, int h, int w, int height, int width, const char *rle); // 1 error, 0 ok
 
 int neighbors(int h, int w, game_of_life);
+// When out of bound:
+// - if game is a tor, get element using a modulo,
+// - otherwise, consider it is dead (e.g. false)
+bool get(game_of_life, int h, int w);
+
+void debug(const char *data) {
+    size_t len = strlen(data);
+    for (size_t i = 0; i < len; i++)
+    {
+        dbg.buffer[dbg.size] = data[i];
+        dbg.size = dbg.size + 1 % (DEBUG_BUFFER_SIZE - 1);
+    }
+    dbg.buffer[dbg.size] = '\0';
+}
 
 #ifndef TERMINAL
+char *EMSCRIPTEN_KEEPALIVE debug_pointer() {
+    return &dbg.buffer[0];
+}
+
+unsigned EMSCRIPTEN_KEEPALIVE debug_size() {
+    return dbg.size;
+}
+
 void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int index, bool is_tor, char pattern) {
+    debug("test\n");
     srand(seed * index);
     if (!games[index]) games[index] = init(height, width, pixel, is_tor);
     switch (pattern) {
@@ -98,18 +130,94 @@ void EMSCRIPTEN_KEEPALIVE start(int height, int width, int pixel, int seed, int 
     }
 }
 
+void circle(game_of_life game, int h, int w) {
+    float r = ((float)game.pixel) / 2.0;
+    bool self = game.board[h][w];
+    unsigned color = self ? ALIVE_COLOR : DEAD_COLOR;
+    float hcoef = game.pixel * game.board_width;
+    float wcoef = 1;
+    float center = ((float)(h * game.pixel) + r - 0.5) * hcoef + ((float)(w * game.pixel) + r - 0.5) * wcoef;
+    float pos_init = game.pixel % 2 ? 0 : 0.5;
+    //  NW  N  NE
+    //  W       E
+    //  SW  S  SE
+    bool N  = get(game, h - 1, w);
+    bool NE = get(game, h - 1, w + 1);
+    bool E  = get(game, h, w + 1);
+    bool SE = get(game, h + 1, w + 1);
+    bool S  = get(game, h + 1, w);
+    bool SW = get(game, h + 1, w - 1);
+    bool W  = get(game, h, w - 1);
+    bool NW = get(game, h - 1, w - 1);
+    for (float i = pos_init; i < r; i++)
+    {
+        for (float j = pos_init; j < r; j++)
+        {
+            int is_in_radius = j*j+i*i <= r*r;
+            int NWpixel, NEpixel, SWpixel, SEpixel;
+            NWpixel = (int)(center - i * hcoef - j * wcoef);
+            NEpixel = (int)(center - i * hcoef + j * wcoef);
+            SEpixel = (int)(center + i * hcoef + j * wcoef);
+            SWpixel = (int)(center + i * hcoef - j * wcoef);
+            // if (NWpixel != center - i * hcoef - j * wcoef) { clear(&game); return; }
+            // if (NEpixel != center - i * hcoef + j * wcoef) { clear(&game); return; }
+            // if (SEpixel != center + i * hcoef + j * wcoef) { clear(&game); return; }
+            // if (SWpixel != center + i * hcoef - j * wcoef) { clear(&game); return; }
+            if (is_in_radius) {
+                game.data[NWpixel] = color;
+                game.data[NEpixel] = color;
+                game.data[SWpixel] = color;
+                game.data[SEpixel] = color;
+                continue;
+            }
+#define HAS_FILLED_ANGLE(self_filled, side_a, side_b, diagonal) (((side_a) & (side_b)) | (self_filled) & ((side_a) | (side_b) | (diagonal)))
+            game.data[NWpixel] = HAS_FILLED_ANGLE(self, W, N, NW) ? ALIVE_COLOR : DEAD_COLOR;
+            game.data[NEpixel] = HAS_FILLED_ANGLE(self, N, E, NE) ? ALIVE_COLOR : DEAD_COLOR;
+            game.data[SWpixel] = HAS_FILLED_ANGLE(self, S, W, SW) ? ALIVE_COLOR : DEAD_COLOR;
+            game.data[SEpixel] = HAS_FILLED_ANGLE(self, S, E, SE) ? ALIVE_COLOR : DEAD_COLOR;
+#undef HAS_FILLED_ANGLE
+       }
+    }
+}
+
+void render_cell(game_of_life game, int h, int w) {
+    if (game.pixel == 1) {
+        game.data[h * game.board_height + w] = game.board[h][w] ? ALIVE_COLOR : DEAD_COLOR;
+    } else {
+        circle(game, h, w);
+        // for (int i = 0; i < game.pixel; i++)
+        // {
+        //     int iw = (h * game.pixel + i) * game.board_width * game.pixel;
+        //     for (int j = 0; j < game.pixel; j++)
+        //     {
+        //         game.data[iw + w * game.pixel + j] = game.board[h][w] ? ALIVE_COLOR : DEAD_COLOR;
+        //     }
+        // }
+    }
+}
+
+
 unsigned int* EMSCRIPTEN_KEEPALIVE render(int index) {
     game_of_life game = *games[index];
     step(game);
-    for (int i = 0; i < game.height; i++) {
-        int iw = i * game.width;
-        for (int j = 0; j < game.width; j++) {
-            game.data[iw + j] = game.board[i / game.pixel][j / game.pixel] ? ALIVE_COLOR : DEAD_COLOR;
+    // for (int i = 0; i < game.height; i++) {
+    //     int iw = i * game.width;
+    //     for (int j = 0; j < game.width; j++) {
+    //         game.data[iw + j] = game.board[i / game.pixel][j / game.pixel] ? ALIVE_COLOR : DEAD_COLOR;
+    //     }
+    // }
+    for (int i = 0; i < game.board_height; i++) {
+        // int iw = i * game.board_width;
+        for (int j = 0; j < game.board_width; j++) {
+            render_cell(game, i, j);
+            // game.data[iw + j] = game.board[i / game.pixel][j / game.pixel] ? ALIVE_COLOR : DEAD_COLOR;
         }
     }
 	return &(game.data)[0];
 }
 #endif
+
+
 
 game_of_life *init(int height, int width, int pixel, bool is_tor) {
     game_of_life *game;
@@ -121,10 +229,10 @@ game_of_life *init(int height, int width, int pixel, bool is_tor) {
     board_width = width / pixel;
 
 
-    board = malloc(board_height*sizeof(bool*));
+    board = malloc(sizeof(*board)*board_height);
     for (int i = 0; i < board_height; i++)
-        board[i] = malloc(board_width*sizeof(bool));
-    game = malloc(sizeof(game_of_life));
+        board[i] = malloc(sizeof(*board[i])*board_width);
+    game = malloc(sizeof(*game));
     *game = (game_of_life){
         .height = height,
         .width = width,
@@ -133,7 +241,7 @@ game_of_life *init(int height, int width, int pixel, bool is_tor) {
         .pixel = pixel,
         .board = board,
         .is_tor = is_tor,
-        .data = malloc(height*width*sizeof(unsigned int))
+        .data = malloc(sizeof(unsigned int)*height*width)
     };
     return game;
 }
@@ -142,6 +250,7 @@ game_of_life *init(int height, int width, int pixel, bool is_tor) {
 void clear(game_of_life *game) {
     for (int i = 0; i < game->board_height; i++) free(game->board[i]);
     free(game->board);
+    free(game->data);
     free(game);
 }
 
@@ -172,7 +281,7 @@ int insert_rle(game_of_life game, int h_init, int w_init, int height, int width,
 
 #define INSERT(code) do {                        \
 if (numbuff_index) {                             \
-    numbuff[numbuff_index] = '\0';           \
+    numbuff[numbuff_index] = '\0';               \
     to_insert = (int)strtol(numbuff, NULL, 10);  \
     if (!to_insert) return 1;                    \
 }                                                \
@@ -181,14 +290,11 @@ numbuff_index = 0;                               \
 to_insert = 1;                                   \
 } while(0)
 
-    //printf("len: %lu\n", strlen(rle));
     char c;
     for (size_t i = 0, len = strlen(rle); i < len; i++) {
         c = rle[i];
-        //printf("current: %c\n", c);
         switch (c) {
             case '0' ... '9':
-                //printf("0..9 %c\n", c);
                 numbuff[numbuff_index] = c;
                 if (++numbuff_index > 99) return 1;
                 break;
@@ -198,19 +304,15 @@ to_insert = 1;                                   \
                 );
                 break;
             case 'o': // alive cell
-                //printf("o\n");
                 INSERT(
                     for (int i = 0; i < to_insert; i++) game.board[h][w++] = true;
                 );
-                //printf("end o\n");
                 break;
             case '$':
-                //printf("$\n");
                 INSERT(
                     h+= to_insert;
                     w = w_init;
                 );
-                //printf("end $\n");
                 break;
             case '!':
                 return numbuff_index > 0;
@@ -262,43 +364,33 @@ void show(game_of_life game) {
 int neighbors(int h, int w, game_of_life game) {
     int count = 0;
 
-    if (game.is_tor) {
-#define COUNT(hdim, wdim) do {                       \
-count += game.board                                  \
-    [(hdim + game.board_height) % game.board_height] \
-    [(wdim + game.board_width) % game.board_width];  \
-} while(0)
+    count += get(game, h - 1, w - 1);
+    count += get(game, h - 1, w + 1);
+    count += get(game, h + 1, w - 1);
+    count += get(game, h + 1, w + 1);
+    count += get(game, h - 1, w);
+    count += get(game, h + 1, w);
+    count += get(game, h, w - 1);
+    count += get(game, h, w + 1);
 
-        COUNT(h - 1, w - 1);
-        COUNT(h - 1, w + 1);
-        COUNT(h + 1, w - 1);
-        COUNT(h + 1, w + 1);
-        COUNT(h - 1, w);
-        COUNT(h + 1, w);
-        COUNT(h, w - 1);
-        COUNT(h, w + 1);
-
-#undef COUNT
-    } else {
-#define COUNT(hdim, wdim) do {            \
-count += (                                \
-    hdim < 0 || hdim >= game.board_height \
- || wdim < 0 || wdim >= game.board_width  \
- ) ? 0 : game.board[hdim][wdim];          \
-} while(0)
-
-        COUNT(h - 1, w - 1);
-        COUNT(h - 1, w + 1);
-        COUNT(h + 1, w - 1);
-        COUNT(h + 1, w + 1);
-        COUNT(h - 1, w);
-        COUNT(h + 1, w);
-        COUNT(h, w - 1);
-        COUNT(h, w + 1);
-
-#undef COUNT
-    }
     return count;
+}
+
+// When out of bound:
+// - if game is a tor, get element using a modulo,
+// - otherwise, consider it is dead (e.g. false)
+bool get(game_of_life game, int h, int w) {
+    if (game.is_tor) {
+        return game.board
+            [(h + game.board_height) % game.board_height]
+            [(w + game.board_width) % game.board_width];
+    }
+
+    if (h < 0 || h >= game.board_height
+        || w < 0 || w >= game.board_width)
+        return 0;
+
+    return game.board[h][w];
 }
 
 #ifdef TERMINAL
