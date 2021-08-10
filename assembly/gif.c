@@ -1,8 +1,11 @@
 #include <stdio.h>
 
-#include "ext/gifenc.h"
 #include "lib/game_of_life.h"
+#include "lib/gifenc.h"
 
+// uncomment next line for a random game_of_life rather than
+// predetermined shape.
+// #define RANDOM
 
 #define DATA(game) (((ge_GIF*)((game).data))->frame)
 
@@ -40,12 +43,11 @@ int main(int argc, char const *argv[])
 			0xda, 0x09, 0xff
 		},
 		1,
-		0 // infinite loop
+		0 /* infinite loop */
 	);
 	game = gol_init(height, width, pixel, false, set_pixel);
 	game->data = gif;
-	// if (P48_LWSS_GUN(*game, 5, 1)) abort();
-
+#ifdef RANDOM
 	gol_fill_random(*game);
 
 	for (size_t i = 0; i < 2000; i++)
@@ -54,26 +56,28 @@ int main(int argc, char const *argv[])
 		gol_render(*game);
 		ge_add_frame(gif, 0);
 	}
+#else
+	if (P48_LWSS_GUN(*game, 5, 1)) abort();
 
 
-	// gol_render(*game);
-	// ge_add_frame(gif, 1);
-	// while (!top_square(*game)) {
-	// 	gol_step(*game);
-	// }
-	// do {
-	// 	gol_step(*game);
-	// 	gol_render(*game);
-	// 	ge_add_frame(gif, 0);
-	// } while(top_square(*game));
-	// do {
-	// 	gol_step(*game);
-	// 	gol_render(*game);
-	// 	ge_add_frame(gif, 0);
-	// } while(!top_square(*game));
-
+	gol_render(*game);
+	ge_add_frame(gif, 1);
+	while (!top_square(*game)) {
+		gol_step(*game);
+	}
+	do {
+		gol_step(*game);
+		gol_render(*game);
+		ge_add_frame(gif, 0);
+	} while(top_square(*game));
+	do {
+		gol_step(*game);
+		gol_render(*game);
+		ge_add_frame(gif, 0);
+	} while(!top_square(*game));
+#endif
 
 	ge_close_gif(gif);
-	// clear(game)
+	// gol_clear(game);
 	return 0;
 }
