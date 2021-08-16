@@ -9,9 +9,6 @@
 
 #define DATA(game) (((ge_GIF*)((game).data))->frame)
 
-#define RGBA(r, g, b, a) ((r) | ((g) << 8) | ((b) << 16) | ((a) << 24))
-#define RGB(r, g, b) RGBA(r, g, b, 0xff)
-
 void set_pixel(game_of_life game, size_t h, size_t w, bool is_alive) {
 	DATA(game)[h * game.width + w] = is_alive;
 }
@@ -43,7 +40,8 @@ int main(int argc, char const *argv[])
 			0xda, 0x09, 0xff
 		},
 		1,
-		0 /* infinite loop */
+		0, /* infinite loop */
+		0  /* transparent background */
 	);
 	game = gol_init(height, width, pixel, false, set_pixel);
 	game->data = gif;
@@ -57,23 +55,21 @@ int main(int argc, char const *argv[])
 		ge_add_frame(gif, 0);
 	}
 #else
+	ge_set_disposal(gif, 2);
+
 	if (P48_LWSS_GUN(*game, 5, 1)) abort();
 
+	while (!top_square(*game)) gol_step(*game);
 
-	gol_render(*game);
-	ge_add_frame(gif, 1);
-	while (!top_square(*game)) {
-		gol_step(*game);
-	}
 	do {
 		gol_step(*game);
 		gol_render(*game);
-		ge_add_frame(gif, 0);
+		ge_add_frame(gif, 10);
 	} while(top_square(*game));
 	do {
 		gol_step(*game);
 		gol_render(*game);
-		ge_add_frame(gif, 0);
+		ge_add_frame(gif, 10);
 	} while(!top_square(*game));
 #endif
 
