@@ -37,6 +37,10 @@ description: |
     		})
     	})
     </script>
+meta:
+  description: |
+    My journey through the Game of Life, or some blobs moving around.
+  image: https://raw.githubusercontent.com/BuonOmo/ulysse.md/main/_posts/2021-09-26-Conway's-Game-of-Life-(in-WebAssembly-C)/game_of_life.gif
 ---
 
 
