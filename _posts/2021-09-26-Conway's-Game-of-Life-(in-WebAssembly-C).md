@@ -7,7 +7,7 @@ description: |
     <script>
     	const wasm = async function wasm() {
     		if (!wasm.data)
-    			wasm.data = WebAssembly.instantiateStreaming(fetch('/assembly/game_of_life.wasm'))
+    			wasm.data = WebAssembly.instantiateStreaming(fetch('/game_of_life/game_of_life.wasm'))
     		return (await wasm.data).instance.exports
     	}
 
@@ -40,21 +40,10 @@ description: |
 meta:
   description: |
     My journey through the Game of Life, or some blobs moving around.
-  image: https://raw.githubusercontent.com/BuonOmo/ulysse.md/main/_posts/2021-09-26-Conway's-Game-of-Life-(in-WebAssembly-C)/game_of_life.gif
+  image: https://raw.githubusercontent.com/BuonOmo/ulysse.md/main/game_of_life/game_of_life.gif
 ---
 
-
-<!-- TODO:
-- add emscripten to the title
-- talk about the game of life nerds
-- talk about webassembly challenges
-- talk about c generalisation inspired from ruby
-- add og image
--->
-
 <canvas height="25" class="game-of-life" data-interval="160" data-pixel="5" data-frozen></canvas>
-
-<!-- <canvas height="700" width="700" class="game-of-life" data-pixel="25" style="border: 1px solid gray"></canvas> -->
 
 It has been a while since I wanted to write my web version of the game of life. It
 turns out I just needed this excuse: a Game of life may appear as slow, and use a
@@ -180,7 +169,7 @@ example :)
 <script>
 const wasm = async function wasm() {
 	if (!wasm.data)
-		wasm.data = WebAssembly.instantiateStreaming(fetch('/assembly/game_of_life.wasm'),
+		wasm.data = WebAssembly.instantiateStreaming(fetch('/game_of_life/game_of_life.wasm'),
 			// debug attempt
 			{ env: { _log(x) { console.log(x) }}}
 		)
@@ -264,7 +253,7 @@ Of course, I'm welcoming PRs and criticism :)
 [conwaylife.com]: https://www.conwaylife.com/wiki/Main_Page
 [lecram/gifenc]: https://github.com/lecram/gifenc
 [game of life]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-[game_of_life.h]: TODO
-[gif.c]: TODO
-[term.c]: TODO
-[wasm.c]: TODO
+[game_of_life.h]: https://github.com/BuonOmo/ulysse.md/main/game_of_life/lib/game_of_life.h
+[gif.c]: https://github.com/BuonOmo/ulysse.md/main/game_of_life/gif.c
+[term.c]: https://github.com/BuonOmo/ulysse.md/main/game_of_life/term.c
+[wasm.c]: https://github.com/BuonOmo/ulysse.md/main/game_of_life/wasm.c
