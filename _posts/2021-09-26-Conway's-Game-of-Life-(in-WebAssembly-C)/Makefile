@@ -4,11 +4,6 @@ libs_c=$(libs_h:.h=.c)
 CC=gcc
 CFLAGS=-Wall
 CPPFLAGS=-Wall
-VARS_OLD := $(.VARIABLES)
-
-# https://emscripten.org/docs/tools_reference/emcc.html#emcc-source-map-base
-# some.wasm: some.c
-# 	emcc -O3 $< -o $@ --no-entry -s EXPORTED_FUNCTIONS="['_foo']" -s WASM=1 -gsource-map
 
 game_of_life.wasm: ## generate webassembly script (default)
 

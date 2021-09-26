@@ -5,7 +5,6 @@
 
 #define DATA(game) ((char**)((game).data))
 
-
 void set_pixel(game_of_life game, size_t h, size_t w, bool is_alive) {
 	DATA(game)[h][w] = is_alive ? 'O' : '.';
 }

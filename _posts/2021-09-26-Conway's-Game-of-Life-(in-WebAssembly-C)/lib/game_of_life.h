@@ -13,7 +13,6 @@ extern "C" {
 
 typedef struct game_of_life game_of_life;
 
-// TODO: understand cross ref typedef to switch this one above eventually?
 typedef void (*set_pixel_fn)(game_of_life self, size_t h, size_t w, bool is_alive);
 
 struct game_of_life {
@@ -35,7 +34,7 @@ struct game_of_life {
 
 
 game_of_life *gol_init(size_t height, size_t width, size_t pixel, bool is_tor, set_pixel_fn);
-/* Does not clear data. If defined, clear it before calling this method. */
+/* Does not clear data pointer. If defined, clear it before calling this method. */
 void gol_clear(game_of_life*);
 void gol_step(game_of_life);
 /* Use `set_pixel_fn` to imprint every pixels, note that a pixel may be written

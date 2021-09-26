@@ -55,8 +55,6 @@ int main(int argc, char const *argv[])
 		ge_add_frame(gif, 0);
 	}
 #else
-	ge_set_disposal(gif, 2);
-
 	if (P48_LWSS_GUN(*game, 5, 1)) abort();
 
 	while (!top_square(*game)) gol_step(*game);
