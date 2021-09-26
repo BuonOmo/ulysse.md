@@ -82,7 +82,7 @@ unsigned int* EMSCRIPTEN_KEEPALIVE render(int index) {
 And this array will be interpreted as an image in JavaScript:
 
 ```js
-const pointer = render(index, now - t)
+const pointer = render(index)
 const size = width * height * 4 // must match size of the C array
 const data = new Uint8ClampedArray(memory.buffer, pointer, size)
 const img = new ImageData(data, width, height)
