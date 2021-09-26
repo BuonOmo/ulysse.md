@@ -118,12 +118,12 @@ switch(neighbors_count[i][j]) {
 		board[i][j] = board[i][j];
 		break;
 	case 3:
-	/* A cell — either dead or alive — will live on next generation
-	 * if it has exactly 3 neighbors. */
+	/* A cell — either dead or alive — will live on next
+	 * generation if it has exactly 3 neighbors. */
 		board[i][j] = 1;
 		break;
-	/* If a cell has neither 2 nor 3 neighbors, it cannot live next
-	 * round. */
+	/* If a cell has neither 2 nor 3 neighbors, it cannot live
+	 * next round. */
 	default: // 0-1 && 4-8
 		board[i][j] = 0;
 		break;
@@ -164,7 +164,28 @@ working on gif makes for really cool discussions full of colors, and easy reprod
 Now the PR is merged, and if you share this article you'll directly share a Game of Life
 example :)
 
+# The end of the journey
+
+I've wrote a simple implemantation used for this article, feel free to
+[use it][game_of_life.h] to generate [a gif][gif.c], [ascii art][term.c] or
+[some WebAssembly][wasm.c] as in this article.
+
+I have to thanks the ruby language once again, for it helped me to find a way
+to generalise the `game_of_life.h` implementation with the `set_pixel` and
+`data` elements, which are a pale copy of C extension data integration in ruby.
+
+Of course, I'm welcoming PRs and criticism :)
+
 <canvas height="700" class="game-of-life" data-pixel="1"></canvas>
+
+[emscripten.org]: https://emscripten.org/
+[conwaylife.com]: https://www.conwaylife.com/wiki/Main_Page
+[lecram/gifenc]: https://github.com/lecram/gifenc
+[game of life]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+[game_of_life.h]: https://github.com/BuonOmo/ulysse.md/blob/main/game_of_life/lib/game_of_life.h
+[gif.c]: https://github.com/BuonOmo/ulysse.md/blob/main/game_of_life/gif.c
+[term.c]: https://github.com/BuonOmo/ulysse.md/blob/main/game_of_life/term.c
+[wasm.c]: https://github.com/BuonOmo/ulysse.md/blob/main/game_of_life/wasm.c
 
 <script>
 const wasm = async function wasm() {
@@ -236,24 +257,3 @@ window.addEventListener('keydown', e => {
 	})
 })
 </script>
-
-# The end of the journey
-
-I've wrote a simple implemantation used for this article, feel free to
-[use it][game_of_life.h] to generate [a gif][gif.c], [ascii art][term.c] or
-[some WebAssembly][wasm.c] as in this article.
-
-I have to thanks the ruby language once again, for it helped me to find a way
-to generalise the `game_of_life.h` implementation with the `set_pixel` and
-`data` elements, which are a pale copy of C extension data integration in ruby.
-
-Of course, I'm welcoming PRs and criticism :)
-
-[emscripten.org]: https://emscripten.org/
-[conwaylife.com]: https://www.conwaylife.com/wiki/Main_Page
-[lecram/gifenc]: https://github.com/lecram/gifenc
-[game of life]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-[game_of_life.h]: https://github.com/BuonOmo/ulysse.md/main/game_of_life/lib/game_of_life.h
-[gif.c]: https://github.com/BuonOmo/ulysse.md/main/game_of_life/gif.c
-[term.c]: https://github.com/BuonOmo/ulysse.md/main/game_of_life/term.c
-[wasm.c]: https://github.com/BuonOmo/ulysse.md/main/game_of_life/wasm.c
