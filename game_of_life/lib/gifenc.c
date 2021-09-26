@@ -84,17 +84,17 @@ static void put_loop(ge_GIF *gif, uint16_t loop);
 ge_GIF *
 ge_new_gif(
     const char *fname, uint16_t width, uint16_t height,
-    uint8_t *palette, int depth, int loop, int transparent_index
+    uint8_t *palette, int depth, int bgindex, int loop
 )
 {
     int i, r, g, b, v;
     int store_gct, custom_gct;
-    ge_GIF *gif = calloc(1, sizeof(*gif) + 2*width*height);
+    int nbuffers = bgindex < 0 ? 2 : 1;
+    ge_GIF *gif = calloc(1, sizeof(*gif) + nbuffers*width*height);
     if (!gif)
         goto no_gif;
     gif->w = width; gif->h = height;
-    gif->transparent_index = transparent_index;
-    gif->has_unencoded_frame = false;
+    gif->bgindex = bgindex;
     gif->frame = (uint8_t *) &gif[1];
     gif->back = &gif->frame[width*height];
 #ifdef _WIN32
@@ -120,7 +120,7 @@ ge_new_gif(
     if (depth < 0)
         depth = -depth;
     gif->depth = depth > 1 ? depth : 2;
-    write(gif->fd, (uint8_t []) {0xF0 | (depth-1), 0x00, 0x00}, 3);
+    write(gif->fd, (uint8_t []) {0xF0 | (depth-1), (uint8_t) bgindex, 0x00}, 3);
     if (custom_gct) {
         write(gif->fd, palette, 3 << depth);
     } else if (depth <= 4) {
@@ -206,7 +206,7 @@ end_key(ge_GIF *gif)
 }
 
 static void
-put_image(ge_GIF *gif, uint8_t *frame, uint16_t w, uint16_t h, uint16_t x, uint16_t y)
+put_image(ge_GIF *gif, uint16_t w, uint16_t h, uint16_t x, uint16_t y)
 {
     int nkeys, key_size, i, j;
     Node *node, *child, *root;
@@ -223,7 +223,7 @@ put_image(ge_GIF *gif, uint8_t *frame, uint16_t w, uint16_t h, uint16_t x, uint1
     put_key(gif, degree, key_size); /* clear code */
     for (i = y; i < y+h; i++) {
         for (j = x; j < x+w; j++) {
-            uint8_t pixel = frame[i*gif->w+j] & (degree - 1);
+            uint8_t pixel = gif->frame[i*gif->w+j] & (degree - 1);
             child = node->children[pixel];
             if (child) {
                 node = child;
@@ -254,12 +254,14 @@ get_bbox(ge_GIF *gif, uint16_t *w, uint16_t *h, uint16_t *x, uint16_t *y)
 {
     int i, j, k;
     int left, right, top, bottom;
+    uint8_t back;
     left = gif->w; right = 0;
     top = gif->h; bottom = 0;
     k = 0;
     for (i = 0; i < gif->h; i++) {
         for (j = 0; j < gif->w; j++, k++) {
-            if (gif->frame[k] != gif->back[k]) {
+            back = gif->bgindex >= 0 ? gif->bgindex : gif->back[k];
+            if (gif->frame[k] != back) {
                 if (j < left)   left    = j;
                 if (j > right)  right   = j;
                 if (i < top)    top     = i;
@@ -277,91 +279,13 @@ get_bbox(ge_GIF *gif, uint16_t *w, uint16_t *h, uint16_t *x, uint16_t *y)
     }
 }
 
-typedef enum {
-    DM_UNSPEC = 0 << 2,
-    DM_DND    = 1 << 2, /* Do Not Dispose */
-    DM_RTB    = 2 << 2, /* Restore To Background (clear pixel) */
-    DM_RTP    = 3 << 2  /* Restore To Previous (not currently used) */
-} DisposalMethod;
-
 static void
-add_graphics_control_extension(ge_GIF *gif, const uint16_t d, const DisposalMethod dm)
+add_graphics_control_extension(ge_GIF *gif, uint16_t d)
 {
-    uint8_t out[4] = {'!', 0xF9, 0x04, dm};
-    if(gif->transparent_index != -1) {
-        out[3] |= 0x1; // transparent color flag
-    }
-    write(gif->fd, out, sizeof(out));
+    uint8_t flags = ((gif->bgindex >= 0 ? 2 : 1) << 2) + 1;
+    write(gif->fd, (uint8_t []) {'!', 0xF9, 0x04, flags}, 4);
     write_num(gif->fd, d);
-    out[0] = 0;
-    out[1] = 0;
-    if(gif->transparent_index != -1)
-        out[0] = gif->transparent_index;
-    write(gif->fd, out, 2);
-}
-
-void
-add_frame_with_transparency(ge_GIF *gif, const bool has_new_frame)
-{
-    gif->has_unencoded_frame = false;
-    DisposalMethod dm = DM_DND;
-    uint16_t w = gif->unencoded_w;
-    uint16_t h = gif->unencoded_h;
-    uint16_t x = gif->unencoded_x;
-    uint16_t y = gif->unencoded_y;
-    if(has_new_frame)
-    {
-        /* if the new frame has any new transparent pixels (not already transparent) RTB is required */
-        for(int i = 0; i < gif->h; i++)
-        {
-            for(int j = 0; j < gif->w; j++)
-            {
-                if((gif->frame[i*gif->w + j] == gif->transparent_index) && (gif->back[i*gif->w+j] != gif->transparent_index))
-                {
-                    dm = DM_RTB;
-                    /* adjust the BB so the pixel will be cleared on RTB*/
-                    if(i < y)
-                    {
-                        const uint16_t delta = y-i;
-                        y = i;
-                        h += delta;
-                    }
-
-                    if(j < x)
-                    {
-                        const uint16_t delta = x-j;
-                        x = j;
-                        w += delta;
-                    }
-
-                    if(i >= (y+gif->h))
-                    {
-                        h += (i-(y+gif->h)+1);
-                    }
-
-                    if(j >= (x+gif->w))
-                    {
-                        w += (j-(x+gif->w)+1);
-                    }
-                }
-            }
-        }
-
-    }
-    add_graphics_control_extension(gif, gif->unencoded_delay, dm);
-    put_image(gif, gif->back, w, h, x, y);
-
-    if(dm == DM_RTB)
-    {
-        /* RTB our internal model, used by get_bbox*/
-        for(int i = y; i < (y+h); i++)
-        {
-            for(int j = x; j < (x+w); j++)
-            {
-                gif->back[i*gif->w + j] = gif->transparent_index;
-            }
-        }
-    }
+    write(gif->fd, (uint8_t []) {(uint8_t) gif->bgindex, 0x00}, 2);
 }
 
 void
@@ -370,13 +294,9 @@ ge_add_frame(ge_GIF *gif, uint16_t delay)
     uint16_t w, h, x, y;
     uint8_t *tmp;
 
-    /* encode an old frame if needed */
-    if(gif->has_unencoded_frame) {
-        add_frame_with_transparency(gif, true);
-    }
-
-    /* determine the changed area since the last frame */
-    if ((gif->nframes == 0)) {
+    if (delay || (gif->bgindex >= 0))
+        add_graphics_control_extension(gif, delay);
+    if (gif->nframes == 0) {
         w = gif->w;
         h = gif->h;
         x = y = 0;
@@ -385,38 +305,18 @@ ge_add_frame(ge_GIF *gif, uint16_t delay)
         w = h = 1;
         x = y = 0;
     }
-
-    /* encode the frame now if transparency isn't used at all*/
-    if(gif->transparent_index == -1)
-    {
-        if(delay) {
-            add_graphics_control_extension(gif, delay, DM_DND);
-        }
-        put_image(gif, gif->frame, w, h, x, y);
-    }
-    else
-    {
-        gif->has_unencoded_frame = true;
-        gif->unencoded_w = w;
-        gif->unencoded_h = h;
-        gif->unencoded_x = x;
-        gif->unencoded_y = y;
-        gif->unencoded_delay = delay;
-    }
-
+    put_image(gif, w, h, x, y);
     gif->nframes++;
-    tmp = gif->back;
-    gif->back = gif->frame;
-    gif->frame = tmp;
+    if (gif->bgindex < 0) {
+        tmp = gif->back;
+        gif->back = gif->frame;
+        gif->frame = tmp;
+    }
 }
 
 void
 ge_close_gif(ge_GIF* gif)
 {
-    /* encode an old frame if needed */
-    if(gif->has_unencoded_frame) {
-        add_frame_with_transparency(gif, false);
-    }
     write(gif->fd, ";", 1);
     close(gif->fd);
     free(gif);

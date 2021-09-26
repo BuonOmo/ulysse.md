@@ -40,8 +40,8 @@ int main(int argc, char const *argv[])
 			0xda, 0x09, 0xff
 		},
 		1,
-		0, /* infinite loop */
-		0  /* transparent background */
+		0, /* transparent background */
+		0  /* infinite loop */
 	);
 	game = gol_init(height, width, pixel, false, set_pixel);
 	game->data = gif;
