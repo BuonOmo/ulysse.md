@@ -6,3 +6,8 @@ cat <<-TEXT > .git/hooks/pre-commit
 	./bin/pre-commit
 TEXT
 chmod +x .git/hooks/pre-commit
+
+# https://medium.com/@porteneuve/how-to-make-git-preserve-specific-files-while-merging-18c92343826b
+# https://git-scm.com/docs/gitattributes#_defining_a_custom_merge_driver
+git config --local merge.humans.name "Avoid conflict on humans.txt, always pick the last date"
+git config --local merge.humans.driver "bin/humans-merge %A %B"

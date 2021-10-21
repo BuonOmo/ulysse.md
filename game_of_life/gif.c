@@ -13,14 +13,6 @@ void set_pixel(game_of_life game, size_t h, size_t w, bool is_alive) {
 	DATA(game)[h * game.width + w] = is_alive;
 }
 
-bool top_square(game_of_life game) {
-	for (size_t w = 0; w < game.board_width - 1; w++)
-	{
-		if (game.board[0][w] & game.board[0][w + 1] & game.board[1][w] & game.board[1][w + 1]) return true;
-	}
-	return false;
-}
-
 int main(int argc, char const *argv[])
 {
 	if (argc != 2) {
@@ -28,9 +20,9 @@ int main(int argc, char const *argv[])
 		return 1;
 	}
 
-	size_t height = 380;
-	size_t width = 1000;
-	size_t pixel = 5;
+	size_t pixel = 12;
+	size_t height = 48 * pixel;
+	size_t width = 48 * pixel;
     game_of_life *game;
 	ge_GIF* gif;
 	gif = ge_new_gif(
@@ -55,20 +47,14 @@ int main(int argc, char const *argv[])
 		ge_add_frame(gif, 0);
 	}
 #else
-	if (P48_LWSS_GUN(*game, 5, 1)) abort();
+	if (P49_BUMPER_LOOP(*game, 1, 1)) abort();
 
-	while (!top_square(*game)) gol_step(*game);
-
+	int i = 49;
 	do {
 		gol_step(*game);
 		gol_render(*game);
 		ge_add_frame(gif, 10);
-	} while(top_square(*game));
-	do {
-		gol_step(*game);
-		gol_render(*game);
-		ge_add_frame(gif, 10);
-	} while(!top_square(*game));
+	} while(i--);
 #endif
 
 	ge_close_gif(gif);

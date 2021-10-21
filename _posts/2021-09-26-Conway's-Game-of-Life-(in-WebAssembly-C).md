@@ -187,6 +187,12 @@ Of course, I'm welcoming PRs and criticism :)
 [term.c]: https://github.com/BuonOmo/ulysse.md/blob/main/game_of_life/term.c
 [wasm.c]: https://github.com/BuonOmo/ulysse.md/blob/main/game_of_life/wasm.c
 
+<!-- More resources
+https://github.com/MichaelJCole/n-body-wasm-canvas/blob/ecf9c4ae00b5b931582a9d5db3cfb22acdb95991/src/workerWasm.js
+https://emscripten.org/docs/porting/connecting_cpp_and_javascript/Interacting-with-code.html?highlight=import
+https://github.com/emscripten-core/emscripten/blob/1.29.12/tests/test_core.py#L5043
+-->
+
 <script>
 const wasm = async function wasm() {
 	if (!wasm.data)

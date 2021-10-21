@@ -20,19 +20,18 @@ void show(game_of_life game) {
 
 int main()
 {
-	int height = 70;
-	int width = 70;
+	int height = 46;
+	int width = 46;
     game_of_life *game;
     srand(time(NULL)); // for randomly filled games.
-    game = gol_init(height, width, 70, false, set_pixel);
+    game = gol_init(height, width, 1, false, set_pixel);
 	game->data = malloc(sizeof(char*)*height);
 	for (size_t i = 0; i < height; i++)
 	{
 		DATA(*game)[i] = malloc(sizeof(char)*width);
 	}
 
-    // if (P48_LWSS_GUN(*game, 0, 0)) abort();
-	if (gol_insert_rle(*game, 0, 0, 1, 1, "o!")) abort();
+	if (P49_BUMPER_LOOP(*game, 0, 0)) abort();
 
 	gol_render(*game);
 	show(*game);
