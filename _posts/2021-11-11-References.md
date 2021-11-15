@@ -17,4 +17,4 @@ adding new (or most important) ones to the top.
 - BOOK (3d) [Ruby Hacking Guide](https://git.io/ruby-hacking)
 - BOOK (2d) [Learn you some Erlang](https://learnyousomeerlang.com/)
 - BOOK (2d) [Learn you a Haskell](http://learnyouahaskell.com/)
-- BOOK (Xd) [In the beginning... Was the command line](https://booksvooks.com/fullbook/in-the-beginningwas-the-command-line-pdf-1.html?page=1)
+- BOOK (...d) [In the beginning... Was the command line](https://booksvooks.com/fullbook/in-the-beginningwas-the-command-line-pdf-1.html?page=1)
