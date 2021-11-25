@@ -9,7 +9,6 @@ lately. I'd like to lay here some of the references that
 really inspired me. I'll update this blogpost quite often,
 adding new (or most important) ones to the top.
 
-
 # Added 2021-11-11.
 
 - BLOG POST (15m) [Writing system software: code comments.](http://antirez.com/news/124)
