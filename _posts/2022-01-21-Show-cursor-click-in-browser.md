@@ -1,10 +1,13 @@
 ---
 layout: post
-title: Show cursor click in browser
+title: Show cursor click (script injection in chrome)
 author: Ulysse
 ---
 
-Copy paste that in your console (or read it first):
+Copy paste the code below in any console (or read it first). You can also use
+[whitchcraft](https://luciopaiva.com/witchcraft/) if you want this feature
+everywhere. Or look at my [chrome-scripts](https://github.com/BuonOmo/chrome-scripts)
+for meaningful browser hacks.
 
 ```js
 const div = document.createElement('div')
@@ -49,4 +52,6 @@ document.body.addEventListener('click', e => {
 })
 ```
 
-Find more browser hacks in my [chrome-scripts](https://github.com/BuonOmo/chrome-scripts)
+<script async defer>
+	eval(document.querySelector('.language-js').innerText)
+</script>

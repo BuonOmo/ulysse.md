@@ -78,3 +78,26 @@ not being bothered most of the time.
 
 I use all of those three solutions in my day to day work, and they help me manage my time spent on the
 terminal, and finding time for those [tiny](https://xkcd.com/) [breaks](https://thecodinglove.com/) we all love!
+
+# BONUS: Ruby IRB timings
+
+If you don't have an irbrc file yet, now may be a good time to create yours! Here's
+[mine](https://github.com/BuonOmo/dotfiles/blob/main/.irbrc) as an example.
+
+To have a similar way of working as in zsh with `zsh-command-time`, you may add
+this to your irbrc:
+
+```ruby
+if IRB.respond_to?(:set_measure_callback)
+  IRB.set_measure_callback do |context, code, line_no, &block|
+    time = Time.now
+    result = block.()
+    now = Time.now
+    diff = (now - time)
+    puts 'processing time: %fs' % diff if IRB.conf[:MEASURE] && diff > 0.5
+    result
+  end
+end
+```
+
+And now you'll have timings as long as it is more than 0.5 seconds.
