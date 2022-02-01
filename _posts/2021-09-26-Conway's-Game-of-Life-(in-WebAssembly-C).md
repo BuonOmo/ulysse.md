@@ -143,6 +143,9 @@ spaceships (things that move) or still lives (things that don't) and
 
 For more on the game of life itself, I suggets reading the [wiki][conwaylife.com].
 
+Some lifer (Brice Due) went all in, such that they created [a metapixel][metapixel] which emulates
+the game of life, using the game of life! [Here is some more information][metapixel_how] on the topic if you want
+to see how it works
 
 # What thumbnail for this article?
 
@@ -185,6 +188,8 @@ Of course, I'm welcoming PRs and criticism :)
 [gif.c]: https://github.com/BuonOmo/ulysse.md/blob/main/game_of_life/gif.c
 [term.c]: https://github.com/BuonOmo/ulysse.md/blob/main/game_of_life/term.c
 [wasm.c]: https://github.com/BuonOmo/ulysse.md/blob/main/game_of_life/wasm.c
+[metapixel]: https://conwaylife.com/wiki/OTCA_metapixel
+[metapixel_how]: http://otcametapixel.blogspot.com/2006/05/how-does-it-work.html
 
 <!-- More resources
 https://github.com/MichaelJCole/n-body-wasm-canvas/blob/ecf9c4ae00b5b931582a9d5db3cfb22acdb95991/src/workerWasm.js
