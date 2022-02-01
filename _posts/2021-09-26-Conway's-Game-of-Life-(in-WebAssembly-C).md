@@ -38,8 +38,7 @@ description: |
     	})
     </script>
 meta:
-  description: |
-    My journey through the Game of Life, or some blobs moving around.
+  description: My journey through the Game of Life, or some blobs moving around.
   image: https://raw.githubusercontent.com/BuonOmo/ulysse.md/main/game_of_life/game_of_life.gif
 ---
 

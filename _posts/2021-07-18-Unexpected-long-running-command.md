@@ -3,9 +3,9 @@ layout: post
 title: Unexpected long running command
 author: Ulysse
 meta:
-  description: |
-    TL;DR: time matters in your terminal, so just print it, you’ll gain
-    productivity!
+  description: >
+    TL;DR: time matters in your terminal,
+    so just print it, you’ll gain productivity!
   image: https://raw.githubusercontent.com/BuonOmo/zsh-command-time/main/demo.gif
 ---
 

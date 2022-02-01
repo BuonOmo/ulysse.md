@@ -3,7 +3,7 @@ layout: post
 title: Compare versions in PostgreSQL
 author: Ulysse
 meta:
-  description: |
+  description: >
     TL;DR: Implementing a semver_match(version, '~> 2.3.1') function in SQL.
 ---
 

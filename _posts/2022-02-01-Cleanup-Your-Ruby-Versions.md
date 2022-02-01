@@ -2,6 +2,8 @@
 layout: post
 title: Cleanup Your Ruby Versions
 author: Ulysse
+meta:
+  description: A simple way to make some space on your computer
 ---
 
 One day my computer decided to tell that I had no space available anymore. As
