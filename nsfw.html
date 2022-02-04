@@ -1,0 +1,25 @@
+<style>
+	body {
+		background-color: hsl(0deg 0% 8%);
+		padding: 2em;
+	}
+	video {
+		max-width: 512px;
+		margin: 0 auto;
+		display: block;
+	}
+</style>
+<video id="video" controls>
+    <source src="t.webm" type="video/webm" />
+	<audio id="audio">
+		<source src="nsfw.mp4" type="audio/mpeg"/>
+	</audio>
+</video>
+
+<script>
+	// const video = document.getElementById("video");
+	// const audio = document.getElementById("audio");
+	video.onplay  = function() { audio.play();  }
+	video.onpause = function() { audio.pause(); }
+	document.body.onclick = function() { video.requestPictureInPicture() }
+</script>
