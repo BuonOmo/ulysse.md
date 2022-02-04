@@ -7,9 +7,10 @@ author: Ulysse
 I've been reading and watching a lot of code related stuff
 lately. I'd like to lay here some of the references that
 really inspired me. I'll update this blogpost quite often,
-adding new (or most important) ones to the top.
+adding new (or most important) ones to the top. See this
+file's history for more information.
 
-# Added 2021-11-11.
+# Miscellaneous
 
 - BLOG POST (15m) [Writing system software: code comments.](http://antirez.com/news/124)
 - VIDEO (1h) [The art of Code](https://www.youtube.com/watch?v=6avJHaC3C2U)
@@ -17,3 +18,92 @@ adding new (or most important) ones to the top.
 - BOOK (2d) [Learn you some Erlang](https://learnyousomeerlang.com/)
 - BOOK (2d) [Learn you a Haskell](http://learnyouahaskell.com/)
 - BOOK (...d) [In the beginning... Was the command line](https://booksvooks.com/fullbook/in-the-beginningwas-the-command-line-pdf-1.html?page=1)
+- BLOG POST (20m) [Test-induced design damage](https://dhh.dk/2014/test-induced-design-damage.html)
+- ARTICLE (1h) [Bash Pitfalls](http://mywiki.wooledge.org/BashPitfalls)
+
+# Blogs to read through (or RSS)
+
+- https://blog.cleverelephant.ca/
+- https://antirez.com
+- https://martinfowler.com
+- https://blog.peterzhu.ca/notes-on-ruby-gc/
+- http://tmm1.net/
+- https://www.speedshop.co/feed.xml
+- https://www.brendangregg.com/blog/rss.xml
+- https://samsaffron.com/
+
+# Ruby related
+
+Roughly sorted from beginner to advanced stuff
+
+- https://poignant.guide/
+- https://www.zenspider.com/ruby/quickref.html
+- https://tenderlovemaking.com/2016/02/05/i-am-a-puts-debuggerer.html
+- https://www.schneems.com/2016/01/25/ruby-debugging-magic-cheat-sheet.html
+- http://tmm1.net/ruby21-profiling/
+- https://github.com/tenderlove/heap-utils
+- https://www.speedshop.co/2017/12/04/malloc-doubles-ruby-memory.html
+- https://speakerdeck.com/gnprice/profiling-ruby
+- https://speakerdeck.com/tmm1/debugging-ruby-performance
+
+## Ruby C ext related
+
+- https://github.com/ruby/ruby/blob/HEAD/doc/extension.rdoc
+- https://ruby.github.io/rdoc/RDoc/Parser/C.html
+- https://silverhammermba.github.io/emberb/
+- https://alanwu.space/post/check-compaction/
+- https://buonomo.github.io/ruby-hacking-guide.github.com/gc
+
+# Utilities
+
+- short and free url shortener http://bit.do/
+- test markdown compatibility https://babelmark.github.io/
+- planning poker https://gaga.labvoid.com/
+- music https://musicforprogramming.net/latest/
+- a chrome driver to mess with internet in ruby https://ferrum.rocks/
+- free isochrone service https://geoservices.ign.fr/documentation/services/services-deprecies/isochrones-isodistances
+- nice PG (postgresql) plans https://tatiyants.com/pev/#/plans/new
+- https://transfer.sh/
+- CSS specificity calculator https://specificity.keegan.st/
+- Manage CRON like a boss https://crontab.guru/
+- https://madebymike.github.io/html5-periodic-table
+- cheatsheets https://devhints.io/
+- https://adventofcode.com/
+- Guide for CSS in emails https://www.campaignmonitor.com/css/
+
+## Free APIs/Data
+
+- helps you choosing https://yesno.wtf/
+- maps data https://gadm.org/index.html
+- Pictures of persons that won't complain https://thispersondoesnotexist.com/
+- https://adresse.data.gouv.fr/api-doc
+- OSS/Free IP service https://www.ipify.org/
+- http://httpbin.org/
+- 30mo free https://redis.com
+
+# Unsorted/read in progress
+
+- https://www.youtube.com/watch?v=H8iWLoarTZc
+- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/
+- http://gameprogrammingpatterns.com/data-locality.html
+- http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/
+- https://use-the-index-luke.com/
+- https://www.12factor.net/
+- https://staffeng.com/
+- http://ruby-doc.com/docs/ProgrammingRuby/
+- https://rubyreferences.github.io/rubyref/advanced/dtrace.html
+- https://www.datadoghq.com/pdf/Understanding-the-Top-5-Redis-Performance-Metrics.pdf
+- https://github.com/donnemartin/system-design-primer
+- https://linuxgazette.net/139/peterson.html
+- https://zachholman.com/talk/utc-is-enough-for-everyone-right :heart:
+- https://speaking.io/
+- https://www.brendangregg.com/offcpuanalysis.html
+- https://www.brendangregg.com/usemethod.html
+- https://netflixtechblog.com/cache-warming-agility-for-a-stateful-service-2d3b1da82642
+- https://www.postgresql.org/docs/current/using-explain.html
+- https://pganalyze.com/blog/postgres-connection-tracing-wait-event-analysis-and-vacuum-monitoring
+
+# HR/Recruitment stuff (FR mostly)
+
+- Club IF https://servif-cocktail.insa-lyon.fr/PFE/pages/accueil/authentification.html
+- https://www.blog-management.fr/2019/03/07/prendre-un-nouveau-depar/
