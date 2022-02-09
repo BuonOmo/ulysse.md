@@ -14,6 +14,7 @@ file's history for more information.
 
 - BLOG POST (15m) [Writing system software: code comments.](http://antirez.com/news/124)
 - VIDEO (1h) [The art of Code](https://www.youtube.com/watch?v=6avJHaC3C2U)
+- VIDEO (40mn) [Why We Code? (the economics behind OSS)](https://vimeo.com/231975273)
 - BOOK (3d) [Ruby Hacking Guide](https://git.io/ruby-hacking)
 - BOOK (2d) [Learn you some Erlang](https://learnyousomeerlang.com/)
 - BOOK (2d) [Learn you a Haskell](http://learnyouahaskell.com/)
