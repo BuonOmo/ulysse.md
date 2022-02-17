@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unexpected long running command
+title: Utilities for a time aware shell
 author: Ulysse
 meta:
   description: >
