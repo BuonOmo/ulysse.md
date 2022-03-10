@@ -237,6 +237,12 @@ bool gol_get(game_of_life, size_t h, size_t w);
 "3bo2bo5b3o$6b2o16bo6bobo$24bo9bo$29bo2b3o2bo$18b2o9bo5b3o$19bo9bo3b2o$16b3o9b2o5bo$16bo11bo2bob2o$29bobobo$30b2o2bo$"\
 "33b2o!")
 
+/* ..O....O..
+ * OO.OOOO.OO
+ * ..O....O..
+ * https://conwaylife.com/wiki/Pentadecathlon */
+#define PENTADECATHLON(game, h, w) gol_insert_rle(game, h, w, 3, 10, "2bo4bo2b$2ob4ob2o$2bo4bo!")
+
 #ifdef __cplusplus
 }
 #endif

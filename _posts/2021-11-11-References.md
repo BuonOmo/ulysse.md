@@ -32,6 +32,7 @@ file's history for more information.
 - [speedshop.co](https://www.speedshop.co/feed.xml)
 - [brendangregg.com](https://www.brendangregg.com/blog/rss.xml)
 - [samsaffron.com](https://samsaffron.com/)
+- [boringcactus.com](https://www.boringcactus.com/feed.xml)
 
 # Ruby related
 

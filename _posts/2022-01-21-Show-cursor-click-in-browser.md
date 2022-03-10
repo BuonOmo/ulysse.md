@@ -22,7 +22,7 @@ div.style = `
 const inner = document.createElement('div')
 inner.style = `
 	border-radius: 50%;
-	border: 2px solid blue;
+	border: 2px solid #61afef;
 	width: 0px;
 	height: 0px;
 `

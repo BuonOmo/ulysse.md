@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	{% include meta.html %}
 	<title>{{ page.title }} - Posted By Ulysse</title>
-	<link rel="stylesheet" href="/css/Tr3jer.css" type="text/css" />
-	<link rel="stylesheet" href="/css/ulysse.css" type="text/css" />
+	<link rel="stylesheet" href="/css/main.css" type="text/css" />
 	<link rel="stylesheet" href="/css/syntax.css" type="text/css" />
 </head>
 
 <body>
 	<div class="site">
-		<div class="post-content">
-			<div id="post">
-				<a class="back" href="/"><h1>{{ page.title }}</h1></a>
-				<p class="date">{{ page.date | date: "%B %e, %Y" }} — {{ page.author }}</p>
+		<div id="post" class="post-content">
+			<a class="👈" href="/"><h1>{{ page.title }}</h1></a>
+			<p class="📆">{{ page.date | date: "%B %e, %Y" }} — {{ page.author }}</p>
 
-				<section>
-					{{ content }}
-				</section>
-			</div>
+			<section>
+				{{ content }}
+			</section>
 		</div>
 
 		{% include footer.html %}

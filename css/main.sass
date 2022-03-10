@@ -1,0 +1,171 @@
+---
+---
+
+$background-color: #282c34
+$text-color: #abb2bf
+$comment-color: #7f848e
+$link-color: #61afef
+$link-hover-color: lighten($link-color, 20%)
+
+$main-font: MonoLisa, 'JetBrains Mono', monospace, serif
+
+// Tabs will rule the world.
+*
+	tab-size: 4
+
+// https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap
+@font-face
+	font-family: 'JetBrains Mono'
+	font-style: normal
+	font-weight: 100
+	font-display: swap
+	src: url(/fonts/jetbrains.woff) format('woff')
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+
+@each $suffix, $weight in ('Light': 300, 'Regular': 400, 'Bold': 700)
+	@font-face
+		font-family: 'MonoLisa'
+		font-style: normal
+		font-weight: $weight
+		font-display: swap
+		src: url('/fonts/MonoLisa-#{$suffix}.woff2') format('woff2')
+	@font-face
+		font-family: 'MonoLisa'
+		font-style: italic
+		font-weight: $weight
+		font-display: swap
+		src: url('/fonts/MonoLisa-#{$suffix}Italic.woff2') format('woff2')
+
+@mixin separator
+	border-top: 1px darken($text-color, 20%) solid
+	margin-top: 1rem
+	margin-bottom: 1rem
+
+.📆
+	color: $comment-color
+
+.highlight
+	& .c,   // Comment
+	& .ch,  // Comment.Hashbang
+	& .cm,  // Comment.Multiline
+	& .cpf, // Comment.PreprocFile
+	& .c1,  // Comment.Single
+	& .cs   // Comment.Special
+		font-style: italic
+*
+	color: $text-color
+
+a
+	color: $link-color
+	text-decoration: none
+	.title &, .contact &
+		color: $text-color
+	&:hover
+		color: $link-hover-color
+
+body
+	background-color: $background-color
+
+.site
+	margin: 2em auto 1em auto
+	font-family: $main-font
+	font-size: 18px
+	font-feature-settings: 'ss02' 1 // Enable MonoLisa script variant
+	font-weight: 300
+	width: clamp(47ch, 50vw, 77ch)
+	#post p
+		margin-left: 2ch
+
+code
+	font-family: $main-font
+	font-size: 0.9em
+	white-space: nowrap // Avoid code span over two lines.
+
+code.highlighter-rouge
+	word-break: keep-all
+	font-family: $main-font
+	font-weight: 700
+	&::before, &::after
+		content: '`'
+		font-weight: 700
+		font-family: $main-font
+
+.footer
+	@include separator
+	font-size: clamp(0.8rem, 1.18vw, 1.33rem)
+	text-align: center
+	p
+		margin-top: clamp(0rem, calc(1vw - 0.5rem), 0.5rem)
+
+.main-content
+	@include separator
+	li::after
+		clear: both
+		content: ''
+		display: table
+
+.post-content
+	padding-top: 1.2rem
+	a.👈
+		color: initial
+		> h1:hover::before
+			content: '<'
+	h1, h2, h3, h4, h5, h6
+		line-height: 1.5
+		font-weight: 400
+		font-style: italic
+	h1
+		font-size: 1.7em
+		&::before
+			content: '#'
+			margin-right: 0.6rem
+	h2, section h1
+		font-size: 1.4em
+		&::before
+			content: '##'
+			margin-right: 0.9rem
+	h3, section h2
+		font-size: 1.2em
+		&::before
+			content: '###'
+			margin-right: 0.9rem
+	li::marker
+		content: '- '
+	p
+		margin-left: 2ch
+		text-align: justify
+	pre
+		overflow: initial
+	.📆
+		color: #7F848E
+		font-size: 0.8em
+		padding-bottom: 1.3rem
+		text-align: right
+		width: initial
+
+.post-list
+	list-style-type: none
+	padding: 0
+	.📆
+		float: right
+		font-size: 0.8em
+	li
+		line-height: 1.7em
+
+pre.highlight
+	&::before, &::after
+		content: '```'
+		display: block
+		font-family: 'MonoLisa', 'JetBrains Mono', monospace
+	&::before
+		margin-bottom: -0.9rem
+	&::after
+		margin-top: 0.3rem
+
+pre code
+	white-space: pre
+
+.title
+	a
+		font-size: 2em
+		font-style: italic

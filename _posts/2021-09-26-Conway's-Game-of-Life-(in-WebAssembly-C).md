@@ -3,39 +3,30 @@ layout: post
 title: Conway's Game of Life (in WebAssembly C)
 author: Ulysse
 description: |
-    <canvas class="game-of-life" height="10" data-pixel="2"></canvas>
+    <canvas class="game-of-life" height="18" width="32" style="margin-bottom:-2px"></canvas>
     <script>
-    	const wasm = async function wasm() {
-    		if (!wasm.data)
-    			wasm.data = WebAssembly.instantiateStreaming(fetch('/game_of_life/game_of_life.wasm'))
-    		return (await wasm.data).instance.exports
-    	}
+    	(async function(){
+    		const wasm = async function wasm() {
+    			if (!wasm.data)
+    				wasm.data = WebAssembly.instantiateStreaming(fetch('/game_of_life/game_of_life.wasm'))
+    			return (await wasm.data).instance.exports
+    		}
 
-    	const games = Array.from(document.getElementsByClassName('game-of-life'))
-    	let offsetIndex = 0;
-    	games.forEach(async (canvas, index) => {
+    		const canvas = document.querySelector('.game-of-life')
     		const ctx = canvas.getContext('2d')
-    		const width = canvas.width = document.querySelector('ul').clientWidth;
+    		const width = canvas.width
     		const height = canvas.height
-    		const offset = offsetIndex
-
     		const { start, render, memory } = await wasm()
-    		start(height, width, canvas.dataset.pixel || 5, Date.now(), index)
+    		start(
+    			height, width, 2 /* px size */, Date.now(), 0, false, 'p'.charCodeAt(0) /* pattern to draw */
+    		)
     		setInterval(() => {
-    			const pointer = render(index)
+    			const pointer = render(0)
     			const data = new Uint8ClampedArray(memory.buffer, pointer, width * height * 4)
     			const img = new ImageData(data, width, height)
     			ctx.putImageData(img, 0, 0)
-    		}, canvas.dataset.interval || 100)
-    	})
-    	window.addEventListener('keydown', e => {
-    		// if (e.key !== 'Enter') return
-
-    		games.forEach(async (canvas, index) => {
-    			const { start } = await wasm()
-    			start(canvas.height, canvas.width, Date.now(), index)
-    		})
-    	})
+    		}, 100 /* frame rate */)
+    	})()
     </script>
 meta:
   description: My journey through the Game of Life, or some blobs moving around.

@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
+# You'll need pygments (pygments.org). On a mac: `brew install pygments`
 
 set -e
 

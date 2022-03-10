@@ -56,7 +56,7 @@ SELECT ARRAY['4', '2']::int[];
 Since in PostgreSQL array comparison is done by comparing each pair consecutively, we are already very close to a complete solution:
 
 ```sql
-SELECT ARRAY[2, 1] > ARRAY[2, 0]; -- ture
+SELECT ARRAY[2, 1] > ARRAY[2, 0]; -- true
 SELECT ARRAY[2, 1] > ARRAY[2]; -- true
 ```
 

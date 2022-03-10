@@ -33,6 +33,10 @@ void EMSCRIPTEN_KEEPALIVE start(size_t height, size_t width, size_t pixel, size_
             gol_empty(*games[index]);
             if (PI_SHIP(*games[index], height / pixel - 40, 0)) gol_fill_random(*games[index]);
             break;
+        case 'p':
+            gol_empty(*games[index]);
+            if (PENTADECATHLON(*games[index], 3, 3)) gol_fill_random(*games[index]);
+            break;
         case 'r':
         default:
             gol_fill_random(*games[index]);
