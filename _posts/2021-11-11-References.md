@@ -81,7 +81,7 @@ Roughly sorted from beginner to advanced stuff
 - [french address API](https://adresse.data.gouv.fr/api-doc)
 - [OSS/Free IP service](https://www.ipify.org/)
 - [httpbin.org](http://httpbin.org/)
-- [30mo free](https://redis.com)
+- [30mo free REDIS db](https://redis.com)
 
 # Unsorted/read in progress
 
@@ -104,6 +104,7 @@ Roughly sorted from beginner to advanced stuff
 - [https://netflixtechblog.com/cache-warming-agility-for-a-stateful-service-2d3b1da82642](https://netflixtechblog.com/cache-warming-agility-for-a-stateful-service-2d3b1da82642)
 - [https://www.postgresql.org/docs/current/using-explain.html](https://www.postgresql.org/docs/current/using-explain.html)
 - [https://pganalyze.com/blog/postgres-connection-tracing-wait-event-analysis-and-vacuum-monitoring](https://pganalyze.com/blog/postgres-connection-tracing-wait-event-analysis-and-vacuum-monitoring)
+- VIDEO [https://8thlight.com/blog/web3-why-we-care/](https://8thlight.com/blog/web3-why-we-care/)
 
 # HR/Recruitment stuff
 
