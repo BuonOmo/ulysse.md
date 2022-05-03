@@ -33,7 +33,7 @@ gem "rgeo", ">= 3"
 This can also be used in code directly:
 
 ```ruby
-Gem::Version("10.0.1") > Gem::Version("10.0.0") # true
+Gem::Version.new("10.0.1") > Gem::Version.new("10.0.0") # true
 ```
 
 See [the ruby documentation](https://ruby-doc.org/stdlib-2.4.0/libdoc/rubygems/rdoc/Gem/Version.html) for a more in-depth explanation of those operators.
