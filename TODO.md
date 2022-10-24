@@ -1,12 +1,12 @@
 # Prio
 
-- [ ] Meta tags
-- [ ] Fix RSS
+- [x] Meta tags
+- [x] Fix RSS
 
 # Most Wanted
 
-- [ ] email address
-- [ ] 404 page
+- [x] email address
+- [x] 404 page
 - [ ] mobile version
 
 # Ideas

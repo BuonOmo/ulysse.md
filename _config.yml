@@ -9,3 +9,5 @@ exclude:
   - Makefile
   - README.md
   - TODO.md
+  - .github
+  - globe/index.html.erb

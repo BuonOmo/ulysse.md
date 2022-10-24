@@ -26,5 +26,4 @@ jobs:
           author_email: buonomo.ulysse@gmail.com
           committer_name: GitHub Actions
           committer_email: actions@github.com
-          commit: --signoff
           message: 'auto(globe): update globe/index.html'

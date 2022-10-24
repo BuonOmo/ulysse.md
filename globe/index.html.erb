@@ -50,9 +50,9 @@
 		<div id="breves">
 			<h1>Breves de voyage</h1>
 			<% breves.each do |breve| %>
-				<div data-date="<%= breve.date %>" data-loc="<%= breve.lng / 1e6 %>,<%= breve.lat / 1e6 %>">
+				<div data-date="<%= breve.date %>" data-loc="<%= breve.loc %>">
 					<h2><%= breve.title %></h2>
-					<sub class="📆"><%= breve.date %></sub> <!-- TODO: format date -->
+					<sub class="📆"><%= breve.display_date %></sub>
 					<p><%= breve.content %></p>
 				</div>
 			<% end %>
