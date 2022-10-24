@@ -117,7 +117,7 @@
 		const zoom = 7
 		const breves = Array.from(document.getElementById("breves").children).slice(1).map(el => ({ el, date: el.dataset.date, loc: el.dataset.loc.split(',').map(e => +e), layer: null }))
 		const findBreve = () => {
-			const offset = window.screen.height / 8 /* Pixel offset from top */
+			const offset = window.screen.height / 16 /* Pixel offset from top */
 			let closest = null
 			let min = 10000
 			for (let breve of breves) {
@@ -166,7 +166,7 @@
 				},
 				'layout': { 'line-cap': 'round' },
 				'paint': {
-					'line-color': '#666',
+					'line-color': '#282c34',
 					'line-width': 1
 				}
 			})
@@ -189,7 +189,7 @@
 						'circle-radius': 4,
 						'circle-color': '#ddd',
 						'circle-stroke-width': 1,
-						'circle-stroke-color': '#666'
+						'circle-stroke-color': '#282c34'
 					}
 				})
 				map.on('click', id, () => {
