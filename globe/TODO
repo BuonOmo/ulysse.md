@@ -1,0 +1,20 @@
+- [x] web design
+- [ ] Database design
+- [ ] Database setup
+- [ ] Generation of the website with github action
+- [ ] application to write to the website + to store gps locations
+	- [ ] get gps positions in background
+	- [ ] send gps to the db when internet available
+	- [ ] write a breve
+
+# Optional
+
+- [ ] add pictures
+
+# Database design
+
+- breve:
+  - date (mandatory)
+  - gps loc (mandatory)
+  - title (optionnal??)
+  - content (optionnal??)
