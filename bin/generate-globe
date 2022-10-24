@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "bundler/inline"
+
+gemfile do
+	source "https://rubygems.org"
+	gem "pg", "1.4.4"
+	gem "activerecord", "7.0.4", require: "active_record"
+end
+
+require "erb"
+
+class Breve < ActiveRecord::Base
+	establish_connection ENV.fetch("DB_URL")
+end
+
+breves = Breve.all
+
+IO.write(
+	File.join(__dir__, "..", "globe", "index.html"),
+	ERB.new(File.read(File.join(__dir__, "..", "globe", "index.html.erb"))).result(binding)
+)

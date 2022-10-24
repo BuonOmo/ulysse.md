@@ -1,0 +1,30 @@
+name: globe
+on:
+  schedule:
+    - cron: '53 23 * * */1' # every day at 23:53
+  workflow_dispatch:
+
+jobs:
+  Build:
+    name: Build Globe
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+      - name: install apt deps
+        run: sudo apt-get install -yqq libpq-dev
+      - name: generate globe/index.html
+        env:
+           DB_URL: ${{ secrets.DB_URL }}
+        run: ./bin/generate-globe
+      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+        with:
+          add: globe/index.html
+          author_name: Ulysse Buonomo
+          author_email: buonomo.ulysse@gmail.com
+          committer_name: GitHub Actions
+          committer_email: actions@github.com
+          commit: --signoff
+          message: 'auto(globe): update globe/index.html'
