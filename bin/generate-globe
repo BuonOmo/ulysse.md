@@ -16,11 +16,11 @@ class Breve < ActiveRecord::Base
 	establish_connection ENV.fetch("DB_URL")
 
 	def display_date
-		Date.parse(date).strftime("%d/%m/%Y")
+		date.strftime("%d/%m/%Y")
 	end
 
 	def loc
-		"#{breve.lng / 1e6},#{breve.lat / 1e6}"
+		"#{lng / 1e6},#{lat / 1e6}"
 	end
 end
 
