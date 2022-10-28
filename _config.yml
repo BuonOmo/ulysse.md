@@ -10,4 +10,4 @@ exclude:
   - README.md
   - TODO.md
   - .github
-  - globe/index.html.erb
+  - globe.html.erb

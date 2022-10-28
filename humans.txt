@@ -5,4 +5,4 @@
 	from: Grenoble, Rhone-Alpe, France
 
 /* SITE */
-	last update: 2022-10-27
+	last update: 2022-10-28

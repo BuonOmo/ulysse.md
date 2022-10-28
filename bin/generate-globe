@@ -24,9 +24,9 @@ class Breve < ActiveRecord::Base
 	end
 end
 
-breves = Breve.all
+breves = Breve.order_by(&:date).all
 
 IO.write(
-	File.join(__dir__, "..", "globe", "index.html"),
-	ERB.new(File.read(File.join(__dir__, "..", "globe", "index.html.erb"))).result(binding)
+	File.join(__dir__, "..", "globe.html"),
+	ERB.new(File.read(File.join(__dir__, "..", "globe.html.erb"))).result(binding)
 )
