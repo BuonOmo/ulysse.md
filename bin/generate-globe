@@ -24,7 +24,7 @@ class Breve < ActiveRecord::Base
 	end
 end
 
-breves = Breve.order_by(&:date).all
+breves = Breve.order(:date).all
 
 IO.write(
 	File.join(__dir__, "..", "globe.html"),

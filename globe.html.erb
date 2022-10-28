@@ -53,13 +53,15 @@
 				<div data-date="<%= breve.date %>" data-loc="<%= breve.loc %>">
 					<h2><%= breve.title %></h2>
 					<sub class="📆"><%= breve.display_date %></sub>
-					<p><%= breve.content %></p>
+					<%= breve.content %>
 				</div>
 			<% end %>
 		</div>
 	</div>
 	{% include footer.html %}
 	<script>
+		const tok = btoa('cGsuZXlKMUlqb2lhUzFyYVd4c0xYbHZkU0lzSW1FaU9pSmpiRGxyY1hVd1ptZ3dhV2sxTTI1d2JHOWxiSE5wYURnMUluMC5GZDlyM0FmR0hTcTNscWFubGJXUjNB')
+
 		function rand(min, max = null) {
 			if (max === null) {
 				max = min
@@ -76,6 +78,16 @@
 			}
 		}
 
+		function throttle(func, timeout = 300) {
+			let throttling = false
+			return (...args) => {
+				if (throttling) return
+
+				throttling = true
+				func.apply(this, args)
+				setTimeout(() => { throttling = false }, timeout)
+			}
+		}
 
 		const zoom = 7
 		const breves = Array.from(document.getElementById("breves").children).slice(1).map(el => ({ el, date: el.dataset.date, loc: el.dataset.loc.split(',').map(e => +e), layer: null }))
@@ -93,7 +105,7 @@
 			return closest
 		}
 
-		mapboxgl.accessToken = 'pk.eyJ1IjoiaS1raWxsLXlvdSIsImEiOiJjbDlrcXUwZmgwaWk1M25wbG9lbHNpaDg1In0.Fd9r3AfGHSq3lqanlbWR3A'
+		mapboxgl.accessToken = tok
 		const map = new mapboxgl.Map({
 			container: 'map',
 			style: 'mapbox://styles/mapbox/light-v10', /* Or outdoor v11 for more peps */
@@ -173,11 +185,12 @@
 			})
 		})
 
-		// Fly to breve that is under hover
-		document.getElementById('breves').addEventListener('scroll', debounce((e) => {
+		// Fly to breve that is closer in view
+		document.getElementById('breves').addEventListener('scroll', throttle((e) => {
+			console.log('scrolled')
 			const breve = findBreve()
 			flyToBreve(map, breve)
-		}, 300))
+		}, 40))
 	</script>
 
 </body>
