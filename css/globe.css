@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#grid {
+	display: grid;
+	grid-template-columns: 1fr minmax(100px, 1fr);
+	height: 100vh;
+}
+
+#breves {
+	overflow: scroll;
+	padding: 1rem;
+	padding-bottom: calc(90vh - 10rem);
+	letter-spacing: -0.05rem;
+}
+
+#breves h1 {
+	font-style: italic;
+}
+
+#breves h2 {
+	font-style: italic;
+	cursor: pointer;
+	margin-bottom: 0;
+}
