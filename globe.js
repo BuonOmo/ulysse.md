@@ -1,5 +1,3 @@
-const tok = btoa('cGsuZXlKMUlqb2lhUzFyYVd4c0xYbHZkU0lzSW1FaU9pSmpiRGxyY1hVd1ptZ3dhV2sxTTI1d2JHOWxiSE5wYURnMUluMC5GZDlyM0FmR0hTcTNscWFubGJXUjNB')
-
 function rand(min, max = null) {
 	if (max === null) {
 		max = min
@@ -43,7 +41,7 @@ const findBreve = () => {
 	return closest
 }
 
-mapboxgl.accessToken = tok
+mapboxgl.accessToken = 'pk.eyJ1IjoiaS1raWxsLXlvdSIsImEiOiJjbDlrcXUwZmgwaWk1M25wbG9lbHNpaDg1In0.Fd9r3AfGHSq3lqanlbWR3A'
 const map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/mapbox/light-v10', /* Or outdoor v11 for more peps */
