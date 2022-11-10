@@ -15,15 +15,15 @@ jobs:
           ruby-version: 3.1
       - name: install apt deps
         run: sudo apt-get install -yqq libpq-dev
-      - name: generate globe/index.html
+      - name: generate globe.html
         env:
            DB_URL: ${{ secrets.DB_URL }}
         run: ./bin/generate-globe
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
-          add: globe/index.html
+          add: globe.html
           author_name: Ulysse Buonomo
           author_email: buonomo.ulysse@gmail.com
           committer_name: GitHub Actions
           committer_email: actions@github.com
-          message: 'auto(globe): update globe/index.html'
+          message: 'auto(globe): update globe.html'
