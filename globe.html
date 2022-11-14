@@ -1,4 +1,5 @@
 ---
+comments: true
 ---
 
 <!DOCTYPE html>
@@ -21,19 +22,49 @@
 		<div id="map"></div>
 		<div id="breves">
 			<h1>Breves de voyage</h1>
-
+			
 				<div data-date="2022-11-09" data-loc="5.758342,45.212658">
 					<h2>Le grand départ</h2>
 					<sub class="📆">09/11/2022</sub>
 					<p>Je viens de finir le sac, 16kg, tout rentre! Maintenant direction le train pour la Rochelle</p>
 				</div>
-
+			
 				<div data-date="2022-11-10" data-loc="-1.152288,46.151223">
 					<h2>Au port des minimes</h2>
 					<sub class="📆">10/11/2022</sub>
 					<p>Annonce posée à la capitainerie. Je suis loin d'être le seul a chercher, il va falloir réussir à se vendre. Et le site semble enfin marcher !</p>
 				</div>
-
+			
+				<div data-date="2022-11-14" data-loc="-0.670283,45.752952">
+					<h2>Le début du pèlerinage! 👍</h2>
+					<sub class="📆">14/11/2022</sub>
+					<p>J'ai trouvé un bateau qui part de la Corogne vendredi matin. J'ai donc pris la route en stop ce matin ! Objectif Bilbao avant la nuit.</p>
+				</div>
+			
+				<div data-date="2022-11-14" data-loc="-0.670283,45.752952">
+					<h2>Le début du pèlerinage! 👍</h2>
+					<sub class="📆">14/11/2022</sub>
+					<p>J'ai trouvé un bateau qui part de la Corogne vendredi matin. J'ai donc pris la route en stop ce matin ! Objectif Bilbao avant la nuit.</p>
+				</div>
+			
+				<div data-date="2022-11-14" data-loc="-0.670283,45.752952">
+					<h2>Le début du pèlerinage! 👍</h2>
+					<sub class="📆">14/11/2022</sub>
+					<p>J'ai trouvé un bateau qui part de la Corogne vendredi matin. J'ai donc pris la route en stop ce matin ! Objectif Bilbao avant la nuit.</p>
+				</div>
+			
+				<div data-date="2022-11-14" data-loc="-2.007449,43.314667">
+					<h2>Albergue Peregrinos</h2>
+					<sub class="📆">14/11/2022</sub>
+					<p>Nuit a San Sebastian, je suis seul dans le grand dortoir. Normalement ça grouille de pèlerins, mais là il doit faire un peu frais.</p><p>Un petit appel avec Arnaud dont le bateau attend des équipiers aux Canaries. Peut-être les étoiles seront alignés et je pourrai reprendre la mer des mon arrivée...</p>
+				</div>
+			
+				<div data-date="2022-11-14" data-loc="-2.007449,43.314667">
+					<h2>Albergue Peregrinos</h2>
+					<sub class="📆">14/11/2022</sub>
+					<p>Nuit a San Sebastian, je suis seul dans le grand dortoir. Normalement ça grouille de pèlerins, mais là il doit faire un peu frais.</p><p>Un petit appel avec Arnaud dont le bateau attend des équipiers aux Canaries. Peut-être les étoiles seront alignés et je pourrai reprendre la mer des mon arrivée...</p>
+				</div>
+			
 		</div>
 	</div>
 	<div id="disqus_thread"></div>
@@ -45,10 +76,10 @@
 		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
 		var disqus_config = function () {
-			this.page.url = '{{ page.url | absolute_url }}'
-			this.page.identifier = 'globe'
-		}
-		;(function() { // DON'T EDIT BELOW THIS LINE
+		this.page.url = {% site.url %};  // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		(function() { // DON'T EDIT BELOW THIS LINE
 		var d = document, s = d.createElement('script');
 		s.src = 'https://ulysse-md.disqus.com/embed.js';
 		s.setAttribute('data-timestamp', +new Date());
