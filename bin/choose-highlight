@@ -14,5 +14,5 @@ while read -r style; do
 	echo $style
 	apply_style $style
 	read -qs && echo $style >> selection
-done < <(cat old-selection)
+done < old-selection
 rm old-selection

@@ -21,24 +21,40 @@
 		<div id="map"></div>
 		<div id="breves">
 			<h1>Breves de voyage</h1>
-			
+
 				<div data-date="2022-11-09" data-loc="5.758342,45.212658">
 					<h2>Le grand départ</h2>
 					<sub class="📆">09/11/2022</sub>
 					<p>Je viens de finir le sac, 16kg, tout rentre! Maintenant direction le train pour la Rochelle</p>
 				</div>
-			
+
 				<div data-date="2022-11-10" data-loc="-1.152288,46.151223">
 					<h2>Au port des minimes</h2>
 					<sub class="📆">10/11/2022</sub>
 					<p>Annonce posée à la capitainerie. Je suis loin d'être le seul a chercher, il va falloir réussir à se vendre. Et le site semble enfin marcher !</p>
 				</div>
-			
+
 		</div>
 	</div>
+	<div id="disqus_thread"></div>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments.</a></noscript>
 	{% include footer.html %}
 	<script src="/globe.js"></script>
-
+	<script>
+		/**
+		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+		var disqus_config = function () {
+			this.page.url = '{{ page.url | absolute_url }}'
+			this.page.identifier = 'globe'
+		}
+		;(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://ulysse-md.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+	</script>
 </body>
 
 </html>
