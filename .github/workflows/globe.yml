@@ -1,7 +1,7 @@
 name: globe
 on:
   schedule:
-    - cron: '53 11/12 * * */1' # every day at 11:53 and 23:53
+    - cron: '53 11,23 * * *' # every day at 11:53 and 23:53
   workflow_dispatch:
 
 jobs:
