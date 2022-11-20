@@ -16,7 +16,7 @@ class Breve < ActiveRecord::Base
 	establish_connection ENV.fetch("DB_URL")
 
 	def display_date
-		date.strftime("%d/%m/%Y")
+		created_at.strftime("%d/%m/%Y, %H:%M")
 	end
 
 	def loc
@@ -24,7 +24,7 @@ class Breve < ActiveRecord::Base
 	end
 end
 
-breves = Breve.order(:date).all
+breves = Breve.order(:date, :created_at).all
 
 IO.write(
 	File.join(__dir__, "..", "globe.html"),
