@@ -25,8 +25,14 @@ function throttle(func, timeout = 300) {
 	}
 }
 
-const zoom = 7
-const breves = Array.from(document.getElementById("breves").children).slice(1).map(el => ({ el, date: el.dataset.date, loc: el.dataset.loc.split(',').map(e => +e), layer: null }))
+// TODO: a proxy could simplify this.
+const breves = Array.from(document.getElementById("breves").children).slice(1).map(el => ({
+	el,
+	date: el.dataset.date,
+	loc: el.dataset.loc.split(',').map(e => +e),
+	layer: null,
+	zoom: +el.dataset.zoom
+}))
 const findBreve = () => {
 	const offset = window.screen.height / 16 /* Pixel offset from top */
 	let closest = null
@@ -46,7 +52,7 @@ const map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/mapbox/light-v10', /* Or outdoor v11 for more peps */
 	center: findBreve().loc,
-	zoom,
+	zoom: 5,
 	minZoom: 2,
 	maxBounds: [[-100.0, -60.0], [9.0, 60.0]],
 	projection: 'naturalEarth' // starting projection
@@ -55,7 +61,7 @@ const map = new mapboxgl.Map({
 const flyToBreve = (map, breve) => {
 	return map.flyTo({
 		center: breve.loc,
-		zoom,
+		zoom: breve.zoom,
 		essential: true // this animation is considered essential with respect to prefers-reduced-motion
 	})
 }
