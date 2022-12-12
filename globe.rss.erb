@@ -1,0 +1,19 @@
+---
+layout: none
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Brèves d'Ulysse</title>
+		<description>Mon voyage en amérique du sud, et les notifications pour UGI</description>
+		<link>{{ site.url }}/globe</link>
+		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
+		<% breves.each do |breve| %>
+			<item>
+				<title><%= breve.title %></title>
+				<pubDate><%= breve.created_at.strftime("%a, %d %b %Y %H:%M:%S %z") %></pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		<% end %>
+	</channel>

@@ -26,7 +26,10 @@ end
 
 breves = Breve.order(:date, :created_at).all.reverse
 
-IO.write(
-	File.join(__dir__, "..", "globe.html"),
-	ERB.new(File.read(File.join(__dir__, "..", "globe.html.erb"))).result(binding)
-)
+%w(globe.html globe.rss).each do |file|
+	full_path = File.join(__dir__, "..", file)
+	IO.write(
+		full_path,
+		ERB.new(File.read(full_path + ".erb")).result(binding)
+	)
+end
