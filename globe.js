@@ -57,9 +57,9 @@ const findBreve = () => {
   playButton.textContent = ' ▶'
   audio.addEventListener("canplaythrough", () => {
     title.append(playButton)
-    const handleStart = () => { console.log("play");audio.play(); playButton.textContent = ' ⏸️' }
-    const handleEnd = () => { audio.pause(); playButton.textContent = ' ▶' }
-    const toggle = () => { console.log(audio.paused, audio.ended);audio.paused || audio.ended ? handleStart() : handleEnd() }
+    const toggle = () => { audio.paused ? audio.play() : audio.pause() }
+    audio.addEventListener('pause', () => { playButton.textContent = ' ▶'} )
+    audio.addEventListener('play', () => { playButton.textContent = ' ⏸️'} )
     playButton.addEventListener('click', toggle)
     // volare.addEventListener('touchstart', handleStart)
     // volare.addEventListener('touchend', handleEnd)
