@@ -52,16 +52,19 @@ const findBreve = () => {
 (function() {
   const audio = new Audio("/globe/volare.mp3")
   const volare = breves.find(({el}) => el.textContent.includes("Volare")).el
-  console.log(volare)
+  const title = volare.querySelector('h2')
+  const playButton = document.createElement('span')
+  playButton.textContent = ' ▶'
   audio.addEventListener("canplaythrough", () => {
-    const handleStart = () => { audio.play() }
-    const handleEnd = () => { audio.pause() }
-    const toggle = () => { audio.paused ? audio.play() : audio.pause() }
-    volare.addEventListener('click', toggle)
-    volare.addEventListener('touchstart', handleStart)
-    volare.addEventListener('touchend', handleEnd)
-    volare.addEventListener('mouseenter', handleStart)
-    volare.addEventListener('mouseleave', handleEnd)
+    title.append(playButton)
+    const handleStart = () => { console.log("play");audio.play(); playButton.textContent = ' ⏸️' }
+    const handleEnd = () => { audio.pause(); playButton.textContent = ' ▶' }
+    const toggle = () => { console.log(audio.paused, audio.ended);audio.paused || audio.ended ? handleStart() : handleEnd() }
+    playButton.addEventListener('click', toggle)
+    // volare.addEventListener('touchstart', handleStart)
+    // volare.addEventListener('touchend', handleEnd)
+    // volare.addEventListener('mouseenter', handleStart)
+    // volare.addEventListener('mouseleave', handleEnd)
   })
 })()
 
