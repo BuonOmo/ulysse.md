@@ -47,6 +47,26 @@ const findBreve = () => {
 	return closest
 }
 
+//== Special audio section
+
+(function() {
+  const audio = new Audio("/globe/volare.mp3")
+  const volare = breves.find(({el}) => el.textContent.includes("Volare")).el
+  console.log(volare)
+  audio.addEventListener("canplaythrough", () => {
+    const handleStart = () => { audio.play() }
+    const handleEnd = () => { audio.pause() }
+    const toggle = () => { audio.paused ? audio.play() : audio.pause() }
+    volare.addEventListener('click', toggle)
+    volare.addEventListener('touchstart', handleStart)
+    volare.addEventListener('touchend', handleEnd)
+    volare.addEventListener('mouseenter', handleStart)
+    volare.addEventListener('mouseleave', handleEnd)
+  })
+})()
+
+//= End special audio section
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiaS1raWxsLXlvdSIsImEiOiJjbDlrcXUwZmgwaWk1M25wbG9lbHNpaDg1In0.Fd9r3AfGHSq3lqanlbWR3A'
 const map = new mapboxgl.Map({
 	container: 'map',
