@@ -16,7 +16,7 @@ class Breve < ActiveRecord::Base
 	establish_connection ENV.fetch("DB_URL")
 
 	def display_date
-		created_at.strftime("%d/%m/%Y, %H:%M")
+		date.strftime("%d/%m/%Y, %H:%M")
 	end
 
 	def loc
