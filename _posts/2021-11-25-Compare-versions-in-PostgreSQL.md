@@ -129,10 +129,10 @@ CREATE OR REPLACE FUNCTION semver_match(version text, req text) RETURNS boolean
 			(string_to_array(substring(req from 4), '.')::int[])[1:(array_length(string_to_array(req, '.'), 1) - 1)], -- X.Y
 			(string_to_array(substring(req from 4), '.')::int[])[array_length(string_to_array(req, '.'), 1)] + 1 -- Z + 1
 		)
-    WHEN req LIKE '>%' THEN string_to_array(version, '.')::int[] > string_to_array(substring(req from 3), '.')::int[]
-    WHEN req LIKE '<%' THEN string_to_array(version, '.')::int[] < string_to_array(substring(req from 3), '.')::int[]
     WHEN req LIKE '>=%' THEN string_to_array(version, '.')::int[] >= string_to_array(substring(req from 4), '.')::int[]
     WHEN req LIKE '<=%' THEN string_to_array(version, '.')::int[] <= string_to_array(substring(req from 4), '.')::int[]
+    WHEN req LIKE '>%' THEN string_to_array(version, '.')::int[] > string_to_array(substring(req from 3), '.')::int[]
+    WHEN req LIKE '<%' THEN string_to_array(version, '.')::int[] < string_to_array(substring(req from 3), '.')::int[]
     WHEN req LIKE '=%' THEN
 		(string_to_array(version, '.')::int[])[1:array_length(string_to_array(substring(req from 3), '.'), 1)] =
 		string_to_array(substring(req from 3), '.')::int[]
@@ -150,6 +150,7 @@ SELECT
 	CASE WHEN semver_match(ver, req) = expected
 	THEN '✅' ELSE '❌' END AS test_passed
 FROM (VALUES
+	('2.3', '>= 2.3', TRUE),
 	('2.3.1', '> 2.3', TRUE),
 	('2.3.1', '< 2.3.2', TRUE),
 	('2.3.1', '~> 2.3.2', FALSE),
