@@ -6,7 +6,7 @@ canonical: https://blog.appsignal.com/2023/01/18/how-to-parse-arguments-in-your-
 meta:
   description: >
     Let's explore two ways to set up a complex Ruby API written in C.
-  image: https://blog.appsignal.com/_next/image?url=%2Fimages%2Fblog%2F2023-01%2Fparse-rubyc.png&w=2048&q=50
+  image: https://blog.appsignal.com/images/blog/2023-01/parse-rubyc.png
 ---
 
 Ruby is a wonderful language, made for humans first and machines
