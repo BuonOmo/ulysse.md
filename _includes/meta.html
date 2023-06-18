@@ -16,6 +16,10 @@
 	<meta name="description" content="Some hacks I learned and want to keep a note about." />
 {% endif %}
 
+{% if page.canonical %}
+	<link rel="canonical" href="{{ page.canonical }}" />
+{% endif %}
+
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}/feed.xml">
 
 {% if jekyll.environment == "production" %}
