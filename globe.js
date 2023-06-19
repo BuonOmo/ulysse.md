@@ -84,6 +84,10 @@ const map = new mapboxgl.Map({
 	projection: 'naturalEarth' // starting projection
 })
 
+const anchor = (breve) => {
+	window.location.hash = breve.anchor
+}
+
 const flyToBreve = (map, breve) => {
 	return map.flyTo({
 		center: breve.loc,
@@ -136,10 +140,12 @@ map.on('load', () => {
 			}
 		})
 		map.on('click', id, () => {
+			anchor(breve)
 			flyToBreve(map, breve)
 			breve.el.scrollIntoView({ behavior: 'smooth' })
 		})
 		breve.el.addEventListener('click', () => {
+			anchor(breve)
 			flyToBreve(map, breve)
 		})
 		map.on('mouseenter', id, () => {
@@ -158,3 +164,8 @@ document.getElementById('breves').addEventListener('scroll', throttle((e) => {
 	const breve = findBreve()
 	flyToBreve(map, breve)
 }, 40))
+
+if (window.location.hash.length > 0) {
+	const breve = breves.find(({ anchor }) => anchor === window.location.hash.slice(1))
+	breve.el.scrollIntoView({ behavior: 'smooth' })
+}

@@ -22,7 +22,7 @@
 		<div id="breves">
 			<h1>Breves de voyage</h1>
 			<% breves.each do |breve| %>
-				<div data-loc="<%= breve.loc %>" data-zoom="<%= breve.zoom || 13 %>">
+				<div data-loc="<%= breve.loc %>" data-zoom="<%= breve.zoom || 13 %>" data-anchor="<%= breve.anchor %>">
 					<h2><%= breve.title %></h2>
 					<sub class="📆"><%= breve.display_date %></sub>
 					<%= breve.content %>

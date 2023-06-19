@@ -6,7 +6,7 @@ require "bundler/inline"
 gemfile do
 	source "https://rubygems.org"
 	gem "pg", "1.4.4"
-	gem "activerecord", "7.0.4", require: "active_record"
+	gem "activerecord", "~> 7.0.4", require: "active_record"
 end
 
 require "erb"
@@ -17,6 +17,10 @@ class Breve < ActiveRecord::Base
 
 	def display_date
 		date.strftime("%d/%m/%Y, %H:%M")
+	end
+
+	def anchor
+		date.strftime("%Y%m%d__") + title.downcase.gsub(/[^a-z0-9]+/, "_")
 	end
 
 	def loc
