@@ -25,14 +25,21 @@ function throttle(func, timeout = 300) {
 	}
 }
 
-// TODO: a proxy could simplify this.
-const breves = Array.from(document.getElementById("breves").children).slice(1).map(el => ({
-	el,
-	date: el.dataset.date,
-	loc: el.dataset.loc.split(',').map(e => +e),
-	layer: null,
-	zoom: +el.dataset.zoom
-}))
+// Proxy for breves: if an element is not define, check for the dataset
+const datasetHandler = {
+	get(target, prop, receiver) {
+		if (Reflect.has(target, prop)) return Reflect.get(target, prop, receiver)
+
+		const datasetResult = target.el.dataset[prop]
+		return isNaN(datasetResult) ? datasetResult : +datasetResult
+	},
+}
+const breves = Array.from(document.getElementById("breves").children).slice(1).map(el =>
+	new Proxy({
+		el,
+		loc: el.dataset.loc.split(',').map(e => +e),
+		layer: null,
+	}, datasetHandler))
 const findBreve = () => {
 	const offset = window.screen.height / 16 /* Pixel offset from top */
 	let closest = null
@@ -58,13 +65,9 @@ const findBreve = () => {
   audio.addEventListener("canplaythrough", () => {
     title.append(playButton)
     const toggle = () => { audio.paused ? audio.play() : audio.pause() }
-    audio.addEventListener('pause', () => { playButton.textContent = ' ▶'} )
-    audio.addEventListener('play', () => { playButton.textContent = ' ⏸️'} )
+    audio.addEventListener('pause', () => { playButton.textContent = ' ▶' } )
+    audio.addEventListener('play', () => { playButton.textContent = ' ⏸️' } )
     playButton.addEventListener('click', toggle)
-    // volare.addEventListener('touchstart', handleStart)
-    // volare.addEventListener('touchend', handleEnd)
-    // volare.addEventListener('mouseenter', handleStart)
-    // volare.addEventListener('mouseleave', handleEnd)
   })
 })()
 

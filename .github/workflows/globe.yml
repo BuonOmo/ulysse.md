@@ -1,7 +1,7 @@
 name: globe
 on:
   schedule:
-    - cron: '53 11,23 * * *' # every day at 11:53 and 23:53
+    - cron: '53 10,22 * * *' # every day at 11:53 and 23:53 GMT+1 (France)
   workflow_dispatch:
 
 jobs:
@@ -21,9 +21,9 @@ jobs:
         run: ./bin/generate-globe
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
-          add: globe.html
+          add: globe.html globe.rss
           author_name: Ulysse Buonomo
           author_email: buonomo.ulysse@gmail.com
           committer_name: GitHub Actions
           committer_email: actions@github.com
-          message: 'auto(globe): update globe.html'
+          message: 'auto(globe): update globe.html and globe.rss'
