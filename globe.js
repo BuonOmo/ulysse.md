@@ -169,3 +169,21 @@ if (window.location.hash.length > 0) {
 	const breve = breves.find(({ anchor }) => anchor === window.location.hash.slice(1))
 	breve.el.scrollIntoView({ behavior: 'smooth' })
 }
+
+//== Show unread breves
+/* DESIGN: When the user loads the page, we show a dot for every unread breves.
+ * Then we automatically consider that they have read all of them and hence
+ * mark the latest one as read.
+ */
+(function() {
+	let lastRead = localStorage.getItem('globe:lastRead')
+	if (!lastRead) { lastRead = breves[0].anchor }
+	for (let breve of breves) {
+		if (breve.anchor === lastRead) { break }
+
+		breve.el.classList.add('unread')
+		breve.el.title = 'Brève non lue.'
+	}
+	localStorage.setItem('globe:lastRead', breves[0].anchor)
+})()
+//== End show unread breves

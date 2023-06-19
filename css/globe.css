@@ -26,6 +26,10 @@ body {
 	margin-bottom: 0;
 }
 
+#breves .unread > h2::before {
+    content: '● ';
+}
+
 #disqus_thread {
     width: min(90%,40rem);
     margin: 2rem auto;
