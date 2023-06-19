@@ -1,0 +1,865 @@
+---
+layout: none
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Brèves d'Ulysse</title>
+		<description>Mon voyage en amérique du sud, et les notifications pour UGI</description>
+		<link>{{ site.url }}/globe</link>
+		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Original</title>
+				<pubDate>Thu, 15 Jun 2023 18:12:26 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Parlez-moi de la pluie</title>
+				<pubDate>Thu, 15 Jun 2023 18:12:25 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Tampon de sortie</title>
+				<pubDate>Thu, 15 Jun 2023 18:12:24 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Coulante</title>
+				<pubDate>Thu, 15 Jun 2023 18:12:22 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Tubaraõ</title>
+				<pubDate>Mon, 12 Jun 2023 15:19:01 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Mer d'huile</title>
+				<pubDate>Mon, 12 Jun 2023 15:18:58 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Encore en mer</title>
+				<pubDate>Mon, 12 Jun 2023 15:18:57 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>En Amérique !</title>
+				<pubDate>Fri, 09 Jun 2023 19:47:11 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Terre a perte de vue</title>
+				<pubDate>Thu, 08 Jun 2023 19:10:00 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Gros thon</title>
+				<pubDate>Thu, 08 Jun 2023 19:09:53 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Dauphins</title>
+				<pubDate>Thu, 08 Jun 2023 19:09:50 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Baignade en haute mer</title>
+				<pubDate>Thu, 08 Jun 2023 19:09:42 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Repas froids</title>
+				<pubDate>Thu, 08 Jun 2023 19:09:38 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Changement de plan</title>
+				<pubDate>Thu, 08 Jun 2023 19:09:36 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Pas de poissons</title>
+				<pubDate>Thu, 08 Jun 2023 19:09:35 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>En route pour le continent</title>
+				<pubDate>Wed, 31 May 2023 14:11:36 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>18 nœuds 400 Tonneaux</title>
+				<pubDate>Tue, 30 May 2023 18:53:29 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Le Cygne</title>
+				<pubDate>Sun, 28 May 2023 08:09:08 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Lagoon 51</title>
+				<pubDate>Tue, 23 May 2023 17:30:06 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Checkpoint</title>
+				<pubDate>Sun, 21 May 2023 14:13:28 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Tarp</title>
+				<pubDate>Fri, 19 May 2023 23:09:07 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Forêt Martiniquaise</title>
+				<pubDate>Fri, 19 May 2023 23:09:06 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Hello Bateau</title>
+				<pubDate>Wed, 17 May 2023 18:49:42 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Ciao Mojo</title>
+				<pubDate>Thu, 11 May 2023 15:36:01 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Douche chaude illimitée</title>
+				<pubDate>Tue, 09 May 2023 23:29:47 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Balade à Roseau</title>
+				<pubDate>Sun, 07 May 2023 22:38:47 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Au mouillage en Dominique</title>
+				<pubDate>Sun, 07 May 2023 22:38:46 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Dominique en vue</title>
+				<pubDate>Sun, 07 May 2023 22:38:45 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Navigation Caribéenne</title>
+				<pubDate>Sat, 06 May 2023 05:09:05 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>La fin d'une aventure</title>
+				<pubDate>Fri, 05 May 2023 13:59:39 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Pizza!</title>
+				<pubDate>Sat, 29 Apr 2023 16:50:02 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Montagne Pelée</title>
+				<pubDate>Fri, 28 Apr 2023 12:39:16 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>La plage au bébétes</title>
+				<pubDate>Thu, 27 Apr 2023 21:15:32 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Tawashi</title>
+				<pubDate>Wed, 26 Apr 2023 22:08:58 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Jonglage enflammé</title>
+				<pubDate>Wed, 26 Apr 2023 13:10:18 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Dumpster paradise</title>
+				<pubDate>Mon, 24 Apr 2023 02:05:15 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Festival Lézard Tishow</title>
+				<pubDate>Sat, 22 Apr 2023 22:18:25 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Soirée crêpes</title>
+				<pubDate>Sat, 15 Apr 2023 05:44:44 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Première journée de travail</title>
+				<pubDate>Thu, 13 Apr 2023 00:13:18 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Perdu dans le raccourci</title>
+				<pubDate>Sun, 09 Apr 2023 22:30:39 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Nage</title>
+				<pubDate>Sun, 09 Apr 2023 01:20:54 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Nuit chez Gaïac</title>
+				<pubDate>Thu, 06 Apr 2023 11:41:55 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Visite de Sainte Cécile</title>
+				<pubDate>Wed, 05 Apr 2023 21:22:34 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Visite par les terres</title>
+				<pubDate>Tue, 04 Apr 2023 23:46:50 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Le Pélican Bleu</title>
+				<pubDate>Sat, 01 Apr 2023 03:46:03 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Salut Georges</title>
+				<pubDate>Fri, 31 Mar 2023 22:38:05 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Sur la terre ferme</title>
+				<pubDate>Fri, 31 Mar 2023 22:38:03 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Arrivés!</title>
+				<pubDate>Tue, 28 Mar 2023 20:59:53 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Terre ! Terre ! Terre !</title>
+				<pubDate>Tue, 28 Mar 2023 20:59:52 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Atterrissage imminent</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:58 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Belle étoile</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:49 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Champagne!</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:46 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Sunset Dantesque</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:45 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Grain sur grain</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:44 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Il est frais...</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:42 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Du poisson frais</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:42 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Empanage</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:40 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Et une baleine..</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:39 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Douche et Globicéphales</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:38 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Bateau en vue</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:36 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Sur un rail</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:34 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Tout va bien</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:33 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Todo bem</title>
+				<pubDate>Tue, 28 Mar 2023 17:21:13 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Premier quart</title>
+				<pubDate>Thu, 09 Mar 2023 21:38:08 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Premier caca</title>
+				<pubDate>Thu, 09 Mar 2023 18:02:51 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Vers l'Amérique</title>
+				<pubDate>Thu, 09 Mar 2023 15:03:56 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>En pleins préparatifs</title>
+				<pubDate>Wed, 08 Mar 2023 14:47:49 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Pleine lune</title>
+				<pubDate>Wed, 08 Mar 2023 00:03:01 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Changement au port des Christanos</title>
+				<pubDate>Tue, 07 Mar 2023 16:05:52 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>J'ai trouvé un bateau..</title>
+				<pubDate>Tue, 07 Mar 2023 11:53:34 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Fête de la pleine lune</title>
+				<pubDate>Sat, 04 Mar 2023 23:41:50 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Le tour du Cadran</title>
+				<pubDate>Fri, 03 Mar 2023 09:59:27 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Sur la route encore</title>
+				<pubDate>Thu, 02 Mar 2023 12:29:55 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>El Teide</title>
+				<pubDate>Wed, 01 Mar 2023 10:56:13 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Retour a la montagne</title>
+				<pubDate>Mon, 27 Feb 2023 20:04:06 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Grande Randonnée</title>
+				<pubDate>Mon, 27 Feb 2023 15:26:57 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Je crois que j'ai trouvé</title>
+				<pubDate>Sun, 26 Feb 2023 15:55:43 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>En Pays Basque</title>
+				<pubDate>Sat, 25 Feb 2023 20:13:30 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Le ferry démarre</title>
+				<pubDate>Sat, 25 Feb 2023 12:39:59 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Docteur Mario au secours</title>
+				<pubDate>Sat, 25 Feb 2023 04:01:14 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Crevaison</title>
+				<pubDate>Sat, 25 Feb 2023 04:01:12 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Ronds dans l'eau</title>
+				<pubDate>Thu, 23 Feb 2023 18:40:26 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Pour partir</title>
+				<pubDate>Tue, 21 Feb 2023 00:38:16 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Bateau stop à la nage</title>
+				<pubDate>Mon, 20 Feb 2023 22:54:22 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>La Rave</title>
+				<pubDate>Mon, 20 Feb 2023 22:54:21 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>J'ai un vélo!</title>
+				<pubDate>Fri, 17 Feb 2023 13:01:26 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Nuit seul</title>
+				<pubDate>Sun, 12 Feb 2023 13:35:13 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Arrivés a Gran Canaria</title>
+				<pubDate>Fri, 10 Feb 2023 05:46:12 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Retour à la flotte</title>
+				<pubDate>Thu, 09 Feb 2023 12:49:15 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Échecs au coin du feu 🔥</title>
+				<pubDate>Thu, 09 Feb 2023 12:49:14 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Pourquoi Brel plus que Sylvestre ?</title>
+				<pubDate>Fri, 03 Feb 2023 12:00:49 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Première tier lieu?</title>
+				<pubDate>Tue, 31 Jan 2023 15:49:33 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Elon Musk va tuer le stop</title>
+				<pubDate>Thu, 26 Jan 2023 19:05:16 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Saraph au soleil</title>
+				<pubDate>Tue, 24 Jan 2023 14:51:15 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Un goût d'Italie</title>
+				<pubDate>Sun, 22 Jan 2023 23:30:20 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Enfin en navigation</title>
+				<pubDate>Sun, 22 Jan 2023 15:45:52 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Soleil couchant</title>
+				<pubDate>Sun, 22 Jan 2023 15:45:51 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Cinq à bord</title>
+				<pubDate>Sat, 21 Jan 2023 12:15:37 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>La troisième île</title>
+				<pubDate>Sat, 21 Jan 2023 12:15:36 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Squat au Soho</title>
+				<pubDate>Wed, 18 Jan 2023 08:19:00 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Mauvais choix</title>
+				<pubDate>Tue, 17 Jan 2023 15:15:03 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Cuisine collective</title>
+				<pubDate>Mon, 16 Jan 2023 22:35:03 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Mes premiers psychoblocs!</title>
+				<pubDate>Sun, 15 Jan 2023 20:37:26 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Au port d'Arrecife</title>
+				<pubDate>Sun, 15 Jan 2023 01:29:43 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Dodo chez Alejandro</title>
+				<pubDate>Fri, 13 Jan 2023 22:35:33 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Sac à dos à l'arrache</title>
+				<pubDate>Fri, 13 Jan 2023 13:05:36 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Excursion ratée</title>
+				<pubDate>Mon, 09 Jan 2023 12:12:05 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Mouillage temporaire</title>
+				<pubDate>Sun, 08 Jan 2023 09:25:46 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Terre en vue</title>
+				<pubDate>Sat, 07 Jan 2023 23:04:15 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Bientôt aux Canaries</title>
+				<pubDate>Sat, 07 Jan 2023 23:04:11 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Premier virement de bord</title>
+				<pubDate>Sat, 07 Jan 2023 23:04:07 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Altea II prend la mer</title>
+				<pubDate>Mon, 02 Jan 2023 14:43:19 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Bonne année</title>
+				<pubDate>Sun, 01 Jan 2023 19:37:57 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>De retour a Gibraltar</title>
+				<pubDate>Sat, 31 Dec 2022 11:35:09 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>J'ai rencontré Ömer</title>
+				<pubDate>Fri, 23 Dec 2022 23:10:54 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Séville</title>
+				<pubDate>Fri, 23 Dec 2022 11:16:29 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Volare</title>
+				<pubDate>Mon, 19 Dec 2022 23:06:55 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Nouvelles options</title>
+				<pubDate>Mon, 19 Dec 2022 23:06:51 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>À Gibraltar</title>
+				<pubDate>Wed, 14 Dec 2022 13:27:39 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Pollution plastique</title>
+				<pubDate>Wed, 14 Dec 2022 13:27:38 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>À la douane</title>
+				<pubDate>Wed, 14 Dec 2022 08:20:38 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Tajines et gréement abîmé</title>
+				<pubDate>Mon, 12 Dec 2022 21:50:46 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>En eaux internationales</title>
+				<pubDate>Mon, 12 Dec 2022 21:36:49 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Festin a Lagos</title>
+				<pubDate>Thu, 08 Dec 2022 20:12:51 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Des dauphins!</title>
+				<pubDate>Mon, 05 Dec 2022 16:19:56 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Direction Lagos</title>
+				<pubDate>Mon, 05 Dec 2022 15:51:15 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Délogés</title>
+				<pubDate>Tue, 29 Nov 2022 12:00:25 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Lisbonne en vue</title>
+				<pubDate>Mon, 28 Nov 2022 18:40:50 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Vent arrière</title>
+				<pubDate>Mon, 28 Nov 2022 18:40:49 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>C'est le Manouche qui reprend la mer</title>
+				<pubDate>Mon, 28 Nov 2022 18:40:48 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Forró em Porto</title>
+				<pubDate>Mon, 21 Nov 2022 00:35:48 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Arrivée à Porto</title>
+				<pubDate>Sun, 20 Nov 2022 15:48:34 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Premier Quart</title>
+				<pubDate>Sun, 20 Nov 2022 15:48:31 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Imprévu</title>
+				<pubDate>Sat, 19 Nov 2022 02:46:12 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Souquez les Artimuses!</title>
+				<pubDate>Fri, 18 Nov 2022 06:54:23 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Première nuit à bord du Manouche</title>
+				<pubDate>Wed, 16 Nov 2022 22:31:24 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Grasse Matinée</title>
+				<pubDate>Wed, 16 Nov 2022 09:08:08 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Sur la route</title>
+				<pubDate>Tue, 15 Nov 2022 13:26:09 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Albergue Peregrinos</title>
+				<pubDate>Mon, 14 Nov 2022 22:10:01 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Le début du pèlerinage! 👍</title>
+				<pubDate>Mon, 14 Nov 2022 11:14:17 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Au port des minimes</title>
+				<pubDate>Thu, 10 Nov 2022 16:04:40 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Le grand départ</title>
+				<pubDate>Wed, 09 Nov 2022 11:25:25 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+	</channel>
