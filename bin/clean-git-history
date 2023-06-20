@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+TMP_FILE=$(mktemp XXX.rb)
+trap "rm $TMP_FILE" EXIT
+revision=$(git log --reverse --oneline | grep --extended-regexp --before=1 '^[a-z0-9]+ auto' | head -1 | cut -f1 -d' ')
+
+cat <<-RUBY > $TMP_FILE
+squashed = IO.
+	readlines(ARGV[0], chomp: true).
+	chunk { |line| line["pick aabbccd ".length..] }.
+	flat_map { |_, (first, *rest)| [first] + rest.map { _1.sub("pick", "fixup") } }.
+	join("\n")
+
+IO.write(ARGV[0], squashed)
+RUBY
+
+git -c sequence.editor="ruby $TMP_FILE" rebase -i $revision
