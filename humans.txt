@@ -1,6 +1,7 @@
 /* AUTHOR */
 	developper: Ulysse Buonomo
 	contact: buonomo.ulysse [at] gmail.com
+	github: BuonOmo
 	twitter: @ulyssebn
 	from: Grenoble, Rhone-Alpe, France
 
