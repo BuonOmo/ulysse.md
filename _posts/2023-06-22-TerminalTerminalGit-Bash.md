@@ -3,7 +3,7 @@ layout: post
 title: TerminalTerminalGit Bash
 author: Ulysse
 meta:
-	description: You also fell for it, didn't you?
+  description: You also fell for it, didn’t you?
 ---
 
 From time to time, an intern at GitHub (or a staff eng, who knows) tries
@@ -19,9 +19,9 @@ as dumb as me, you will google that, and end up on my article ❤.
 If you were unlucky, paste that to your dev console in the [github doc page][ssh-keygen]:
 
 ```js
-$$('.platform-mac, .platform-linux, .platform-windows').forEach(e => e.style = '')
-```️
+document.querySelectorAll('.platform-mac, .platform-linux, .platform-windows').
+	forEach(e => e.style = '')
+```
 
-
-trend: https://trends.google.com/trends/explore?q=TerminalTerminalGit%20Bash
-ssh-keygen: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux#generating-a-new-ssh-key
+[trend]: https://trends.google.com/trends/explore?q=TerminalTerminalGit%20Bash
+[ssh-keygen]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux#generating-a-new-ssh-key
