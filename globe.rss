@@ -11,6 +11,36 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Nouveaux chaussons</title>
+				<pubDate>Fri, 22 Sep 2023 02:09:53 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Demain j'y vais !</title>
+				<pubDate>Wed, 20 Sep 2023 00:57:48 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>En route pour la grimpe</title>
+				<pubDate>Sun, 17 Sep 2023 11:15:13 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>Point de vue</title>
+				<pubDate>Sat, 16 Sep 2023 17:21:01 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
+				<title>C'est re-parti</title>
+				<pubDate>Tue, 12 Sep 2023 15:21:55 +0000</pubDate>
+				<link>{{ site.url }}/globe</link>
+			</item>
+		
+			<item>
 				<title>Nouveau pantalon</title>
 				<pubDate>Sat, 09 Sep 2023 20:52:23 +0000</pubDate>
 				<link>{{ site.url }}/globe</link>
