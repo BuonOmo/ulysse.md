@@ -161,6 +161,7 @@ map.on('load', () => {
 
 // Fly to breve that is closer in view
 document.getElementById('breves').addEventListener('scroll', throttle((e) => {
+	window.location.hash = null
 	const breve = findBreve()
 	flyToBreve(map, breve)
 }, 40))

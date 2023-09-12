@@ -20,7 +20,7 @@
 - [ ] image or not image
 - [x] url fragment to pin a breve
 - [ ] limit number of breves? (check perf)
-- [ ] last seen feature
+- [x] last seen feature
 
 ## Notes
 
