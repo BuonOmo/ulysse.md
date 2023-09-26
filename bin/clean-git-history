@@ -2,7 +2,7 @@
 
 TMP_FILE=$(mktemp XXX.rb)
 trap "rm $TMP_FILE" EXIT
-revision=$(git log --reverse --oneline | grep --extended-regexp --before=1 '^[a-z0-9]+ auto' | head -1 | cut -f1 -d' ')
+revision='82ca6cbb6ea44f919a895f9626765f6082787602'
 
 cat <<-RUBY > $TMP_FILE
 squashed = IO.
@@ -15,3 +15,4 @@ IO.write(ARGV[0], squashed)
 RUBY
 
 git -c sequence.editor="ruby $TMP_FILE" rebase -i $revision
+sed -i '' "s/^revision=.*/revision='$(git rev-parse HEAD~~)'/" $0
