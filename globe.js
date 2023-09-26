@@ -57,18 +57,18 @@ const findBreve = () => {
 //== Special audio section
 
 (function() {
-  const audio = new Audio("/globe/volare.mp3")
-  const volare = breves.find(({el}) => el.textContent.includes("Volare")).el
-  const title = volare.querySelector('h2')
-  const playButton = document.createElement('span')
-  playButton.textContent = ' ▶'
-  audio.addEventListener("canplaythrough", () => {
-    title.append(playButton)
-    const toggle = () => { audio.paused ? audio.play() : audio.pause() }
-    audio.addEventListener('pause', () => { playButton.textContent = ' ▶' } )
-    audio.addEventListener('play', () => { playButton.textContent = ' ⏸️' } )
-    playButton.addEventListener('click', toggle)
-  })
+	const audio = new Audio("/globe/volare.mp3")
+	const volare = breves.find(({el}) => el.textContent.includes("Volare")).el
+	const title = volare.querySelector('h2')
+	const playButton = document.createElement('span')
+	playButton.textContent = ' ▶'
+	audio.addEventListener("canplaythrough", () => {
+		title.append(playButton)
+		const toggle = () => { audio.paused ? audio.play() : audio.pause() }
+		audio.addEventListener('pause', () => { playButton.textContent = ' ▶' } )
+		audio.addEventListener('play', () => { playButton.textContent = ' ⏸️' } )
+		playButton.addEventListener('click', toggle)
+	})
 })()
 
 //= End special audio section
@@ -161,7 +161,7 @@ map.on('load', () => {
 
 // Fly to breve that is closer in view
 document.getElementById('breves').addEventListener('scroll', throttle((e) => {
-	window.location.hash = null
+	if (window.location.hash.length > 0) { history.pushState(null, null, ' ') }
 	const breve = findBreve()
 	flyToBreve(map, breve)
 }, 40))
