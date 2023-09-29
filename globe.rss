@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Hamac récupéré !</title>
+			<pubDate>Fri, 29 Sep 2023 19:09:59 +0000</pubDate>
+			<link>{{ site.url }}/globe#20230929__hamac_r_cup_r_</link>
+			<guid>{{ site.url }}/globe#20230929__hamac_r_cup_r_</guid>
+			<description>&lt;p&gt;Après un mois d'attente, un aller-retour en bus, et quelques dernières heures de patience sur les docks de l'aéroport, me voilà équipé !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>7h à Cali</title>
+			<pubDate>Fri, 29 Sep 2023 00:22:54 +0000</pubDate>
+			<link>{{ site.url }}/globe#20230929__7h_cali</link>
+			<guid>{{ site.url }}/globe#20230929__7h_cali</guid>
+			<description>&lt;p&gt;À peine arrivé j'apprends qu'une livraison m'attend à Bogotá... &lt;em&gt;Que pena&lt;/em&gt;. J'ai donc eu 7h pour découvrir la ville et faire un cours de Salsa avant d'enchaîner sur ma deuxième nuit en bus d'affilée !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Nouveaux chaussons</title>
 			<pubDate>Fri, 22 Sep 2023 02:09:53 +0000</pubDate>
 			<link>{{ site.url }}/globe#20230922__nouveaux_chaussons</link>
@@ -1296,6 +1312,14 @@ layout: none
 			<link>{{ site.url }}/globe#20221110__au_port_des_minimes</link>
 			<guid>{{ site.url }}/globe#20221110__au_port_des_minimes</guid>
 			<description>&lt;p&gt;Annonce posée à la capitainerie. Je suis loin d'être le seul a chercher, il va falloir réussir à se vendre. Et le site semble enfin marcher !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Derniers Au-revoirs!</title>
+			<pubDate>Mon, 02 Oct 2023 04:16:54 +0000</pubDate>
+			<link>{{ site.url }}/globe#20221110__derniers_au_revoirs_</link>
+			<guid>{{ site.url }}/globe#20221110__derniers_au_revoirs_</guid>
+			<description>&lt;p&gt;C'est pratique de partir en voyage, ça donne une bonne excuse pour fêter.&lt;/p&gt;</description>
 		</item>
 		
 		<item>
