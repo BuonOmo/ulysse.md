@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Un 3152m en 30 minutes</title>
+			<pubDate>Mon, 02 Oct 2023 21:30:55 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231002__un_3152m_en_30_minutes</link>
+			<guid>{{ site.url }}/globe#20231002__un_3152m_en_30_minutes</guid>
+			<description>&lt;p&gt;Facile quand on loge à 2 600m !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Hamac récupéré !</title>
 			<pubDate>Fri, 29 Sep 2023 19:09:59 +0000</pubDate>
 			<link>{{ site.url }}/globe#20230929__hamac_r_cup_r_</link>
