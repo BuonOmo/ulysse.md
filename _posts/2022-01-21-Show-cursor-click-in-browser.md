@@ -32,6 +32,9 @@ div.append(inner)
 let t
 function animate() {
 	if (t) clearTimeout(t)
+	inner.style.width = '0px'
+	inner.style.height = '0px'
+	inner.style.margin = '30px'
 	div.style.display = 'block'
 	const nextFrame = (num) => {
 		t = setTimeout(() => {
