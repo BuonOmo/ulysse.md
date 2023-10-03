@@ -34,12 +34,28 @@ const datasetHandler = {
 		return isNaN(datasetResult) ? datasetResult : +datasetResult
 	},
 }
-const breves = Array.from(document.getElementById("breves").children).slice(1).map(el =>
-	new Proxy({
-		el,
-		loc: el.dataset.loc.split(',').map(e => +e),
-		layer: null,
-	}, datasetHandler))
+const breves = (function() {
+	const els = Array.from(document.getElementById("breves").children).slice(1)
+	const colors = (function* generator(size) {
+		const step = 320 / size
+		for (let i = 0; i < size; i++) {
+			yield step * i
+		}
+	})(els.length)
+
+	return els.map(el =>
+		new Proxy({
+			el,
+			loc: el.dataset.loc.split(',').map(e => +e),
+			color: colors.next().value,
+			layer: null,
+		}, datasetHandler))
+})()
+
+breves.forEach(({ el, color }) => {
+	el.children[0].style.color = `hsl(${color}deg, 100%, 90%)`
+})
+
 const findBreve = () => {
 	const offset = window.screen.height / 16 /* Pixel offset from top */
 	let closest = null
@@ -58,15 +74,15 @@ const findBreve = () => {
 
 (function() {
 	const audio = new Audio("/globe/volare.mp3")
-	const volare = breves.find(({el}) => el.textContent.includes("Volare")).el
+	const volare = breves.find(({ el }) => el.textContent.includes("Volare")).el
 	const title = volare.querySelector('h2')
 	const playButton = document.createElement('span')
 	playButton.textContent = ' ▶'
 	audio.addEventListener("canplaythrough", () => {
 		title.append(playButton)
 		const toggle = () => { audio.paused ? audio.play() : audio.pause() }
-		audio.addEventListener('pause', () => { playButton.textContent = ' ▶' } )
-		audio.addEventListener('play', () => { playButton.textContent = ' ⏸️' } )
+		audio.addEventListener('pause', () => { playButton.textContent = ' ▶' })
+		audio.addEventListener('play', () => { playButton.textContent = ' ⏸️' })
 		playButton.addEventListener('click', toggle)
 	})
 })()
@@ -134,11 +150,21 @@ map.on('load', () => {
 			'source': id,
 			'paint': {
 				'circle-radius': 4,
-				'circle-color': '#ddd',
+				'circle-color': `hsl(${breve.color}deg, 100%, 50%)`,
 				'circle-stroke-width': 1,
 				'circle-stroke-color': '#282c34'
 			}
 		})
+
+		breve.el.addEventListener('mouseenter', () => {
+			map.setPaintProperty(id, 'circle-stroke-width', 2)
+			map.setPaintProperty(id, 'circle-radius', 12)
+		})
+		breve.el.addEventListener('mouseleave', () => {
+			map.setPaintProperty(id, 'circle-stroke-width', 1)
+			map.setPaintProperty(id, 'circle-radius', 4)
+		})
+
 		map.on('click', id, () => {
 			anchor(breve)
 			flyToBreve(map, breve)
@@ -157,26 +183,28 @@ map.on('load', () => {
 			map.getCanvas().style.cursor = ''
 		})
 	})
+
+	// On start, check if the URL contains a breve to fly to.
+	if (window.location.hash.length > 0) {
+		const breve = breves.find(({ anchor }) => anchor === window.location.hash.slice(1))
+		flyToBreve(map, breve)
+		breve.el.scrollIntoView({ behavior: 'smooth' })
+	}
 })
 
 // Fly to breve that is closer in view
-document.getElementById('breves').addEventListener('scroll', throttle((e) => {
+document.getElementById('breves').addEventListener('scroll', throttle(() => {
 	if (window.location.hash.length > 0) { history.pushState(null, null, ' ') }
 	const breve = findBreve()
 	flyToBreve(map, breve)
 }, 40))
-
-if (window.location.hash.length > 0) {
-	const breve = breves.find(({ anchor }) => anchor === window.location.hash.slice(1))
-	breve.el.scrollIntoView({ behavior: 'smooth' })
-}
 
 //== Show unread breves
 /* DESIGN: When the user loads the page, we show a dot for every unread breves.
  * Then we automatically consider that they have read all of them and hence
  * mark the latest one as read.
  */
-(function() {
+;(function() {
 	let lastRead = localStorage.getItem('globe:lastRead')
 	if (!lastRead) { lastRead = breves[0].anchor }
 	for (let breve of breves) {

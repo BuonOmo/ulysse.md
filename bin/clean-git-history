@@ -2,7 +2,7 @@
 
 TMP_FILE=$(mktemp XXX.rb)
 trap "rm $TMP_FILE" EXIT
-revision='82ca6cbb6ea44f919a895f9626765f6082787602'
+revision='8f07ffa3b59e1c76916d246d008112c462e6db6d'
 
 cat <<-RUBY > $TMP_FILE
 squashed = IO.
@@ -14,5 +14,5 @@ squashed = IO.
 IO.write(ARGV[0], squashed)
 RUBY
 
-git -c sequence.editor="ruby $TMP_FILE" rebase -i $revision
+git -c sequence.editor="ruby $TMP_FILE" rebase --interactive --committer-date-is-author-date $revision
 sed -i '' "s/^revision=.*/revision='$(git rev-parse HEAD~~)'/" $0
