@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Croisière d'asphalte</title>
+			<pubDate>Wed, 04 Oct 2023 03:19:52 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231004__croisi_re_d_asphalte</link>
+			<guid>{{ site.url }}/globe#20231004__croisi_re_d_asphalte</guid>
+			<description>&lt;p&gt;C'est parti pour 22 heures de bus, direction le Sud du pays. La clim est forte mais j'ai mon duvet.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Un 3152m en 30 minutes</title>
 			<pubDate>Mon, 02 Oct 2023 21:30:55 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231002__un_3152m_en_30_minutes</link>
