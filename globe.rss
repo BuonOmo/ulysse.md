@@ -11,6 +11,470 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Retrouvailles</title>
+			<pubDate>Sun, 14 Jan 2024 00:02:25 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240113__retrouvailles</link>
+			<guid>{{ site.url }}/globe#20240113__retrouvailles</guid>
+			<description>&lt;p&gt;Un an plus tard, j'ai le plaisir de visiter Matéo chez lui. Nous nous étions rencontrés à &lt;a href="https://ulysse.md/globe#20221223__s_ville"&gt;Séville&lt;/a&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Combien de millions</title>
+			<pubDate>Sun, 14 Jan 2024 00:02:25 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240110__combien_de_millions</link>
+			<guid>{{ site.url }}/globe#20240110__combien_de_millions</guid>
+			<description>&lt;p&gt;De litres d'eau s'écoulent par minute ici ? Ivon m'a proposé de faire une pause ici avant de continuer le voyage... Très bonne idée !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Carotte au piment</title>
+			<pubDate>Mon, 08 Jan 2024 22:20:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240108__carotte_au_piment</link>
+			<guid>{{ site.url }}/globe#20240108__carotte_au_piment</guid>
+			<description>&lt;p&gt;Achetez une carotte et un piment dans un même sac plastique. Ouvrez le piment. Laissez reposer, si possible avec un peu de mouvement. Et voilà, ça pique ! Et c'est parti pour 38h de bus...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Colis reçu</title>
+			<pubDate>Sat, 06 Jan 2024 10:01:52 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240106__colis_re_u</link>
+			<guid>{{ site.url }}/globe#20240106__colis_re_u</guid>
+			<description>&lt;p&gt;Après l'avoir envoyé il y a quelques mois depuis Bogotá. Je récupère ma tente et mon ordi.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>3, 2,1... Taxi</title>
+			<pubDate>Fri, 05 Jan 2024 23:03:38 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240105__3_2_1_taxi</link>
+			<guid>{{ site.url }}/globe#20240105__3_2_1_taxi</guid>
+			<description>&lt;p&gt;Et voilà comment j'ai dit au-revoir à Maëlle avant de filer à la gare routière. Tout juste dans le bus, j'arriverai de nuit à São Paulo&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nouvelle paire</title>
+			<pubDate>Fri, 05 Jan 2024 14:20:29 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240105__nouvelle_paire</link>
+			<guid>{{ site.url }}/globe#20240105__nouvelle_paire</guid>
+			<description>&lt;p&gt;Ça y est, après plus d'un an à trois, je me sépare de mes deux vieilles chaussures... Merci pour les foulées&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>24h de sommeil</title>
+			<pubDate>Fri, 05 Jan 2024 14:20:28 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240102__24h_de_sommeil</link>
+			<guid>{{ site.url }}/globe#20240102__24h_de_sommeil</guid>
+			<description>&lt;p&gt;Sortis du festival, on avait besoin de repos!&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bonne année</title>
+			<pubDate>Mon, 01 Jan 2024 04:16:50 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240101__bonne_ann_e</link>
+			<guid>{{ site.url }}/globe#20240101__bonne_ann_e</guid>
+			<description>&lt;p&gt;Tout le monde en blanc, et ça danse sur la place du village.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bien installés</title>
+			<pubDate>Wed, 27 Dec 2023 02:23:26 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231227__bien_install_s</link>
+			<guid>{{ site.url }}/globe#20231227__bien_install_s</guid>
+			<description>&lt;p&gt;Meilleur bus depuis le départ. Seul défaut, la distance entre nos sièges et les toilettes...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Noël en auberge</title>
+			<pubDate>Wed, 27 Dec 2023 02:22:35 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231226__no_l_en_auberge</link>
+			<guid>{{ site.url }}/globe#20231226__no_l_en_auberge</guid>
+			<description>&lt;p&gt;Pour la seconde fois. Et nous partons aujourd'hui pour le festival d'Itaunas&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Podcast en transit</title>
+			<pubDate>Fri, 22 Dec 2023 21:04:01 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231222__podcast_en_transit</link>
+			<guid>{{ site.url }}/globe#20231222__podcast_en_transit</guid>
+			<description>&lt;p&gt;On vient de finir &lt;em&gt;&lt;a href="https://www.binge.audio/podcast/le-coeur-sur-la-table/la-dialectique-du-calbute-sale"&gt;La Dialectique du Calbute Sale&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Gore-Tex</title>
+			<pubDate>Wed, 20 Dec 2023 22:30:13 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231220__gore_tex</link>
+			<guid>{{ site.url }}/globe#20231220__gore_tex</guid>
+			<description>&lt;p&gt;On a beau être sous les tropiques, on est sorti en veste pour aller au resto sous le déluge ! La nouvelle veste est approuvée.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Aéroport, encore !</title>
+			<pubDate>Sun, 17 Dec 2023 15:38:22 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231217__a_roport_encore_</link>
+			<guid>{{ site.url }}/globe#20231217__a_roport_encore_</guid>
+			<description>&lt;p&gt;J'y vais souvent pour quelqu'un qui ne vole pas... Après le hamac, cette fois je viens chercher Maëlle&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Roda de Samba</title>
+			<pubDate>Sat, 16 Dec 2023 03:31:48 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231216__roda_de_samba</link>
+			<guid>{{ site.url }}/globe#20231216__roda_de_samba</guid>
+			<description>&lt;p&gt;Tous en cercle autour d'une table. Les musicien.nes y sont assis.es. Et nous dansons !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Moqueca</title>
+			<pubDate>Wed, 06 Dec 2023 01:48:52 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231206__moqueca</link>
+			<guid>{{ site.url }}/globe#20231206__moqueca</guid>
+			<description>&lt;p&gt;Repas de départ à l'auberge avant de filer avec Amaya direction Salvador.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Courrez</title>
+			<pubDate>Wed, 06 Dec 2023 01:48:51 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231204__courrez</link>
+			<guid>{{ site.url }}/globe#20231204__courrez</guid>
+			<description>&lt;p&gt;Attaqués par des abeilles. On a bien couru.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Lendemain</title>
+			<pubDate>Sun, 03 Dec 2023 15:36:06 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231203__lendemain</link>
+			<guid>{{ site.url }}/globe#20231203__lendemain</guid>
+			<description>&lt;p&gt;Première soirée brésilienne. Techno, reggaeton. La prochaine fois, promis je découvrirai le Brésil. En attendant je vais me requinquer à coup de feijoada.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bivouac</title>
+			<pubDate>Fri, 01 Dec 2023 15:44:40 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231130__bivouac</link>
+			<guid>{{ site.url }}/globe#20231130__bivouac</guid>
+			<description>&lt;p&gt;On ressort le hamac pour visiter les cascades pourpres !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Traversée du feu</title>
+			<pubDate>Tue, 28 Nov 2023 21:16:47 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231128__travers_e_du_feu</link>
+			<guid>{{ site.url }}/globe#20231128__travers_e_du_feu</guid>
+			<description>&lt;p&gt;On a été coincé de l'autre côté d'un feu de forêt. Heureusement contrôlé, on traverse le sinistre en stop.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>5 fruits par jour</title>
+			<pubDate>Sun, 26 Nov 2023 01:14:09 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231125__5_fruits_par_jour</link>
+			<guid>{{ site.url }}/globe#20231125__5_fruits_par_jour</guid>
+			<description>&lt;p&gt;Mais c'est quoi le maximum ? Avec la saison des mangues, c'est sûr que je m'en approche...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Exploration</title>
+			<pubDate>Sun, 26 Nov 2023 01:14:08 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231121__exploration</link>
+			<guid>{{ site.url }}/globe#20231121__exploration</guid>
+			<description>&lt;p&gt;Il y a plein de cascades et piscines naturelles. L'eau est transparente avec une teinte ocre. Je me suis remis à la cuisine&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Volontaire</title>
+			<pubDate>Sun, 19 Nov 2023 13:37:59 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231119__volontaire</link>
+			<guid>{{ site.url }}/globe#20231119__volontaire</guid>
+			<description>&lt;p&gt;À peine arrivé à Lençois, je paysage est sublime et j'ai trouvé une place de volontaire dans l'auberge ou je devais dormir !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Quitte ou double</title>
+			<pubDate>Sun, 19 Nov 2023 13:37:58 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231118__quitte_ou_double</link>
+			<guid>{{ site.url }}/globe#20231118__quitte_ou_double</guid>
+			<description>&lt;p&gt;Me voilà reparti après 12 heures d'attente. Mais cette fois, le bus me pose à Bahia !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>6h à tuer</title>
+			<pubDate>Sun, 19 Nov 2023 13:37:57 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231118__6h_tuer</link>
+			<guid>{{ site.url }}/globe#20231118__6h_tuer</guid>
+			<description>&lt;p&gt;Arrivée bien tard au terminal. Tout est fermé ! Peut-être qu'un bus nocturne ira dans ma direction ?&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>C'est cassé</title>
+			<pubDate>Thu, 16 Nov 2023 20:43:21 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231116__c_est_cass_</link>
+			<guid>{{ site.url }}/globe#20231116__c_est_cass_</guid>
+			<description>&lt;p&gt;On attend le bus de secours au bord de l'autoroute, ou plutôt de la piste. Ce n'était pas définition que j'avais des routes brésiliennes !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Quasi-stop</title>
+			<pubDate>Thu, 16 Nov 2023 07:27:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231116__quasi_stop</link>
+			<guid>{{ site.url }}/globe#20231116__quasi_stop</guid>
+			<description>&lt;p&gt;Après deux heures de rôtissage en plein cagnard, j'ai décidé de prendre le bus. Courte nuit dans le terminal et me voilà parti pour deux jours de bus, direction l'est.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Décisions</title>
+			<pubDate>Thu, 16 Nov 2023 07:25:30 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231115__d_cisions</link>
+			<guid>{{ site.url }}/globe#20231115__d_cisions</guid>
+			<description>&lt;p&gt;A terre. Jour férié. Il va falloir bien choisir pour que le stop commence sur des chapeaux de roues&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Dernier bateau</title>
+			<pubDate>Thu, 16 Nov 2023 07:25:24 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231113__dernier_bateau</link>
+			<guid>{{ site.url }}/globe#20231113__dernier_bateau</guid>
+			<description>&lt;p&gt;Après une pause intestinale, je reprends le bateau pour trente heures.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Contrôle</title>
+			<pubDate>Fri, 10 Nov 2023 21:44:20 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231110__contr_le</link>
+			<guid>{{ site.url }}/globe#20231110__contr_le</guid>
+			<description>&lt;p&gt;Le chien avait faim, mes potes avaient de la bouffe. Ils fouillent. Je voyage depuis un an aujourd'hui.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Au Brésil...</title>
+			<pubDate>Fri, 10 Nov 2023 21:44:19 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231109__au_br_sil_</link>
+			<guid>{{ site.url }}/globe#20231109__au_br_sil_</guid>
+			<description>&lt;p&gt;Il y a dix douches pour 50 personnes. Elles sont occupées en continue ! Je vais leur apprendre la &lt;em&gt;French Shower&lt;/em&gt;™&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Vent furieux</title>
+			<pubDate>Fri, 10 Nov 2023 21:44:18 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231108__vent_furieux</link>
+			<guid>{{ site.url }}/globe#20231108__vent_furieux</guid>
+			<description>&lt;p&gt;Ne fermez pas les fenêtres le vent pourrait retourner le bateau...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Monstre de metal</title>
+			<pubDate>Fri, 10 Nov 2023 21:44:17 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231107__monstre_de_metal</link>
+			<guid>{{ site.url }}/globe#20231107__monstre_de_metal</guid>
+			<description>&lt;p&gt;Me voilà en eaux brésiliennes. 4 étages, 4 jours de navigation. Le fleuve a déjà bien grandit&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Oiseauphonie</title>
+			<pubDate>Mon, 06 Nov 2023 23:04:45 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231106__oiseauphonie</link>
+			<guid>{{ site.url }}/globe#20231106__oiseauphonie</guid>
+			<description>&lt;p&gt;Des arbres avec plus de perruches que de feuilles ! Elles couvrent presque le bruit des voitures...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Immigrations</title>
+			<pubDate>Mon, 06 Nov 2023 16:28:45 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231106__immigrations</link>
+			<guid>{{ site.url }}/globe#20231106__immigrations</guid>
+			<description>&lt;p&gt;Sortie du Pérou. Je suis rentré une heure au Brésil avant d'aller dormir en Colombie !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bateau lent</title>
+			<pubDate>Fri, 03 Nov 2023 23:15:34 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231103__bateau_lent</link>
+			<guid>{{ site.url }}/globe#20231103__bateau_lent</guid>
+			<description>&lt;p&gt;J'embarque sur un tas de fer de trois étages en direction de la triple frontière.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bateau raté</title>
+			<pubDate>Fri, 03 Nov 2023 23:15:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231101__bateau_rat_</link>
+			<guid>{{ site.url }}/globe#20231101__bateau_rat_</guid>
+			<description>&lt;p&gt;On change pas. Je suis arrivé bien en retard, et les portes étaient déjà fermées. Deux jours de plus pour troquer mon artisanat de feuilles de palmier !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Retour a Babylone</title>
+			<pubDate>Tue, 31 Oct 2023 16:50:24 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231031__retour_a_babylone</link>
+			<guid>{{ site.url }}/globe#20231031__retour_a_babylone</guid>
+			<description>&lt;p&gt;Après un séjour chez les hippies dans la jungle je suis de retour en ville. Le fleuve Amazone en vue.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Tout prend l'eau</title>
+			<pubDate>Tue, 31 Oct 2023 15:43:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231029__tout_prend_l_eau</link>
+			<guid>{{ site.url }}/globe#20231029__tout_prend_l_eau</guid>
+			<description>&lt;p&gt;Je suis parti faire un tour en laissant mes affaires sécher au camp, sans aucune protection. Je crois que je retiendrai longtemps la leçon.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Débarquement</title>
+			<pubDate>Mon, 23 Oct 2023 16:21:42 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231023__d_barquement</link>
+			<guid>{{ site.url }}/globe#20231023__d_barquement</guid>
+			<description>&lt;p&gt;Juste avant d'arriver sur l'Amazone, petite pause dans la jungle...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Encore des bateaux</title>
+			<pubDate>Mon, 23 Oct 2023 16:21:41 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231022__encore_des_bateaux</link>
+			<guid>{{ site.url }}/globe#20231022__encore_des_bateaux</guid>
+			<description>&lt;p&gt;J'embarque en direction d'Iquitos et de l'Amazone. Le bateau transporte autant de marchandises que d'humains. Douches et cuisine. Je dors dans mon hamac.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Reprise du stop</title>
+			<pubDate>Mon, 23 Oct 2023 16:21:40 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231021__reprise_du_stop</link>
+			<guid>{{ site.url }}/globe#20231021__reprise_du_stop</guid>
+			<description>&lt;p&gt;Et pour changer, j'ai été pris par un bus de voyageurs deux étages...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Ceviche</title>
+			<pubDate>Mon, 23 Oct 2023 16:21:38 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231020__ceviche</link>
+			<guid>{{ site.url }}/globe#20231020__ceviche</guid>
+			<description>&lt;p&gt;Je ne savais pas que c'était péruvien, maintenant j'en ai la preuve par l'estomac !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Immigration express</title>
+			<pubDate>Fri, 20 Oct 2023 07:22:26 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231020__immigration_express</link>
+			<guid>{{ site.url }}/globe#20231020__immigration_express</guid>
+			<description>&lt;p&gt;Réveillé.es à la &lt;em&gt;madrugada&lt;/em&gt;. On sort à peine du bus. Et me voilà au Pérou&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bus de luxe</title>
+			<pubDate>Fri, 20 Oct 2023 06:32:05 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231020__bus_de_luxe</link>
+			<guid>{{ site.url }}/globe#20231020__bus_de_luxe</guid>
+			<description>&lt;p&gt;Sièges super comfort. Nourriture et boisson. Direction le Pérou. Je quitte la belle et calme Cuenca avec un peu d'amertume.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Catacombes</title>
+			<pubDate>Wed, 18 Oct 2023 23:27:31 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231018__catacombes</link>
+			<guid>{{ site.url }}/globe#20231018__catacombes</guid>
+			<description>&lt;p&gt;Je visite un musée des arts interdits à Cuenca, on commence par un petit souvenir parisien...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Changement de programme</title>
+			<pubDate>Wed, 18 Oct 2023 23:27:30 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231018__changement_de_programme</link>
+			<guid>{{ site.url }}/globe#20231018__changement_de_programme</guid>
+			<description>&lt;p&gt;Direction Cuenca. Il semblerait que ce soit plus simple de traverser la frontière par la route et de suivre les fleuves ensuite.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Aux abords du Napo</title>
+			<pubDate>Tue, 17 Oct 2023 12:14:32 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231017__aux_abords_du_napo</link>
+			<guid>{{ site.url }}/globe#20231017__aux_abords_du_napo</guid>
+			<description>&lt;p&gt;Un des fleuves qui se jette dans l'amazone. Et déjà qu'il est grand !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Échange</title>
+			<pubDate>Mon, 16 Oct 2023 15:43:19 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231016___change</link>
+			<guid>{{ site.url }}/globe#20231016___change</guid>
+			<description>&lt;p&gt;Sacharuna apprend l'anglais, et moi le kichwa !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Des singes de poche</title>
+			<pubDate>Sun, 15 Oct 2023 11:39:39 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231015__des_singes_de_poche</link>
+			<guid>{{ site.url }}/globe#20231015__des_singes_de_poche</guid>
+			<description>&lt;p&gt;Je fais une halte dans la réserve de Lupe. On y voit plein d'oiseaux, et de tout petits singes !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Au plancher des vaches</title>
+			<pubDate>Wed, 11 Oct 2023 18:56:34 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231011__au_plancher_des_vaches</link>
+			<guid>{{ site.url }}/globe#20231011__au_plancher_des_vaches</guid>
+			<description>&lt;p&gt;Ça y est, je suis rentré ! Direction la ville en stop. Un genou a tapé le sol, mais heureusement j'étais déjà proche du refuge.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Tungurahua</title>
+			<pubDate>Wed, 11 Oct 2023 18:56:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231011__tungurahua</link>
+			<guid>{{ site.url }}/globe#20231011__tungurahua</guid>
+			<description>&lt;p&gt;Entre vapeur et neige à plus de 5000m d'altitude. Quelle spectacle...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nuit à 3800m</title>
+			<pubDate>Wed, 11 Oct 2023 18:56:32 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231010__nuit_3800m</link>
+			<guid>{{ site.url }}/globe#20231010__nuit_3800m</guid>
+			<description>&lt;p&gt;Je viens d'arriver au refuge, accueilli juste avant la pluie par en arc-en-ciel. La flore paraît celle de 500m en France. Mais quand je marche mon cœur bat à 140 bpm! Demain, réveil 2h30.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Poudre finit !</title>
+			<pubDate>Tue, 10 Oct 2023 18:28:29 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231010__poudre_finit_</link>
+			<guid>{{ site.url }}/globe#20231010__poudre_finit_</guid>
+			<description>&lt;p&gt;Je me trimballais le même paquet de nourriture rapide depuis la France. J'ai enfin fini de le manger ce matin. Le sac est de plus en plus léger...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>En face du Volcan</title>
+			<pubDate>Mon, 09 Oct 2023 16:56:23 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231007__en_face_du_volcan</link>
+			<guid>{{ site.url }}/globe#20231007__en_face_du_volcan</guid>
+			<description>&lt;p&gt;On attend que le vent baisse pour sortir les parapentes. En attendant je peux admirer le Tungurahua et parler de politique équatorienne avec Edgar.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Reretrouvailles</title>
+			<pubDate>Thu, 05 Oct 2023 19:18:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231005__reretrouvailles</link>
+			<guid>{{ site.url }}/globe#20231005__reretrouvailles</guid>
+			<description>&lt;p&gt;Après 32 heures de bus et une bonne sieste, je retrouve Antoine et Juliette pour ma première journée en Ecuador !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Adiós Colombianos</title>
+			<pubDate>Thu, 05 Oct 2023 00:33:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231005__adi_s_colombianos</link>
+			<guid>{{ site.url }}/globe#20231005__adi_s_colombianos</guid>
+			<description>&lt;p&gt;Ça y est, j'ai passé la frontière. Après avoir tardé presque quatre mois, il était temps !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Mazamorra</title>
+			<pubDate>Thu, 05 Oct 2023 00:33:32 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231004__mazamorra</link>
+			<guid>{{ site.url }}/globe#20231004__mazamorra</guid>
+			<description>&lt;p&gt;Le bus fait des pauses sur le chemin, et là même pas besoin de lever les fesses pour se faire servir.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Croisière d'asphalte</title>
+			<pubDate>Wed, 04 Oct 2023 03:19:52 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231004__croisi_re_d_asphalte</link>
+			<guid>{{ site.url }}/globe#20231004__croisi_re_d_asphalte</guid>
+			<description>&lt;p&gt;C'est parti pour 22 heures de bus, direction le Sud du pays. La clim est forte mais j'ai mon duvet.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Un 3152m en 30 minutes</title>
 			<pubDate>Mon, 02 Oct 2023 21:30:55 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231002__un_3152m_en_30_minutes</link>
