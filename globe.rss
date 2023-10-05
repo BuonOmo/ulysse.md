@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Adiós Colombianos</title>
+			<pubDate>Thu, 05 Oct 2023 00:33:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231005__adi_s_colombianos</link>
+			<guid>{{ site.url }}/globe#20231005__adi_s_colombianos</guid>
+			<description>&lt;p&gt;Ça y est, j'ai passé la frontière. Après avoir tardé presque quatre mois, il était temps !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Mazamorra</title>
+			<pubDate>Thu, 05 Oct 2023 00:33:32 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231004__mazamorra</link>
+			<guid>{{ site.url }}/globe#20231004__mazamorra</guid>
+			<description>&lt;p&gt;Le bus fait des pauses sur le chemin, et là même pas besoin de lever les fesses pour se faire servir.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Croisière d'asphalte</title>
 			<pubDate>Wed, 04 Oct 2023 03:19:52 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231004__croisi_re_d_asphalte</link>
