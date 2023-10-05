@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Reretrouvailles</title>
+			<pubDate>Thu, 05 Oct 2023 19:18:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231005__reretrouvailles</link>
+			<guid>{{ site.url }}/globe#20231005__reretrouvailles</guid>
+			<description>&lt;p&gt;Après 32 heures de bus et une bonne sieste, je retrouve Antoine et Juliette pour ma première journée en Ecuador !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Adiós Colombianos</title>
 			<pubDate>Thu, 05 Oct 2023 00:33:33 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231005__adi_s_colombianos</link>
