@@ -11,6 +11,30 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Au plancher des vaches</title>
+			<pubDate>Wed, 11 Oct 2023 18:56:34 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231011__au_plancher_des_vaches</link>
+			<guid>{{ site.url }}/globe#20231011__au_plancher_des_vaches</guid>
+			<description>&lt;p&gt;Ça y est, je suis rentré ! Direction la ville en stop. Un genou a tapé le sol, mais heureusement j'étais déjà proche du refuge.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Tungurahua</title>
+			<pubDate>Wed, 11 Oct 2023 18:56:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231011__tungurahua</link>
+			<guid>{{ site.url }}/globe#20231011__tungurahua</guid>
+			<description>&lt;p&gt;Entre vapeur et neige à plus de 5000m d'altitude. Quelle spectacle...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nuit à 3800m</title>
+			<pubDate>Wed, 11 Oct 2023 18:56:32 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231010__nuit_3800m</link>
+			<guid>{{ site.url }}/globe#20231010__nuit_3800m</guid>
+			<description>&lt;p&gt;Je viens d'arriver au refuge, accueilli juste avant la pluie par en arc-en-ciel. La flore paraît celle de 500m en France. Mais quand je marche mon cœur bat à 140 bpm! Demain, réveil 2h30.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Poudre finit !</title>
 			<pubDate>Tue, 10 Oct 2023 18:28:29 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231010__poudre_finit_</link>
