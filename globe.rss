@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Catacombes</title>
+			<pubDate>Wed, 18 Oct 2023 23:27:31 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231018__catacombes</link>
+			<guid>{{ site.url }}/globe#20231018__catacombes</guid>
+			<description>&lt;p&gt;Je visite un musée des arts interdits à Cuenca, on commence par un petit souvenir parisien...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Changement de programme</title>
+			<pubDate>Wed, 18 Oct 2023 23:27:30 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231018__changement_de_programme</link>
+			<guid>{{ site.url }}/globe#20231018__changement_de_programme</guid>
+			<description>&lt;p&gt;Direction Cuenca. Il semblerait que ce soit plus simple de traverser la frontière par la route et de suivre les fleuves ensuite.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Aux abords du Napo</title>
 			<pubDate>Tue, 17 Oct 2023 12:14:32 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231017__aux_abords_du_napo</link>
