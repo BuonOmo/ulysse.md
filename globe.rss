@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Immigration express</title>
+			<pubDate>Fri, 20 Oct 2023 07:22:26 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231020__immigration_express</link>
+			<guid>{{ site.url }}/globe#20231020__immigration_express</guid>
+			<description>&lt;p&gt;Réveillé.es à la &lt;em&gt;madrugada&lt;/em&gt;. On sort à peine du bus. Et me voilà au Pérou&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bus de luxe</title>
+			<pubDate>Fri, 20 Oct 2023 06:32:05 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231020__bus_de_luxe</link>
+			<guid>{{ site.url }}/globe#20231020__bus_de_luxe</guid>
+			<description>&lt;p&gt;Sièges super comfort. Nourriture et boisson. Direction le Pérou. Je quitte la belle et calme Cuenca avec un peu d'amertume.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Catacombes</title>
 			<pubDate>Wed, 18 Oct 2023 23:27:31 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231018__catacombes</link>
