@@ -11,6 +11,38 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Débarquement</title>
+			<pubDate>Mon, 23 Oct 2023 16:21:42 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231023__d_barquement</link>
+			<guid>{{ site.url }}/globe#20231023__d_barquement</guid>
+			<description>&lt;p&gt;Juste avant d'arriver sur l'Amazone, petite pause dans la jungle...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Encore des bateaux</title>
+			<pubDate>Mon, 23 Oct 2023 16:21:41 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231022__encore_des_bateaux</link>
+			<guid>{{ site.url }}/globe#20231022__encore_des_bateaux</guid>
+			<description>&lt;p&gt;J'embarque en direction d'Iquitos et de l'Amazone. Le bateau transporte autant de marchandises que d'humains. Douches et cuisine. Je dors dans mon hamac.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Reprise du stop</title>
+			<pubDate>Mon, 23 Oct 2023 16:21:40 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231021__reprise_du_stop</link>
+			<guid>{{ site.url }}/globe#20231021__reprise_du_stop</guid>
+			<description>&lt;p&gt;Et pour changer, j'ai été pris par un bus de voyageurs deux étages...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Ceviche</title>
+			<pubDate>Mon, 23 Oct 2023 16:21:38 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231020__ceviche</link>
+			<guid>{{ site.url }}/globe#20231020__ceviche</guid>
+			<description>&lt;p&gt;Je ne savais pas que c'était péruvien, maintenant j'en ai la preuve par l'estomac !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Immigration express</title>
 			<pubDate>Fri, 20 Oct 2023 07:22:26 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231020__immigration_express</link>
