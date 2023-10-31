@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Retour a Babylone</title>
+			<pubDate>Tue, 31 Oct 2023 16:50:24 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231031__retour_a_babylone</link>
+			<guid>{{ site.url }}/globe#20231031__retour_a_babylone</guid>
+			<description>&lt;p&gt;Après un séjour chez les hippies dans la jungle je suis de retour en ville. Le fleuve Amazone en vue.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Tout prend l'eau</title>
+			<pubDate>Tue, 31 Oct 2023 15:43:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231029__tout_prend_l_eau</link>
+			<guid>{{ site.url }}/globe#20231029__tout_prend_l_eau</guid>
+			<description>&lt;p&gt;Je suis parti faire un tour en laissant mes affaires sécher au camp, sans aucune protection. Je crois que je retiendrai longtemps la leçon.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Débarquement</title>
 			<pubDate>Mon, 23 Oct 2023 16:21:42 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231023__d_barquement</link>
