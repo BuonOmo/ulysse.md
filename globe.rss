@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Bateau lent</title>
+			<pubDate>Fri, 03 Nov 2023 23:15:34 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231103__bateau_lent</link>
+			<guid>{{ site.url }}/globe#20231103__bateau_lent</guid>
+			<description>&lt;p&gt;J'embarque sur un tas de fer de trois étages en direction de la triple frontière.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bateau raté</title>
+			<pubDate>Fri, 03 Nov 2023 23:15:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231101__bateau_rat_</link>
+			<guid>{{ site.url }}/globe#20231101__bateau_rat_</guid>
+			<description>&lt;p&gt;On change pas. Je suis arrivé bien en retard, et les portes étaient déjà fermées. Deux jours de plus pour troquer mon artisanat de feuilles de palmier !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Retour a Babylone</title>
 			<pubDate>Tue, 31 Oct 2023 16:50:24 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231031__retour_a_babylone</link>
