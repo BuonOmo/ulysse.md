@@ -11,6 +11,38 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Contrôle</title>
+			<pubDate>Fri, 10 Nov 2023 21:44:20 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231110__contr_le</link>
+			<guid>{{ site.url }}/globe#20231110__contr_le</guid>
+			<description>&lt;p&gt;Le chien avait faim, mes potes avaient de la bouffe. Ils fouillent. Je voyage depuis un an aujourd'hui.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Au Brésil...</title>
+			<pubDate>Fri, 10 Nov 2023 21:44:19 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231109__au_br_sil_</link>
+			<guid>{{ site.url }}/globe#20231109__au_br_sil_</guid>
+			<description>&lt;p&gt;Il y a dix douches pour 50 personnes. Elles sont occupées en continue ! Je vais leur apprendre la &lt;em&gt;French Shower&lt;/em&gt;™&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Vent furieux</title>
+			<pubDate>Fri, 10 Nov 2023 21:44:18 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231108__vent_furieux</link>
+			<guid>{{ site.url }}/globe#20231108__vent_furieux</guid>
+			<description>&lt;p&gt;Ne fermez pas les fenêtres le vent pourrait retourner le bateau...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Monstre de metal</title>
+			<pubDate>Fri, 10 Nov 2023 21:44:17 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231107__monstre_de_metal</link>
+			<guid>{{ site.url }}/globe#20231107__monstre_de_metal</guid>
+			<description>&lt;p&gt;Me voilà en eaux brésiliennes. 4 étages, 4 jours de navigation. Le fleuve a déjà bien grandit&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Oiseauphonie</title>
 			<pubDate>Mon, 06 Nov 2023 23:04:45 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231106__oiseauphonie</link>
