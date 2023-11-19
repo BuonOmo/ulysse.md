@@ -11,6 +11,30 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Volontaire</title>
+			<pubDate>Sun, 19 Nov 2023 13:37:59 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231119__volontaire</link>
+			<guid>{{ site.url }}/globe#20231119__volontaire</guid>
+			<description>&lt;p&gt;À peine arrivé à Lençois, je paysage est sublime et j'ai trouvé une place de volontaire dans l'auberge ou je devais dormir !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Quitte ou double</title>
+			<pubDate>Sun, 19 Nov 2023 13:37:58 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231118__quitte_ou_double</link>
+			<guid>{{ site.url }}/globe#20231118__quitte_ou_double</guid>
+			<description>&lt;p&gt;Me voilà reparti après 12 heures d'attente. Mais cette fois, le bus me pose à Bahia !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>6h à tuer</title>
+			<pubDate>Sun, 19 Nov 2023 13:37:57 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231118__6h_tuer</link>
+			<guid>{{ site.url }}/globe#20231118__6h_tuer</guid>
+			<description>&lt;p&gt;Arrivée bien tard au terminal. Tout est fermé ! Peut-être qu'un bus nocturne ira dans ma direction ?&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>C'est cassé</title>
 			<pubDate>Thu, 16 Nov 2023 20:43:21 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231116__c_est_cass_</link>
