@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>5 fruits par jour</title>
+			<pubDate>Sun, 26 Nov 2023 01:14:09 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231125__5_fruits_par_jour</link>
+			<guid>{{ site.url }}/globe#20231125__5_fruits_par_jour</guid>
+			<description>&lt;p&gt;Mais c'est quoi le maximum ? Avec la saison des mangues, c'est sûr que je m'en approche...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Exploration</title>
+			<pubDate>Sun, 26 Nov 2023 01:14:08 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231121__exploration</link>
+			<guid>{{ site.url }}/globe#20231121__exploration</guid>
+			<description>&lt;p&gt;Il y a plein de cascades et piscines naturelles. L'eau est transparente avec une teinte ocre. Je me suis remis à la cuisine&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Volontaire</title>
 			<pubDate>Sun, 19 Nov 2023 13:37:59 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231119__volontaire</link>
