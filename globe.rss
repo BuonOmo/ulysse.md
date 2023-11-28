@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Traversée du feu</title>
+			<pubDate>Tue, 28 Nov 2023 21:16:47 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231128__travers_e_du_feu</link>
+			<guid>{{ site.url }}/globe#20231128__travers_e_du_feu</guid>
+			<description>&lt;p&gt;On a été coincé de l'autre côté d'un feu de forêt. Heureusement contrôlé, on traverse le sinistre en stop.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>5 fruits par jour</title>
 			<pubDate>Sun, 26 Nov 2023 01:14:09 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231125__5_fruits_par_jour</link>
