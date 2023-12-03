@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Lendemain</title>
+			<pubDate>Sun, 03 Dec 2023 15:36:06 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231203__lendemain</link>
+			<guid>{{ site.url }}/globe#20231203__lendemain</guid>
+			<description>&lt;p&gt;Première soirée brésilienne. Techno, reggaeton. La prochaine fois, promis je découvrirai le Brésil. En attendant je vais me requinquer à coup de feijoada.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Bivouac</title>
 			<pubDate>Fri, 01 Dec 2023 15:44:40 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231130__bivouac</link>
