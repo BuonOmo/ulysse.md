@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Bien installés</title>
+			<pubDate>Wed, 27 Dec 2023 02:23:26 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231227__bien_install_s</link>
+			<guid>{{ site.url }}/globe#20231227__bien_install_s</guid>
+			<description>&lt;p&gt;Meilleur bus depuis le départ. Seul défaut, la distance entre nos sièges et les toilettes...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Noël en auberge</title>
+			<pubDate>Wed, 27 Dec 2023 02:22:35 +0000</pubDate>
+			<link>{{ site.url }}/globe#20231226__no_l_en_auberge</link>
+			<guid>{{ site.url }}/globe#20231226__no_l_en_auberge</guid>
+			<description>&lt;p&gt;Pour la seconde fois. Et nous partons aujourd'hui pour le festival d'Itaunas&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Podcast en transit</title>
 			<pubDate>Fri, 22 Dec 2023 21:04:01 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231222__podcast_en_transit</link>
