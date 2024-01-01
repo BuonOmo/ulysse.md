@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Bonne année</title>
+			<pubDate>Mon, 01 Jan 2024 04:16:50 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240101__bonne_ann_e</link>
+			<guid>{{ site.url }}/globe#20240101__bonne_ann_e</guid>
+			<description>&lt;p&gt;Tout le monde en blanc, et ça danse sur la place du village.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Bien installés</title>
 			<pubDate>Wed, 27 Dec 2023 02:23:26 +0000</pubDate>
 			<link>{{ site.url }}/globe#20231227__bien_install_s</link>
