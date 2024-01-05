@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Nouvelle paire</title>
+			<pubDate>Fri, 05 Jan 2024 14:20:29 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240105__nouvelle_paire</link>
+			<guid>{{ site.url }}/globe#20240105__nouvelle_paire</guid>
+			<description>&lt;p&gt;Ça y est, après plus d'un an à trois, je me sépare de mes deux vieilles chaussures... Merci pour les foulées&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>24h de sommeil</title>
+			<pubDate>Fri, 05 Jan 2024 14:20:28 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240102__24h_de_sommeil</link>
+			<guid>{{ site.url }}/globe#20240102__24h_de_sommeil</guid>
+			<description>&lt;p&gt;Sortis du festival, on avait besoin de repos!&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Bonne année</title>
 			<pubDate>Mon, 01 Jan 2024 04:16:50 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240101__bonne_ann_e</link>
