@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Colis reçu</title>
+			<pubDate>Sat, 06 Jan 2024 10:01:52 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240106__colis_re_u</link>
+			<guid>{{ site.url }}/globe#20240106__colis_re_u</guid>
+			<description>&lt;p&gt;Après l'avoir envoyé il y a quelques mois depuis Bogotá. Je récupère ma tente et mon ordi.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>3, 2,1... Taxi</title>
+			<pubDate>Fri, 05 Jan 2024 23:03:38 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240105__3_2_1_taxi</link>
+			<guid>{{ site.url }}/globe#20240105__3_2_1_taxi</guid>
+			<description>&lt;p&gt;Et voilà comment j'ai dit au-revoir à Maëlle avant de filer à la gare routière. Tout juste dans le bus, j'arriverai de nuit à São Paulo&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Nouvelle paire</title>
 			<pubDate>Fri, 05 Jan 2024 14:20:29 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240105__nouvelle_paire</link>
