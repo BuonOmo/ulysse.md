@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Carotte au piment</title>
+			<pubDate>Mon, 08 Jan 2024 22:20:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240108__carotte_au_piment</link>
+			<guid>{{ site.url }}/globe#20240108__carotte_au_piment</guid>
+			<description>&lt;p&gt;Achetez une carotte et un piment dans un même sac plastique. Ouvrez le piment. Laissez reposer, si possible avec un peu de mouvement. Et voilà, ça pique ! Et c'est parti pour 38h de bus...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Colis reçu</title>
 			<pubDate>Sat, 06 Jan 2024 10:01:52 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240106__colis_re_u</link>
