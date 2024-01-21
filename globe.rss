@@ -11,6 +11,38 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Acarreo</title>
+			<pubDate>Mon, 22 Jan 2024 16:23:53 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240122__acarreo</link>
+			<guid>{{ site.url }}/globe#20240122__acarreo</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="Acarreo"&gt;descente dans les pierriers&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Condor</title>
+			<pubDate>Mon, 22 Jan 2024 16:23:52 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240122__condor</link>
+			<guid>{{ site.url }}/globe#20240122__condor</guid>
+			<description>&lt;p&gt;Le premier que je vois. Il enroule un thermique au-dessus du sommet et s'en va...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Lac de montagne</title>
+			<pubDate>Mon, 22 Jan 2024 16:23:51 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240121__lac_de_montagne</link>
+			<guid>{{ site.url }}/globe#20240121__lac_de_montagne</guid>
+			<description>&lt;p&gt;Premier visuel sur les Andes, ou je serai pendant un bout de temps...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bivouac</title>
+			<pubDate>Sun, 21 Jan 2024 14:44:09 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240119__bivouac</link>
+			<guid>{{ site.url }}/globe#20240119__bivouac</guid>
+			<description>&lt;p&gt;Je ressors la tente pour la première fois depuis que je l'ai récupérée ! Et le lieu est merveilleux...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Retrouvailles</title>
 			<pubDate>Sun, 14 Jan 2024 00:02:25 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240113__retrouvailles</link>
