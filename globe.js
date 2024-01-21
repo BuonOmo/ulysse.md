@@ -36,18 +36,19 @@ const datasetHandler = {
 }
 const breves = (function() {
 	const els = Array.from(document.getElementById("breves").children).slice(1)
-	const colors = (function* generator(size) {
-		const step = 320 / size
-		for (let i = 0; i < size; i++) {
-			yield step * i
-		}
-	})(els.length)
+	const lastDate = els.at(0).dataset.epoch,
+	      firstDate = els.at(-1).dataset.epoch
+	const colorForEl = (el) => {
+		const date = el.dataset.epoch
+		const diff = lastDate - firstDate
+		return 320 * ((date - firstDate) / diff)
+	}
 
 	return els.map(el =>
 		new Proxy({
 			el,
 			loc: el.dataset.loc.split(',').map(e => +e),
-			color: colors.next().value,
+			color: colorForEl(el),
 			layer: null,
 		}, datasetHandler))
 })()

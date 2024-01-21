@@ -26,6 +26,10 @@ class Breve < ActiveRecord::Base
 	def loc
 		"#{lng / 1e6},#{lat / 1e6}"
 	end
+
+	def epoch
+		date.to_i
+	end
 end
 
 breves = Breve.order(:date, :created_at).all.reverse
