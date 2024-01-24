@@ -1,3 +1,39 @@
+import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js'
+
+document.querySelectorAll('.sound').forEach((el) => {
+	const soundId = el.dataset.sound
+	// Create progress element and append it to el
+	const progressEl = document.createElement('progress')
+	progressEl.classList.add('sound-progress')
+	progressEl.setAttribute('max', 100)
+	progressEl.setAttribute('value', 0)
+	const progressWrapper = document.createElement('div')
+	progressWrapper.classList.add('sound-wrapper')
+	progressWrapper.append(progressEl)
+	const wavesurfer = WaveSurfer.create({
+		container: el,
+		waveColor: 'hsl(219 14% 71%)',
+		progressColor: 'hsl(219 64% 71%)',
+		url: `https://sunico.hd.free.fr/sound/${soundId}`,
+		barWidth: 4,
+		barGap: 2,
+		barRadius: 4,
+	})
+	wavesurfer.on('load', () => {
+		el.firstChild.remove() // Remove placeholder text
+		el.prepend(progressWrapper)
+	})
+	wavesurfer.on('loading', (percent) => {
+		progressEl.setAttribute('value', percent)
+	})
+	wavesurfer.once('interaction', () => {
+		wavesurfer.play()
+	})
+	wavesurfer.on('redrawcomplete', () => {
+		progressWrapper.remove()
+	})
+})
+
 function rand(min, max = null) {
 	if (max === null) {
 		max = min
