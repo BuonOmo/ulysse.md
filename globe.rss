@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>En tente à 2900m</title>
+			<pubDate>Wed, 24 Jan 2024 20:35:11 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240124__en_tente_2900m</link>
+			<guid>{{ site.url }}/globe#20240124__en_tente_2900m</guid>
+			<description>&lt;p&gt;Merci Matéo pour le sac de couchage, il vaut ses deux kilos !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Acarreo</title>
 			<pubDate>Mon, 22 Jan 2024 16:23:53 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240122__acarreo</link>
@@ -1623,7 +1631,7 @@ layout: none
 			<pubDate>Mon, 19 Dec 2022 23:06:55 +0000</pubDate>
 			<link>{{ site.url }}/globe#20221219__volare</link>
 			<guid>{{ site.url }}/globe#20221219__volare</guid>
-			<description>&lt;p&gt;J'ai fait la rencontre de Daniele et son Ketch (14 mètres pour 20 tonnes). Un homme dont on voudrait faire un film juste pour l'allure, l'accent et le rythme. Tout lui paraissait évident. Un Italien de Sardaigne qui nous a invité a boire des bières dans son bateau. Peut-être que j'irai naviguer avec lui. Je revois Malcolm demain matin&lt;/p&gt;</description>
+			<description>&lt;div class="sound" data-sound="volare"&gt;...&lt;/div&gt;&lt;p&gt;J'ai fait la rencontre de Daniele et son Ketch (14 mètres pour 20 tonnes). Un homme dont on voudrait faire un film juste pour l'allure, l'accent et le rythme. Tout lui paraissait évident. Un Italien de Sardaigne qui nous a invité a boire des bières dans son bateau. Peut-être que j'irai naviguer avec lui. Je revois Malcolm demain matin&lt;/p&gt;</description>
 		</item>
 		
 		<item>
