@@ -23,7 +23,7 @@
 - [x] last seen feature
 - [ ] Mobile version as well
 - [ ] Address the two NGINX todos.
-- [ ] now that sound is available remove the first sound exception
+- [x] now that sound is available remove the first sound exception
 
 ## Notes
 

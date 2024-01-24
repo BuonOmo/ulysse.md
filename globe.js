@@ -20,7 +20,7 @@ document.querySelectorAll('.sound').forEach((el) => {
 		barRadius: 4,
 	})
 	wavesurfer.on('load', () => {
-		el.firstChild.remove() // Remove placeholder text
+		if (el.firstChild.nodeName === '#text') el.firstChild.remove() // Remove placeholder text
 		el.prepend(progressWrapper)
 	})
 	wavesurfer.on('loading', (percent) => {
@@ -106,25 +106,6 @@ const findBreve = () => {
 	}
 	return closest
 }
-
-//== Special audio section
-
-(function() {
-	const audio = new Audio("/globe/volare.mp3")
-	const volare = breves.find(({ el }) => el.textContent.includes("Volare")).el
-	const title = volare.querySelector('h2')
-	const playButton = document.createElement('span')
-	playButton.textContent = ' ▶'
-	audio.addEventListener("canplaythrough", () => {
-		title.append(playButton)
-		const toggle = () => { audio.paused ? audio.play() : audio.pause() }
-		audio.addEventListener('pause', () => { playButton.textContent = ' ▶' })
-		audio.addEventListener('play', () => { playButton.textContent = ' ⏸️' })
-		playButton.addEventListener('click', toggle)
-	})
-})()
-
-//= End special audio section
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiaS1raWxsLXlvdSIsImEiOiJjbDlrcXUwZmgwaWk1M25wbG9lbHNpaDg1In0.Fd9r3AfGHSq3lqanlbWR3A'
 const map = new mapboxgl.Map({
