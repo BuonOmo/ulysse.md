@@ -21,6 +21,9 @@
 - [x] url fragment to pin a breve
 - [ ] limit number of breves? (check perf)
 - [x] last seen feature
+- [ ] Mobile version as well
+- [ ] Address the two NGINX todos.
+- [ ] now that sound is available remove the first sound exception
 
 ## Notes
 

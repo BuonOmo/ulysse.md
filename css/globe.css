@@ -27,10 +27,37 @@ body {
 }
 
 #breves .unread > h2::before {
-    content: '● ';
+	content: '● ';
 }
 
 #disqus_thread {
-    width: min(90%,40rem);
-    margin: 2rem auto;
+	width: min(90%, 40rem);
+	margin: 2rem auto;
+}
+
+.sound-wrapper {
+	min-height: 128px;
+	margin-bottom: -128px;
+	position: relative;
+}
+
+progress.sound-progress {
+	position: absolute;
+	top: calc(50% - 0.7rem);
+	border-radius: 1rem;
+	width: 90%;
+	height: 1rem;
+	border: 0.2rem solid;
+	-webkit-appearance: none;
+}
+
+progress.sound-progress::-webkit-progress-bar {
+	background-color: #abb2bf; /* $text-color */
+	border-radius: 1rem;
+}
+
+progress.sound-progress::-webkit-progress-value {
+	background-color: #7f848e; /* $comment-color */
+	border-radius: 1rem;
+	transition: width ease-in-out 200ms;
 }
