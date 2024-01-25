@@ -36,8 +36,10 @@ breves = Breve.order(:date, :created_at).all.reverse
 
 %w(globe.html globe.rss).each do |file|
 	full_path = File.join(__dir__, "..", file)
+	string = File.read(full_path + ".erb")
+	_, yaml, string = *string.match(/^(---\n.+?\n---\n|)(.*)/m)
 	IO.write(
 		full_path,
-		ERB.new(File.read(full_path + ".erb")).result(binding)
+		yaml + ERB.new(string).result(binding)
 	)
 end
