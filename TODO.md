@@ -24,6 +24,7 @@
 - [ ] Mobile version as well
 - [ ] Address the two NGINX todos.
 - [x] now that sound is available remove the first sound exception
+- [ ] Mobile: make the browser toolbar part of the page.
 
 ## Notes
 

@@ -94,12 +94,13 @@ breves.forEach(({ el, color }) => {
 })
 
 const findBreve = () => {
-	let offset = document.getElementById('breves').getBoundingClientRect().top +
-		window.screen.height / 16 /* Pixel offset from top */
 	let closest = null
 	let min = 10000
+	const getCurr = window.screen.width < 768 ?
+		(breve) => Math.abs(breve.el.getBoundingClientRect().left) :
+		(breve) => Math.abs(breve.el.getBoundingClientRect().top - window.screen.height / 16 /* Pixel offset from top */)
 	for (let breve of breves) {
-		let curr = Math.abs(breve.el.getBoundingClientRect().top - offset)
+		let curr = getCurr(breve)
 		if (curr < min) {
 			closest = breve
 			min = curr
@@ -135,6 +136,7 @@ const scrollToBreve = (breve) => {
 	const container = document.getElementById('breves')
 	container.scrollTo({
 		top: breve.el.offsetTop - container.getBoundingClientRect().top - 8,
+		left: breve.el.offsetLeft,
 		behavior: 'smooth'
 	})
 }
