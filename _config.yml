@@ -1,6 +1,7 @@
 baseurl: ""
 highlighter: rouge
-name: My developer's notes | Ulysse Buonomo
+name: &name My developer's notes | Ulysse Buonomo
+title: *name
 description: >-
   Some of the stuff I don't want to forget a few years from now.
 url: https://ulysse.md
