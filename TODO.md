@@ -25,6 +25,8 @@
 - [ ] Address the two NGINX todos.
 - [x] now that sound is available remove the first sound exception
 - [ ] Mobile: make the browser toolbar part of the page.
+- [x] Mobile: better handle the title size
+- [x] Mobile: 100vh is not taking the toolbar into account
 
 ## Notes
 

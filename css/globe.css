@@ -6,7 +6,7 @@ body {
 #grid {
 	display: grid;
 	grid-template-columns: 1fr minmax(100px, 1fr);
-	height: 100vh;
+	height: 100dvh;
 }
 
 #map {
@@ -82,6 +82,7 @@ progress.sound-progress::-webkit-progress-value {
 		position: absolute;
 		top: 0;
 		margin: 0.67rem;
+		font-size: min(8vw, 2em);
 		color: var(--text-color);
 		background: var(--background-color);
 		opacity: 0.9;
