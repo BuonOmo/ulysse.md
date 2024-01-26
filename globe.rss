@@ -11,6 +11,111 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Super Postier</title>
+			<pubDate>Mon, 19 Feb 2024 22:32:58 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240219__super_postier</link>
+			<guid>{{ site.url }}/globe#20240219__super_postier</guid>
+			<description>&lt;p&gt;On envoie le sac de Raphaël en France par la poste. C'est long, galère, mais le postier en est à 3 heures supplémentaires non rémunérées pour nous aider. Et c'est un service public !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Le retour du stop</title>
+			<pubDate>Mon, 19 Feb 2024 22:32:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240218__le_retour_du_stop</link>
+			<guid>{{ site.url }}/globe#20240218__le_retour_du_stop</guid>
+			<description>&lt;p&gt;Il pleut. C'est tard. Mais j'ai ma tente, de la bouffe et envie d'en découdre ! Pancarte : Brésil...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Parapente</title>
+			<pubDate>Fri, 16 Feb 2024 19:50:29 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240216__parapente</link>
+			<guid>{{ site.url }}/globe#20240216__parapente</guid>
+			<description>&lt;p&gt;Ça y est je vole ! Et quelle chance : je suis allé dans le savoir au seul endroit du pays où la météo est bonne, et les patrons de ls plus grosse école d'Uruguay en vacances ici...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Balade à Buenos Aires</title>
+			<pubDate>Wed, 14 Feb 2024 23:29:02 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240214__balade_buenos_aires</link>
+			<guid>{{ site.url }}/globe#20240214__balade_buenos_aires</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="puentemujer"&gt;Avant de partir je fais un tour dans les ports et sur le &lt;em&gt;Puente de la Mujer&lt;/em&gt;&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Carnaval</title>
+			<pubDate>Wed, 14 Feb 2024 23:29:02 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240213__carnaval</link>
+			<guid>{{ site.url }}/globe#20240213__carnaval</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="carnaplata"&gt;On fête le carnaval à La Plata avec Yvon&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nulle part</title>
+			<pubDate>Wed, 14 Feb 2024 23:29:01 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240211__nulle_part</link>
+			<guid>{{ site.url }}/globe#20240211__nulle_part</guid>
+			<description>&lt;p&gt;J'ai rendez vous avec Camille. Un point GPS mais pas d'internet, ni de route. Allez, on tente!&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nuit chaude à Mina Clavero</title>
+			<pubDate>Wed, 14 Feb 2024 23:29:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240208__nuit_chaude_mina_clavero</link>
+			<guid>{{ site.url }}/globe#20240208__nuit_chaude_mina_clavero</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="minanuit"&gt;Nous arrivons à la &lt;em&gt;madrugada&lt;/em&gt; et dormons aux abord de la rivière en attendant l'ouverture des boulangeries&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Plata</title>
+			<pubDate>Wed, 07 Feb 2024 19:19:15 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240206__plata</link>
+			<guid>{{ site.url }}/globe#20240206__plata</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="plata"&gt;On y est !&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nuit à <em>El Salto</em></title>
+			<pubDate>Wed, 07 Feb 2024 19:19:13 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240205__nuit_em_el_salto_em_</link>
+			<guid>{{ site.url }}/globe#20240205__nuit_em_el_salto_em_</guid>
+			<description>&lt;p&gt;On se couche en tente à 4300m sous la pluie. Demain réveil à 2 heures pour le sommet.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bivouac, nuit 1</title>
+			<pubDate>Wed, 07 Feb 2024 19:19:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240205__bivouac_nuit_1</link>
+			<guid>{{ site.url }}/globe#20240205__bivouac_nuit_1</guid>
+			<description>&lt;p&gt;Petit jeu de Hanabi dans la tente. Spacieuse, on peut même s'y asseoir !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>T'es où Raph ?</title>
+			<pubDate>Fri, 02 Feb 2024 18:15:07 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240202__t_es_o_raph_</link>
+			<guid>{{ site.url }}/globe#20240202__t_es_o_raph_</guid>
+			<description>
+&lt;p&gt;&lt;div class="sound" data-sound="tes_ou"&gt;il a pris le raccourci...&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>À la recherche de Raph</title>
+			<pubDate>Fri, 02 Feb 2024 18:15:06 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240128___la_recherche_de_raph</link>
+			<guid>{{ site.url }}/globe#20240128___la_recherche_de_raph</guid>
+			<description>&lt;p&gt;Il devrait être arrivé. Mais sans batterie bien sûr !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Pico Franke, 4800m</title>
+			<pubDate>Fri, 26 Jan 2024 14:43:38 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240125__pico_franke_4800m</link>
+			<guid>{{ site.url }}/globe#20240125__pico_franke_4800m</guid>
+			<description>&lt;p&gt;Et je me sens super, prêt à en découdre avec l'Aconcagua !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>En tente à 2900m</title>
 			<pubDate>Wed, 24 Jan 2024 20:35:11 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240124__en_tente_2900m</link>
@@ -96,6 +201,14 @@ layout: none
 			<link>{{ site.url }}/globe#20240105__nouvelle_paire</link>
 			<guid>{{ site.url }}/globe#20240105__nouvelle_paire</guid>
 			<description>&lt;p&gt;Ça y est, après plus d'un an à trois, je me sépare de mes deux vieilles chaussures... Merci pour les foulées&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Maison de la Douleur</title>
+			<pubDate>Thu, 04 Jan 2024 15:08:42 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240104__maison_de_la_douleur</link>
+			<guid>{{ site.url }}/globe#20240104__maison_de_la_douleur</guid>
+			<description>&lt;p&gt;Et c'est à Rio que j'aurais enfin eu ma première boucle d'oreille !&lt;/p&gt;</description>
 		</item>
 		
 		<item>
