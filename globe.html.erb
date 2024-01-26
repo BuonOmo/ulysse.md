@@ -21,7 +21,7 @@ meta:
 	<div id="grid">
 		<div id="map"></div>
 		<div id="breves">
-			<h1>Breves de voyage</h1>
+			<h1>Brèves de voyage</h1>
 			<% breves.each do |breve| %>
 				<div data-loc="<%= breve.loc %>" data-zoom="<%= breve.zoom || 13 %>" data-anchor="<%= breve.anchor %>" data-epoch="<%= breve.epoch%>">
 					<h2><%= breve.title %></h2>
