@@ -94,7 +94,8 @@ breves.forEach(({ el, color }) => {
 })
 
 const findBreve = () => {
-	const offset = window.screen.height / 16 /* Pixel offset from top */
+	let offset = document.getElementById('breves').getBoundingClientRect().top +
+		window.screen.height / 16 /* Pixel offset from top */
 	let closest = null
 	let min = 10000
 	for (let breve of breves) {
@@ -127,6 +128,14 @@ const flyToBreve = (map, breve) => {
 		center: breve.loc,
 		zoom: breve.zoom,
 		essential: true // this animation is considered essential with respect to prefers-reduced-motion
+	})
+}
+
+const scrollToBreve = (breve) => {
+	const container = document.getElementById('breves')
+	container.scrollTo({
+		top: breve.el.offsetTop - container.getBoundingClientRect().top - 8,
+		behavior: 'smooth'
 	})
 }
 
@@ -186,7 +195,7 @@ map.on('load', () => {
 		map.on('click', id, () => {
 			anchor(breve)
 			flyToBreve(map, breve)
-			breve.el.scrollIntoView({ behavior: 'smooth' })
+			scrollToBreve(breve)
 		})
 		breve.el.addEventListener('click', () => {
 			anchor(breve)
@@ -206,7 +215,7 @@ map.on('load', () => {
 	if (window.location.hash.length > 0) {
 		const breve = breves.find(({ anchor }) => anchor === window.location.hash.slice(1))
 		flyToBreve(map, breve)
-		breve.el.scrollIntoView({ behavior: 'smooth' })
+		scrollToBreve(breve)
 	}
 })
 
