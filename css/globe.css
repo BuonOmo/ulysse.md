@@ -61,3 +61,13 @@ progress.sound-progress::-webkit-progress-value {
 	border-radius: 1rem;
 	transition: width ease-in-out 200ms;
 }
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+	#grid {
+		grid-template-columns: initial;
+		grid-template-rows: auto 20rem;
+	}
+	#breves {
+		padding-bottom: 0;
+	}
+}
