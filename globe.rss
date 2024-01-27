@@ -107,6 +107,14 @@ layout: none
 		</item>
 		
 		<item>
+			<title>Maison de la Douleur</title>
+			<pubDate>Thu, 04 Jan 2024 15:08:42 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240104__maison_de_la_douleur</link>
+			<guid>{{ site.url }}/globe#20240104__maison_de_la_douleur</guid>
+			<description>&lt;p&gt;Et c'est à Rio que j'aurais enfin eu ma première boucle d'oreille !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>24h de sommeil</title>
 			<pubDate>Fri, 05 Jan 2024 14:20:28 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240102__24h_de_sommeil</link>
