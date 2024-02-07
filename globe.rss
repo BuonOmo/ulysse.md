@@ -11,6 +11,30 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Plata</title>
+			<pubDate>Wed, 07 Feb 2024 19:19:15 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240206__plata</link>
+			<guid>{{ site.url }}/globe#20240206__plata</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="plata"&gt;On y est !&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nuit à <em>El Salto</em></title>
+			<pubDate>Wed, 07 Feb 2024 19:19:13 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240205__nuit_em_el_salto_em_</link>
+			<guid>{{ site.url }}/globe#20240205__nuit_em_el_salto_em_</guid>
+			<description>&lt;p&gt;On se couche en tente à 4300m sous la pluie. Demain réveil à 2 heures pour le sommet.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bivouac, nuit 1</title>
+			<pubDate>Wed, 07 Feb 2024 19:19:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240205__bivouac_nuit_1</link>
+			<guid>{{ site.url }}/globe#20240205__bivouac_nuit_1</guid>
+			<description>&lt;p&gt;Petit jeu de Hanabi dans la tente. Spacieuse, on peut même s'y asseoir !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>T'es où Raph ?</title>
 			<pubDate>Fri, 02 Feb 2024 18:15:07 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240202__t_es_o_raph_</link>
