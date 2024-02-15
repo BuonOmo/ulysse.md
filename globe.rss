@@ -11,6 +11,38 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Balade à Buenos Aires</title>
+			<pubDate>Wed, 14 Feb 2024 23:29:02 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240214__balade_buenos_aires</link>
+			<guid>{{ site.url }}/globe#20240214__balade_buenos_aires</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="puentemujer"&gt;Avant de partir je fais un tour dans les ports et sur le &lt;em&gt;Puente de la Mujer&lt;/em&gt;&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Carnaval</title>
+			<pubDate>Wed, 14 Feb 2024 23:29:02 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240213__carnaval</link>
+			<guid>{{ site.url }}/globe#20240213__carnaval</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="carnaplata"&gt;On fête le carnaval à La Plata avec Yvon&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nulle part</title>
+			<pubDate>Wed, 14 Feb 2024 23:29:01 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240211__nulle_part</link>
+			<guid>{{ site.url }}/globe#20240211__nulle_part</guid>
+			<description>&lt;p&gt;J'ai rendez vous avec Camille. Un point GPS mais pas d'internet, ni de route. Allez, on tente!&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nuit chaude à Mina Clavero</title>
+			<pubDate>Wed, 14 Feb 2024 23:29:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240208__nuit_chaude_mina_clavero</link>
+			<guid>{{ site.url }}/globe#20240208__nuit_chaude_mina_clavero</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="minanuit"&gt;Nous arrivons à la &lt;em&gt;madrugada&lt;/em&gt; et dormons aux abord de la rivière en attendant l'ouverture des boulangeries&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Plata</title>
 			<pubDate>Wed, 07 Feb 2024 19:19:15 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240206__plata</link>
