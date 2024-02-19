@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Super Postier</title>
+			<pubDate>Mon, 19 Feb 2024 22:32:58 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240219__super_postier</link>
+			<guid>{{ site.url }}/globe#20240219__super_postier</guid>
+			<description>&lt;p&gt;On envoie le sac de Raphaël en France par la poste. C'est long, galère, mais le postier en est à 3 heures supplémentaires non rémunérées pour nous aider. Et c'est un service public !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Le retour du stop</title>
+			<pubDate>Mon, 19 Feb 2024 22:32:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240218__le_retour_du_stop</link>
+			<guid>{{ site.url }}/globe#20240218__le_retour_du_stop</guid>
+			<description>&lt;p&gt;Il pleut. C'est tard. Mais j'ai ma tente, de la bouffe et envie d'en découdre ! Pancarte : Brésil...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Parapente</title>
 			<pubDate>Fri, 16 Feb 2024 19:50:29 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240216__parapente</link>
