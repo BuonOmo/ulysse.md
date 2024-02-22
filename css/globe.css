@@ -31,6 +31,12 @@ body {
 	margin-bottom: 0;
 }
 
+/* h2 color is set dynamically in JS, we want
+   eventual em/strong blocks to follow. */
+#breves h2 > * {
+	color: inherit;
+}
+
 #breves .unread > h2::before {
 	content: '● ';
 }
