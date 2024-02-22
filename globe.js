@@ -10,6 +10,11 @@ document.querySelectorAll('.sound').forEach((el) => {
 	const progressWrapper = document.createElement('div')
 	progressWrapper.classList.add('sound-wrapper')
 	progressWrapper.append(progressEl)
+
+	// Array.from is important, because childNodes is a live collection.
+	// We want to fix the current state of the collection.
+	const placeholder = Array.from(el.childNodes)
+
 	const wavesurfer = WaveSurfer.create({
 		container: el,
 		waveColor: 'hsl(219 14% 71%)',
@@ -20,7 +25,7 @@ document.querySelectorAll('.sound').forEach((el) => {
 		barRadius: 4,
 	})
 	wavesurfer.on('load', () => {
-		if (el.firstChild.nodeName === '#text') el.firstChild.remove() // Remove placeholder text
+		for (const node of placeholder) el.removeChild(node)
 		el.prepend(progressWrapper)
 	})
 	wavesurfer.on('loading', (percent) => {
@@ -31,6 +36,10 @@ document.querySelectorAll('.sound').forEach((el) => {
 	})
 	wavesurfer.on('redrawcomplete', () => {
 		progressWrapper.remove()
+	})
+	wavesurfer.on('finish', () => {
+		wavesurfer.destroy()
+		for (const node of placeholder) el.appendChild(node)
 	})
 })
 

@@ -21,12 +21,13 @@
 - [x] url fragment to pin a breve
 - [ ] limit number of breves? (check perf)
 - [x] last seen feature
-- [ ] Mobile version as well
+- [x] Mobile version as well
 - [ ] Address the two NGINX todos.
 - [x] now that sound is available remove the first sound exception
 - [ ] Mobile: make the browser toolbar part of the page.
 - [x] Mobile: better handle the title size
 - [x] Mobile: 100vh is not taking the toolbar into account
+- [ ] Mobile: Extend map points when selected (e.g. on the screen)
 
 ## Notes
 
