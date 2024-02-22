@@ -67,10 +67,11 @@ layout: none
 		</item>
 		
 		<item>
-			<title>Plata</title>
+			<title><em>El Plata</em>
+</title>
 			<pubDate>Wed, 07 Feb 2024 19:19:15 +0000</pubDate>
-			<link>{{ site.url }}/globe#20240206__plata</link>
-			<guid>{{ site.url }}/globe#20240206__plata</guid>
+			<link>{{ site.url }}/globe#20240206___em_el_plata_em_</link>
+			<guid>{{ site.url }}/globe#20240206___em_el_plata_em_</guid>
 			<description>&lt;p&gt;&lt;div class="sound" data-sound="plata"&gt;On y est !&lt;/div&gt;&lt;/p&gt;</description>
 		</item>
 		
