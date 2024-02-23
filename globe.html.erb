@@ -35,6 +35,15 @@ meta:
 	</div>
 	<div id="disqus_thread"></div>
 	{% include footer.html %}
+	<script type="importmap">
+		{
+			"imports": {
+				"@turf/helpers": "https://unpkg.com/@turf/helpers@6/dist/es/index.js",
+				"@turf/invariant": "https://unpkg.com/@turf/invariant@6/dist/es/index.js",
+				"@turf/distance": "https://unpkg.com/@turf/distance@6/dist/es/index.js"
+			}
+		}
+	</script>
 	<script src="/globe.js" type="module"></script>
 	<script>
 		/**
