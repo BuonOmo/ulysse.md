@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Francis de Kate</title>
+			<pubDate>Fri, 23 Feb 2024 12:37:11 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240223__francis_de_kate</link>
+			<guid>{{ site.url }}/globe#20240223__francis_de_kate</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="francis_de_kate"&gt;Après une interlude musicale, direction São Paulo.&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nouvelle frontale</title>
+			<pubDate>Fri, 23 Feb 2024 12:37:10 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240222__nouvelle_frontale</link>
+			<guid>{{ site.url }}/globe#20240222__nouvelle_frontale</guid>
+			<description>&lt;p&gt;Ayant perdu l'ancienne, je viens de trouver un magasin pour en changer. PETZL, bien sûr&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Super Postier</title>
 			<pubDate>Mon, 19 Feb 2024 22:32:58 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240219__super_postier</link>
