@@ -11,6 +11,538 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Dissolution</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:26 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240619__dissolution</link>
+			<guid>{{ site.url }}/globe#20240619__dissolution</guid>
+			<description>&lt;p&gt;Je suis parti en navigation au moment de l'annonce, ça fait bizarre de l'apprendre seulement maintenant. Allez voter, le gouvernement, c'est plus important que le président. 🙏&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>SNCF</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:25 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240619__sncf</link>
+			<guid>{{ site.url }}/globe#20240619__sncf</guid>
+			<description>&lt;p&gt;Ça sent le début d'une nouvelle aventure...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Presque</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:24 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240618__presque</link>
+			<guid>{{ site.url }}/globe#20240618__presque</guid>
+			<description>&lt;p&gt;On est arrivé jusque là à la voile, mais le vent ne nous permet pas d'arriver au port. La SNSM est en route&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>On voit les côtes !</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:23 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240618__on_voit_les_c_tes_</link>
+			<guid>{{ site.url }}/globe#20240618__on_voit_les_c_tes_</guid>
+			<description>&lt;p&gt;Bon après y a encore du taffe, on arrive dans la rade de Brest sans moteur...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Dernière nuit</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:22 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240618__derni_re_nuit</link>
+			<guid>{{ site.url }}/globe#20240618__derni_re_nuit</guid>
+			<description>&lt;p&gt;Après un dernier dodo dans la machine à laver, je suis récompensé par un lever de soleil sur l'océan Atlantique. Chose rare pour qui vit dans l'hexagone !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Dauphins qui brillent</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:22 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240617__dauphins_qui_brillent</link>
+			<guid>{{ site.url }}/globe#20240617__dauphins_qui_brillent</guid>
+			<description>&lt;p&gt;On les voit bien grâce au plancton bioluminescent. Depuis le temps que j'attendais de voir ça, et puis peut-être pour ma dernière nuit de quart...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>L'apprentissage de la patience</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:21 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240615__l_apprentissage_de_la_patience</link>
+			<guid>{{ site.url }}/globe#20240615__l_apprentissage_de_la_patience</guid>
+			<description>&lt;p&gt;Si près des côtes et pourtant si lent. Où est l'amphore d'Eole qui nous pousserait à bon port ?&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Panne-panne</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:20 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240615__panne_panne</link>
+			<guid>{{ site.url }}/globe#20240615__panne_panne</guid>
+			<description>&lt;p&gt;Moteur en panne, nous sommes si proches de l'arrivée pour moi, mais il faudra peut-être changer de plan...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Brume</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:19 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240612__brume</link>
+			<guid>{{ site.url }}/globe#20240612__brume</guid>
+			<description>&lt;p&gt;Il fait froid, le bateau est couvert d'humidité, on ne voit pas plus loin que deux mètres. Belle ambiance pour ce quart de nuit&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Petite bonite</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:18 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240610__petite_bonite</link>
+			<guid>{{ site.url }}/globe#20240610__petite_bonite</guid>
+			<description>&lt;p&gt;Enfin une pêche ! Et heureusement, le nouvel arrivant sait aussi tailler des filets, je peux retourner dormir avant mon quart, je préparerai le mi-cuit demain...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Pas de podcasts</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:17 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240609__pas_de_podcasts</link>
+			<guid>{{ site.url }}/globe#20240609__pas_de_podcasts</guid>
+			<description>&lt;p&gt;Mon téléphone a décidé de beuguer. Après le départ d'internet. Le voyage s'annonce plus introspectif que prévu...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Dans un raffiot craquant</title>
+			<pubDate>Sat, 08 Jun 2024 20:52:57 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240608__dans_un_raffiot_craquant</link>
+			<guid>{{ site.url }}/globe#20240608__dans_un_raffiot_craquant</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="crac"&gt;De la coque au pont...&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Heure de Paris</title>
+			<pubDate>Sat, 08 Jun 2024 13:16:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240608__heure_de_paris</link>
+			<guid>{{ site.url }}/globe#20240608__heure_de_paris</guid>
+			<description>&lt;p&gt;On règle l'horloge, je prépare le premier repas, toutes les voiles sont dehors.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Sauvetage en mer</title>
+			<pubDate>Sat, 08 Jun 2024 11:31:47 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240608__sauvetage_en_mer</link>
+			<guid>{{ site.url }}/globe#20240608__sauvetage_en_mer</guid>
+			<description>
+&lt;p&gt;Un bateau à la dérive, on retourne au port pour les dépanner !
+&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Adiós Klara</title>
+			<pubDate>Sat, 08 Jun 2024 09:42:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240608__adi_s_klara</link>
+			<guid>{{ site.url }}/globe#20240608__adi_s_klara</guid>
+			<description>&lt;p&gt;On prend la mer, une équipiere en moins, un équipier en plus&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Vu sur les Amériques</title>
+			<pubDate>Fri, 07 Jun 2024 09:12:55 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240606__vu_sur_les_am_riques</link>
+			<guid>{{ site.url }}/globe#20240606__vu_sur_les_am_riques</guid>
+			<description>
+&lt;p&gt;J'ai un jour pour me balader alors j'en profite ! Je fais le tour d'un volcan calme. Rencontre des marin.es chouettes, un veau orphelin, un paon qui vole. Et je vois l'océan s'étendre en direction de l'ouest...
+&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>7h45</title>
+			<pubDate>Thu, 06 Jun 2024 07:45:03 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240606__7h45</link>
+			<guid>{{ site.url }}/globe#20240606__7h45</guid>
+			<description>&lt;p&gt;Il y a tellement de monde ayant du linge sale, je dois être là le premier si je veux une chance de nettoyer nos trois sacs...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Trouvaille</title>
+			<pubDate>Thu, 06 Jun 2024 02:34:22 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240606__trouvaille</link>
+			<guid>{{ site.url }}/globe#20240606__trouvaille</guid>
+			<description>&lt;p&gt;Je revois des visages aperçus, et j'en découvre de nouveaux ! Ça fait du bien de voir tant de monde.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Dinghy stop</title>
+			<pubDate>Wed, 05 Jun 2024 20:56:42 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240605__dinghy_stop</link>
+			<guid>{{ site.url }}/globe#20240605__dinghy_stop</guid>
+			<description>&lt;p&gt;Trop envie de sortir et le capitaine ne répondait pas. Alors j'ai fait du stop avec les  voisins !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Horta</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:16 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240605__horta</link>
+			<guid>{{ site.url }}/globe#20240605__horta</guid>
+			<description>&lt;p&gt;On m'attend sur le pont pour l'arrivée !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nouvelle boucle</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:15 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240604__nouvelle_boucle</link>
+			<guid>{{ site.url }}/globe#20240604__nouvelle_boucle</guid>
+			<description>&lt;p&gt;On voit le sommet d'une montagne depuis quelques heures... Je fais mon dernier quart. Demain je me réveille à Horta&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Tartiflette</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:14 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240530__tartiflette</link>
+			<guid>{{ site.url }}/globe#20240530__tartiflette</guid>
+			<description>&lt;p&gt;Et nous arrivons dans cinq jours si nous suivons bien les nuages...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Calzones</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:13 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240528__calzones</link>
+			<guid>{{ site.url }}/globe#20240528__calzones</guid>
+			<description>&lt;p&gt;On a transformé le bateau en pizzeria pour une soirée ! Et maintenant, je prends mon quart au près serré, le pied...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Contact</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240527__contact</link>
+			<guid>{{ site.url }}/globe#20240527__contact</guid>
+			<description>&lt;p&gt;On croise un bateau à l'air familier. J'apprends en radio qu'il s'agit du Randoboot (incertitude radio...). Ils sont partis la veille du même port. Ils ont vu des baleines au Nord, on a plus qu'à être aux aguets et espérer qu'elles viennent nous voir au Sud.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Couché de soleil</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:11 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240526__couch_de_soleil</link>
+			<guid>{{ site.url }}/globe#20240526__couch_de_soleil</guid>
+			<description>&lt;p&gt;Nous venons de faire la moitié, 1200 miles nautiques. Et nous avons enfin droit à un soleil dégagé au couchant. Certaines tensions se sont apaisées aussi. Pour le capitaine, la discussion reste peu accessible, mais je laisse flotter...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nage avec les oiseaux</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:08 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240522__nage_avec_les_oiseaux</link>
+			<guid>{{ site.url }}/globe#20240522__nage_avec_les_oiseaux</guid>
+			<description>&lt;p&gt;On s'est arrêtés pour retirer un filet de pêche d'un safran. Les oiseaux (des benjamins ?) nous accompagnent.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Le retour du vent</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:07 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240521__le_retour_du_vent</link>
+			<guid>{{ site.url }}/globe#20240521__le_retour_du_vent</guid>
+			<description>&lt;p&gt;Après un long calme plat, une mer presque huileuse, nous voilà enfin avec plus de 10 nœuds dans le nez !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Joyeux anniversaire</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:06 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240521__joyeux_anniversaire</link>
+			<guid>{{ site.url }}/globe#20240521__joyeux_anniversaire</guid>
+			<description>&lt;p&gt;On fête un anniversaire à bord. Et ensuite on parle eau. On va devoir se rationner sérieusement, l'aventure commence !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Droit vers les Açores</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:05 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240519__droit_vers_les_a_ores</link>
+			<guid>{{ site.url }}/globe#20240519__droit_vers_les_a_ores</guid>
+			<description>&lt;p&gt;Nous voilà au nord de la mer de Sargasses. Ça y est le choix est fait : on ne s'arrête plus avant au moins 15 jours.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Sauvetage des fruits</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:04 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240518__sauvetage_des_fruits</link>
+			<guid>{{ site.url }}/globe#20240518__sauvetage_des_fruits</guid>
+			<description>&lt;p&gt;Le congélateur nous ayant lâché un peu avant le départ (maintenant réparé). Notre frigo est plein de viande et les fruits et légumes n'y ont plus leur place... Alors on joue comme on peut avec l'espace à bord et les astuces de conservation.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Musk a encore frappé</title>
+			<pubDate>Sat, 18 May 2024 00:39:46 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240518__musk_a_encore_frapp_</link>
+			<guid>{{ site.url }}/globe#20240518__musk_a_encore_frapp_</guid>
+			<description>&lt;p&gt;Certain.es d'entres nous ont choisi d'avoir internet à bord. Vous pourrez trouver quelques informations &lt;a href="https://www.instagram.com/mango_pirates"&gt;ici&lt;/a&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Le plein</title>
+			<pubDate>Sat, 18 May 2024 00:39:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240517__le_plein</link>
+			<guid>{{ site.url }}/globe#20240517__le_plein</guid>
+			<description>&lt;p&gt;On nettoie le deck et on se lave une dernière fois les cheveux, ça sent le départ...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Équipage complet</title>
+			<pubDate>Tue, 14 May 2024 14:33:43 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240514___quipage_complet</link>
+			<guid>{{ site.url }}/globe#20240514___quipage_complet</guid>
+			<description>&lt;p&gt;Klara vient de nous rejoindre, il ne reste plus que quelques préparatifs avant de partir de nouveau en mer...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Tapioca</title>
+			<pubDate>Tue, 14 May 2024 14:33:42 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240509__tapioca</link>
+			<guid>{{ site.url }}/globe#20240509__tapioca</guid>
+			<description>&lt;p&gt;Merci Fred pour ce chouette cadeau, j'en ferai bon usage !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Fluo</title>
+			<pubDate>Thu, 09 May 2024 03:28:08 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240509__fluo</link>
+			<guid>{{ site.url }}/globe#20240509__fluo</guid>
+			<description>&lt;p&gt;En soirée, venu en annexe solo !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Le canal des esclaves</title>
+			<pubDate>Mon, 06 May 2024 15:36:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240506__le_canal_des_esclaves</link>
+			<guid>{{ site.url }}/globe#20240506__le_canal_des_esclaves</guid>
+			<description>&lt;p&gt;Un dernier au-revoir à Blue, Effy, Sasha et Axelle avant de re-filer au Marin. Sûrement pour la dernière fois avant longtemps&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Frantz Fanon</title>
+			<pubDate>Fri, 03 May 2024 23:11:49 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240503__frantz_fanon</link>
+			<guid>{{ site.url }}/globe#20240503__frantz_fanon</guid>
+			<description>&lt;p&gt;De retour au Carbet, j'ai la chance d'assister à une projection d'un documentaire sur ce &lt;a href="https://fr.m.wikipedia.org/wiki/Frantz_Fanon"&gt;psychiatre et essayiste algérien martiniquais&lt;/a&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Tour de Martinique</title>
+			<pubDate>Fri, 03 May 2024 23:09:44 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240428__tour_de_martinique</link>
+			<guid>{{ site.url }}/globe#20240428__tour_de_martinique</guid>
+			<description>&lt;p&gt;Et nous arrivons à la pointe de la Caravelle après un slalom entre des filets de pêche.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Préparatifs</title>
+			<pubDate>Thu, 25 Apr 2024 20:04:08 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240425__pr_paratifs</link>
+			<guid>{{ site.url }}/globe#20240425__pr_paratifs</guid>
+			<description>&lt;p&gt;Après avoir quitté Éloïse Daoud et leurs enfants non sans difficultés, je me retrouve au marin. Nous partons bientôt naviguer quelques jours avec Dimitri.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Retour à l'atelier</title>
+			<pubDate>Thu, 18 Apr 2024 18:10:24 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240418__retour_l_atelier</link>
+			<guid>{{ site.url }}/globe#20240418__retour_l_atelier</guid>
+			<description>&lt;p&gt;Je passe voir Mahaut et son Atelier Fruité entre le montage et le festival. Ça a bien changé : il y a même un frigo maintenant !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Montage</title>
+			<pubDate>Thu, 18 Apr 2024 18:10:23 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240416__montage</link>
+			<guid>{{ site.url }}/globe#20240416__montage</guid>
+			<description>&lt;p&gt;On arrête pas de brasser, construire, cuisiner ! Aujourd'hui Agathe et Thomas viennent d'arriver&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Installation</title>
+			<pubDate>Sat, 13 Apr 2024 21:06:58 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240413__installation</link>
+			<guid>{{ site.url }}/globe#20240413__installation</guid>
+			<description>&lt;p&gt;En plein montage pour le festival Lézard Tishow du week-end prochain !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Étoiles, Mer, et Bébêtes</title>
+			<pubDate>Thu, 11 Apr 2024 13:43:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240411___toiles_mer_et_b_b_tes</link>
+			<guid>{{ site.url }}/globe#20240411___toiles_mer_et_b_b_tes</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="bebetes"&gt;Je dors dans mon nouveau hamac après avoir passé une soirée avec Dimitri, peut-être mon futur capitaine !&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Téléportation</title>
+			<pubDate>Wed, 10 Apr 2024 21:15:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240410__t_l_portation</link>
+			<guid>{{ site.url }}/globe#20240410__t_l_portation</guid>
+			<description>&lt;p&gt;Et voilà, huit jours de navigation en deux heures, ça fait bizarre...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>T'aimes la pluie ?</title>
+			<pubDate>Wed, 10 Apr 2024 21:14:59 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240410__t_aimes_la_pluie_</link>
+			<guid>{{ site.url }}/globe#20240410__t_aimes_la_pluie_</guid>
+			<description>&lt;p&gt;Alors viens en Guyane, mais moi je me tire !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Ace</title>
+			<pubDate>Sat, 06 Apr 2024 01:23:11 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240406__ace</link>
+			<guid>{{ site.url }}/globe#20240406__ace</guid>
+			<description>&lt;p&gt;J'ai rencontré Hans Klaar et son équipage et mon instinct a parlé. Il ne m'a même pas proposé la nav. Y a plus qu'à prendre le billet !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nuit en cabine</title>
+			<pubDate>Thu, 04 Apr 2024 11:31:43 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240404__nuit_en_cabine</link>
+			<guid>{{ site.url }}/globe#20240404__nuit_en_cabine</guid>
+			<description>&lt;p&gt;De retour dans le monde des bateaux. Dommage, ils ne partent pas. Mais j'ai eu un toit pour cette nuit pluvieuse !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Peut-être</title>
+			<pubDate>Mon, 01 Apr 2024 20:34:43 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240401__peut_tre</link>
+			<guid>{{ site.url }}/globe#20240401__peut_tre</guid>
+			<description>&lt;p&gt;De retour au bateau stop. Nous avons un rendez-vous prometteur demain pour la Guadeloupe !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Pas Dengue</title>
+			<pubDate>Wed, 27 Mar 2024 21:12:38 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240317__pas_dengue</link>
+			<guid>{{ site.url }}/globe#20240317__pas_dengue</guid>
+			<description>&lt;p&gt;Bloqué à Kourou alors que les bateaux filent vers les îles...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>En forêt</title>
+			<pubDate>Fri, 15 Mar 2024 23:25:17 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240315__en_for_t</link>
+			<guid>{{ site.url }}/globe#20240315__en_for_t</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="fiu"&gt;Avec de drôles d'oiseaux...&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Camp de stop</title>
+			<pubDate>Wed, 13 Mar 2024 23:34:06 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240313__camp_de_stop</link>
+			<guid>{{ site.url }}/globe#20240313__camp_de_stop</guid>
+			<description>&lt;p&gt;À nouveau aux abords d'une marina. Je cherche un bateau en compagnie d'Agathe et Hugo. On a un petit abri, une douche, des toilettes, interner... Le squat c'est le luxe&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>En stop</title>
+			<pubDate>Mon, 11 Mar 2024 16:24:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240311__en_stop</link>
+			<guid>{{ site.url }}/globe#20240311__en_stop</guid>
+			<description>&lt;p&gt;Me voilà arrivé à Cayenne après deux super stops, ou j'ai écouté du métier de militaire et du mélange culturel local&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Sur la ligne</title>
+			<pubDate>Mon, 11 Mar 2024 16:24:11 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240311__sur_la_ligne</link>
+			<guid>{{ site.url }}/globe#20240311__sur_la_ligne</guid>
+			<description>&lt;p&gt;On est au milieu de la rivière séparant les deux pays. Avec un marocain s'en allant demander asile pour cause de violences royales...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Bus miniature</title>
+			<pubDate>Sun, 10 Mar 2024 20:24:58 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240310__bus_miniature</link>
+			<guid>{{ site.url }}/globe#20240310__bus_miniature</guid>
+			<description>&lt;p&gt;Je suis dans une clio en route pour la frontière. J'ai cédé après avoir négocié un prix moins cher que le bus !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>P'tit déj au lit</title>
+			<pubDate>Sun, 10 Mar 2024 20:24:57 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240310__p_tit_d_j_au_lit</link>
+			<guid>{{ site.url }}/globe#20240310__p_tit_d_j_au_lit</guid>
+			<description>&lt;p&gt;À peine réveillé que le voisin me dit qu'il est allé me payer un &lt;em&gt;café da manhã&lt;/em&gt;. Même pas besoin de me lever de mon matelas !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Signes</title>
+			<pubDate>Sun, 10 Mar 2024 20:24:56 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240310__signes</link>
+			<guid>{{ site.url }}/globe#20240310__signes</guid>
+			<description>&lt;p&gt;Les euros sont acceptés. Les brésiliens me parlent en français, parfois même avec un accent créole. Je m'approche...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>En bateau !</title>
+			<pubDate>Sat, 09 Mar 2024 19:49:05 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240309__en_bateau_</link>
+			<guid>{{ site.url }}/globe#20240309__en_bateau_</guid>
+			<description>&lt;p&gt;Je vais traverser l'embouchure de l'amazone, 24 heures de bateau.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Téléportation</title>
+			<pubDate>Fri, 08 Mar 2024 03:32:26 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240308__t_l_portation</link>
+			<guid>{{ site.url }}/globe#20240308__t_l_portation</guid>
+			<description>&lt;p&gt;Après 60h de bus, me voilà à l'embouchure de l'amazone. Y a plus qu'à trouver où dormir.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Panne parfaite</title>
+			<pubDate>Wed, 06 Mar 2024 15:38:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240306__panne_parfaite</link>
+			<guid>{{ site.url }}/globe#20240306__panne_parfaite</guid>
+			<description>&lt;p&gt;Une mauvaise nouvelle à prime abord. Mais un super resto juste à côté du bus. Et le suivant est arrivé le temps de manger !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Petit poney</title>
+			<pubDate>Mon, 04 Mar 2024 19:51:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240304__petit_poney</link>
+			<guid>{{ site.url }}/globe#20240304__petit_poney</guid>
+			<description>&lt;p&gt;Aujourd'hui on monte à cheval. Un petit souvenir d'El Juego...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Mémoire Catalane</title>
+			<pubDate>Mon, 04 Mar 2024 19:50:59 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240303__m_moire_catalane</link>
+			<guid>{{ site.url }}/globe#20240303__m_moire_catalane</guid>
+			<description>&lt;p&gt;Je fais du kayak pour le plaisir. Ça change des allers-retours en kayak juste pour pouvoir prendre une douche à Lanzarote...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Surf</title>
+			<pubDate>Wed, 28 Feb 2024 20:26:29 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240228__surf</link>
+			<guid>{{ site.url }}/globe#20240228__surf</guid>
+			<description>&lt;p&gt;On a loué des planches avec Lizzie. Je fais mes premiers virages !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Enfin sorti</title>
+			<pubDate>Wed, 28 Feb 2024 20:26:28 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240225__enfin_sorti</link>
+			<guid>{{ site.url }}/globe#20240225__enfin_sorti</guid>
+			<description>&lt;p&gt;Je me suis retrouvé coincé au milieu d'une manif pro Bolsonaro... La police ne laissait sortir que les inconscients. C'est bon, j'ai trouvé un chemin !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Soirée Zouk</title>
+			<pubDate>Sun, 25 Feb 2024 01:07:08 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240225__soir_e_zouk</link>
+			<guid>{{ site.url }}/globe#20240225__soir_e_zouk</guid>
+			<description>&lt;p&gt;Je n'y connais rien. Mais Jascha m'apprend et Lizzy m'accompagne. Et tout le monde ici est bienveillant. J'adore cette danse...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Francis de Kate</title>
+			<pubDate>Fri, 23 Feb 2024 12:37:11 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240223__francis_de_kate</link>
+			<guid>{{ site.url }}/globe#20240223__francis_de_kate</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="francis_de_kate"&gt;Après une interlude musicale, direction São Paulo.&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nouvelle frontale</title>
+			<pubDate>Fri, 23 Feb 2024 12:37:10 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240222__nouvelle_frontale</link>
+			<guid>{{ site.url }}/globe#20240222__nouvelle_frontale</guid>
+			<description>&lt;p&gt;Ayant perdu l'ancienne, je viens de trouver un magasin pour en changer. PETZL, bien sûr&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Super Postier</title>
 			<pubDate>Mon, 19 Feb 2024 22:32:58 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240219__super_postier</link>
