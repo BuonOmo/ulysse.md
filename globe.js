@@ -1,5 +1,7 @@
 import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js'
 
+import distance from '@turf/distance'
+
 document.querySelectorAll('.sound').forEach((el) => {
 	const soundId = el.dataset.sound
 	// Create progress element and append it to el
@@ -105,9 +107,9 @@ breves.forEach(({ el, color }) => {
 const findBreve = () => {
 	let closest = null
 	let min = 10000
-	const getCurr = window.screen.width < 768 ?
+	const getCurr = window.innerWidth < 768 ?
 		(breve) => Math.abs(breve.el.getBoundingClientRect().left) :
-		(breve) => Math.abs(breve.el.getBoundingClientRect().top - window.screen.height / 16 /* Pixel offset from top */)
+		(breve) => Math.abs(breve.el.getBoundingClientRect().top - window.innerHeight / 16 /* Pixel offset from top */)
 	for (let breve of breves) {
 		let curr = getCurr(breve)
 		if (curr < min) {
@@ -117,6 +119,8 @@ const findBreve = () => {
 	}
 	return closest
 }
+
+let foundByMap
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiaS1raWxsLXlvdSIsImEiOiJjbDlrcXUwZmgwaWk1M25wbG9lbHNpaDg1In0.Fd9r3AfGHSq3lqanlbWR3A'
 const map = new mapboxgl.Map({
@@ -222,6 +226,22 @@ map.on('load', () => {
 		})
 	})
 
+	map.on('dragend', (e) => {
+		const {lng, lat} = e.target.getCenter()
+		// Find closest breve to the center of the map
+		let closest
+		let minDist = 1e30
+		for (let breve of breves) {
+			const dist = distance(breve.loc, [lng, lat])
+			if (dist < minDist) {
+				closest = breve
+				minDist = dist
+			}
+		}
+		foundByMap = closest
+		scrollToBreve(closest)
+	})
+
 	// On start, check if the URL contains a breve to fly to.
 	if (window.location.hash.length > 0) {
 		const breve = breves.find(({ anchor }) => anchor === window.location.hash.slice(1))
@@ -231,9 +251,13 @@ map.on('load', () => {
 })
 
 // Fly to breve that is closer in view
-document.getElementById('breves').addEventListener('scroll', throttle(() => {
+document.getElementById('breves').addEventListener('scrollend', throttle(() => {
 	if (window.location.hash.length > 0) { history.pushState(null, null, ' ') }
 	const breve = findBreve()
+	if (breve === foundByMap) {
+		foundByMap = null
+		return
+	}
 	flyToBreve(map, breve)
 }, 40))
 
