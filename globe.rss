@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Petit poney</title>
+			<pubDate>Mon, 04 Mar 2024 19:51:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240304__petit_poney</link>
+			<guid>{{ site.url }}/globe#20240304__petit_poney</guid>
+			<description>&lt;p&gt;Aujourd'hui on monte à cheval. Un petit souvenir d'El Juego...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Mémoire Catalane</title>
+			<pubDate>Mon, 04 Mar 2024 19:50:59 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240303__m_moire_catalane</link>
+			<guid>{{ site.url }}/globe#20240303__m_moire_catalane</guid>
+			<description>&lt;p&gt;Je fais du kayak pour le plaisir. Ça change des allers-retours en kayak juste pour pouvoir prendre une douche à Lanzarote...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Surf</title>
 			<pubDate>Wed, 28 Feb 2024 20:26:29 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240228__surf</link>
