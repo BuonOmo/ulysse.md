@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Téléportation</title>
+			<pubDate>Fri, 08 Mar 2024 03:32:26 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240308__t_l_portation</link>
+			<guid>{{ site.url }}/globe#20240308__t_l_portation</guid>
+			<description>&lt;p&gt;Après 60h de bus, me voilà à l'embouchure de l'amazone. Y a plus qu'à trouver où dormir.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Panne parfaite</title>
 			<pubDate>Wed, 06 Mar 2024 15:38:00 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240306__panne_parfaite</link>
