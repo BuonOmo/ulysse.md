@@ -11,6 +11,30 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Bus miniature</title>
+			<pubDate>Sun, 10 Mar 2024 20:24:58 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240310__bus_miniature</link>
+			<guid>{{ site.url }}/globe#20240310__bus_miniature</guid>
+			<description>&lt;p&gt;Je suis dans une clio en route pour la frontière. J'ai cédé après avoir négocié un prix moins cher que le bus !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>P'tit déj au lit</title>
+			<pubDate>Sun, 10 Mar 2024 20:24:57 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240310__p_tit_d_j_au_lit</link>
+			<guid>{{ site.url }}/globe#20240310__p_tit_d_j_au_lit</guid>
+			<description>&lt;p&gt;À peine réveillé que le voisin me dit qu'il est allé me payer un &lt;em&gt;café da manhã&lt;/em&gt;. Même pas besoin de me lever de mon matelas !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Signes</title>
+			<pubDate>Sun, 10 Mar 2024 20:24:56 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240310__signes</link>
+			<guid>{{ site.url }}/globe#20240310__signes</guid>
+			<description>&lt;p&gt;Les euros sont acceptés. Les brésiliens me parlent en français, parfois même avec un accent créole. Je m'approche...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>En bateau !</title>
 			<pubDate>Sat, 09 Mar 2024 19:49:05 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240309__en_bateau_</link>
