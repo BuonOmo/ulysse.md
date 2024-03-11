@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>En stop</title>
+			<pubDate>Mon, 11 Mar 2024 16:24:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240311__en_stop</link>
+			<guid>{{ site.url }}/globe#20240311__en_stop</guid>
+			<description>&lt;p&gt;Me voilà arrivé à Cayenne après deux super stops, ou j'ai écouté du métier de militaire et du mélange culturel local&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Sur la ligne</title>
+			<pubDate>Mon, 11 Mar 2024 16:24:11 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240311__sur_la_ligne</link>
+			<guid>{{ site.url }}/globe#20240311__sur_la_ligne</guid>
+			<description>&lt;p&gt;On est au milieu de la rivière séparant les deux pays. Avec un marocain s'en allant demander asile pour cause de violences royales...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Bus miniature</title>
 			<pubDate>Sun, 10 Mar 2024 20:24:58 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240310__bus_miniature</link>
