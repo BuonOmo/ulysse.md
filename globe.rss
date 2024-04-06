@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Ace</title>
+			<pubDate>Sat, 06 Apr 2024 01:23:11 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240406__ace</link>
+			<guid>{{ site.url }}/globe#20240406__ace</guid>
+			<description>&lt;p&gt;J'ai rencontré Hans Klaar et son équipage et mon instinct a parlé. Il ne m'a même pas proposé la nav. Y a plus qu'à prendre le billet !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Nuit en cabine</title>
 			<pubDate>Thu, 04 Apr 2024 11:31:43 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240404__nuit_en_cabine</link>
