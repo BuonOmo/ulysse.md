@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Téléportation</title>
+			<pubDate>Wed, 10 Apr 2024 21:15:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240410__t_l_portation</link>
+			<guid>{{ site.url }}/globe#20240410__t_l_portation</guid>
+			<description>&lt;p&gt;Et voilà, huit jours de navigation en deux heures, ça fait bizarre...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>T'aimes la pluie ?</title>
+			<pubDate>Wed, 10 Apr 2024 21:14:59 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240410__t_aimes_la_pluie_</link>
+			<guid>{{ site.url }}/globe#20240410__t_aimes_la_pluie_</guid>
+			<description>&lt;p&gt;Alors viens en Guyane, mais moi je me tire !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Ace</title>
 			<pubDate>Sat, 06 Apr 2024 01:23:11 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240406__ace</link>
