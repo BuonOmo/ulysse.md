@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Étoiles, Mer, et Bébêtes</title>
+			<pubDate>Thu, 11 Apr 2024 13:43:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240411___toiles_mer_et_b_b_tes</link>
+			<guid>{{ site.url }}/globe#20240411___toiles_mer_et_b_b_tes</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="bebetes"&gt;Je dors dans mon nouveau hamac après avoir passé une soirée avec Dimitri, peut-être mon futur capitaine !&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Téléportation</title>
 			<pubDate>Wed, 10 Apr 2024 21:15:00 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240410__t_l_portation</link>
