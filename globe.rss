@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Préparatifs</title>
+			<pubDate>Thu, 25 Apr 2024 20:04:08 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240425__pr_paratifs</link>
+			<guid>{{ site.url }}/globe#20240425__pr_paratifs</guid>
+			<description>&lt;p&gt;Après avoir quitté Éloïse Daoud et leurs enfants non sans difficultés, je me retrouve au marin. Nous partons bientôt naviguer quelques jours avec Dimitri.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Retour à l'atelier</title>
 			<pubDate>Thu, 18 Apr 2024 18:10:24 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240418__retour_l_atelier</link>
