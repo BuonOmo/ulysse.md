@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Frantz Fanon</title>
+			<pubDate>Fri, 03 May 2024 23:11:49 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240503__frantz_fanon</link>
+			<guid>{{ site.url }}/globe#20240503__frantz_fanon</guid>
+			<description>&lt;p&gt;De retour au Carbet, j'ai la chance d'assister à une projection d'un documentaire sur ce &lt;a href="https://fr.m.wikipedia.org/wiki/Frantz_Fanon"&gt;psychiatre et essayiste algérien martiniquais&lt;/a&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Tour de Martinique</title>
+			<pubDate>Fri, 03 May 2024 23:09:44 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240428__tour_de_martinique</link>
+			<guid>{{ site.url }}/globe#20240428__tour_de_martinique</guid>
+			<description>&lt;p&gt;Et nous arrivons à la pointe de la Caravelle après un slalom entre des filets de pêche.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Préparatifs</title>
 			<pubDate>Thu, 25 Apr 2024 20:04:08 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240425__pr_paratifs</link>
