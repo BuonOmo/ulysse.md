@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Le canal des esclaves</title>
+			<pubDate>Mon, 06 May 2024 15:36:33 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240506__le_canal_des_esclaves</link>
+			<guid>{{ site.url }}/globe#20240506__le_canal_des_esclaves</guid>
+			<description>&lt;p&gt;Un dernier au-revoir à Blue, Effy, Sasha et Axelle avant de re-filer au Marin. Sûrement pour la dernière fois avant longtemps&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Frantz Fanon</title>
 			<pubDate>Fri, 03 May 2024 23:11:49 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240503__frantz_fanon</link>
