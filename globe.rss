@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Équipage complet</title>
+			<pubDate>Tue, 14 May 2024 14:33:43 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240514___quipage_complet</link>
+			<guid>{{ site.url }}/globe#20240514___quipage_complet</guid>
+			<description>&lt;p&gt;Klara vient de nous rejoindre, il ne reste plus que quelques préparatifs avant de partir de nouveau en mer...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Tapioca</title>
+			<pubDate>Tue, 14 May 2024 14:33:42 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240509__tapioca</link>
+			<guid>{{ site.url }}/globe#20240509__tapioca</guid>
+			<description>&lt;p&gt;Merci Fred pour ce chouette cadeau, j'en ferai bon usage !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Fluo</title>
 			<pubDate>Thu, 09 May 2024 03:28:08 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240509__fluo</link>
