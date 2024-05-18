@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Musk a encore frappé</title>
+			<pubDate>Sat, 18 May 2024 00:39:46 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240518__musk_a_encore_frapp_</link>
+			<guid>{{ site.url }}/globe#20240518__musk_a_encore_frapp_</guid>
+			<description>&lt;p&gt;Certain.es d'entres nous ont choisi d'avoir internet à bord. Vous pourrez trouver quelques informations &lt;a href="https://www.instagram.com/velas_al_viento"&gt;ici&lt;/a&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Le plein</title>
+			<pubDate>Sat, 18 May 2024 00:39:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240517__le_plein</link>
+			<guid>{{ site.url }}/globe#20240517__le_plein</guid>
+			<description>&lt;p&gt;On nettoie le deck et on se lave une dernière fois les cheveux, ça sent le départ...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Équipage complet</title>
 			<pubDate>Tue, 14 May 2024 14:33:43 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240514___quipage_complet</link>
