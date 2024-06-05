@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Dinghy stop</title>
+			<pubDate>Wed, 05 Jun 2024 20:56:42 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240605__dinghy_stop</link>
+			<guid>{{ site.url }}/globe#20240605__dinghy_stop</guid>
+			<description>&lt;p&gt;Trop envie de sortir et le capitaine ne répondait pas. Alors j'ai fait du stop avec les  voisins !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Horta</title>
 			<pubDate>Wed, 05 Jun 2024 05:38:16 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240605__horta</link>
@@ -103,7 +111,7 @@ layout: none
 			<pubDate>Sat, 18 May 2024 00:39:46 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240518__musk_a_encore_frapp_</link>
 			<guid>{{ site.url }}/globe#20240518__musk_a_encore_frapp_</guid>
-			<description>&lt;p&gt;Certain.es d'entres nous ont choisi d'avoir internet à bord. Vous pourrez trouver quelques informations &lt;a href="https://www.instagram.com/velas_al_viento"&gt;ici&lt;/a&gt;&lt;/p&gt;</description>
+			<description>&lt;p&gt;Certain.es d'entres nous ont choisi d'avoir internet à bord. Vous pourrez trouver quelques informations &lt;a href="https://www.instagram.com/mango_pirates"&gt;ici&lt;/a&gt;&lt;/p&gt;</description>
 		</item>
 		
 		<item>
