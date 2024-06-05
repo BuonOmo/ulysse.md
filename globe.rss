@@ -11,6 +11,94 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Horta</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:16 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240605__horta</link>
+			<guid>{{ site.url }}/globe#20240605__horta</guid>
+			<description>&lt;p&gt;On m'attend sur le pont pour l'arrivée !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nouvelle boucle</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:15 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240604__nouvelle_boucle</link>
+			<guid>{{ site.url }}/globe#20240604__nouvelle_boucle</guid>
+			<description>&lt;p&gt;On voit le sommet d'une montagne depuis quelques heures... Je fais mon dernier quart. Demain je me réveille à Horta&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Tartiflette</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:14 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240530__tartiflette</link>
+			<guid>{{ site.url }}/globe#20240530__tartiflette</guid>
+			<description>&lt;p&gt;Et nous arrivons dans cinq jours si nous suivons bien les nuages...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Calzones</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:13 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240528__calzones</link>
+			<guid>{{ site.url }}/globe#20240528__calzones</guid>
+			<description>&lt;p&gt;On a transformé le bateau en pizzeria pour une soirée ! Et maintenant, je prends mon quart au près serré, le pied...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Contact</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240527__contact</link>
+			<guid>{{ site.url }}/globe#20240527__contact</guid>
+			<description>&lt;p&gt;On croise un bateau à l'air familier. J'apprends en radio qu'il s'agit du Randoboot (incertitude radio...). Ils sont partis la veille du même port. Ils ont vu des baleines au Nord, on a plus qu'à être aux aguets et espérer qu'elles viennent nous voir au Sud.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Couché de soleil</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:11 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240526__couch_de_soleil</link>
+			<guid>{{ site.url }}/globe#20240526__couch_de_soleil</guid>
+			<description>&lt;p&gt;Nous venons de faire la moitié, 1200 miles nautiques. Et nous avons enfin droit à un soleil dégagé au couchant. Certaines tensions se sont apaisées aussi. Pour le capitaine, la discussion reste peu accessible, mais je laisse flotter...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Nage avec les oiseaux</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:08 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240522__nage_avec_les_oiseaux</link>
+			<guid>{{ site.url }}/globe#20240522__nage_avec_les_oiseaux</guid>
+			<description>&lt;p&gt;On s'est arrêtés pour retirer un filet de pêche d'un safran. Les oiseaux (des benjamins ?) nous accompagnent.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Le retour du vent</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:07 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240521__le_retour_du_vent</link>
+			<guid>{{ site.url }}/globe#20240521__le_retour_du_vent</guid>
+			<description>&lt;p&gt;Après un long calme plat, une mer presque huileuse, nous voilà enfin avec plus de 10 nœuds dans le nez !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Joyeux anniversaire</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:06 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240521__joyeux_anniversaire</link>
+			<guid>{{ site.url }}/globe#20240521__joyeux_anniversaire</guid>
+			<description>&lt;p&gt;On fête un anniversaire à bord. Et ensuite on parle eau. On va devoir se rationner sérieusement, l'aventure commence !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Droit vers les Açores</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:05 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240519__droit_vers_les_a_ores</link>
+			<guid>{{ site.url }}/globe#20240519__droit_vers_les_a_ores</guid>
+			<description>&lt;p&gt;Nous voilà au nord de la mer de Sargasses. Ça y est le choix est fait : on ne s'arrête plus avant au moins 15 jours.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Sauvetage des fruits</title>
+			<pubDate>Wed, 05 Jun 2024 05:38:04 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240518__sauvetage_des_fruits</link>
+			<guid>{{ site.url }}/globe#20240518__sauvetage_des_fruits</guid>
+			<description>&lt;p&gt;Le congélateur nous ayant lâché un peu avant le départ (maintenant réparé). Notre frigo est plein de viande et les fruits et légumes n'y ont plus leur place... Alors on joue comme on peut avec l'espace à bord et les astuces de conservation.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Musk a encore frappé</title>
 			<pubDate>Sat, 18 May 2024 00:39:46 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240518__musk_a_encore_frapp_</link>
