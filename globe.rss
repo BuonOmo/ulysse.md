@@ -11,6 +11,22 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>7h45</title>
+			<pubDate>Thu, 06 Jun 2024 07:45:03 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240606__7h45</link>
+			<guid>{{ site.url }}/globe#20240606__7h45</guid>
+			<description>&lt;p&gt;Il y a tellement de monde ayant du linge sale, je dois être là le premier si je veux une chance de nettoyer nos trois sacs...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Trouvaille</title>
+			<pubDate>Thu, 06 Jun 2024 02:34:22 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240606__trouvaille</link>
+			<guid>{{ site.url }}/globe#20240606__trouvaille</guid>
+			<description>&lt;p&gt;Je revois des visages aperçus, et j'en découvre de nouveaux ! Ça fait du bien de voir tant de monde.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Dinghy stop</title>
 			<pubDate>Wed, 05 Jun 2024 20:56:42 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240605__dinghy_stop</link>
