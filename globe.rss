@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Vu sur les Amériques</title>
+			<pubDate>Fri, 07 Jun 2024 09:12:55 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240606__vu_sur_les_am_riques</link>
+			<guid>{{ site.url }}/globe#20240606__vu_sur_les_am_riques</guid>
+			<description>&lt;p&gt;J'ai un jour pour me balader alors j'en profite ! Je fais le tour d'un volcan calme. Rencontre des marin.es chouettes, un veau orphelin. Et je vois l'océan s'étendre en direction de l'ouest...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>7h45</title>
 			<pubDate>Thu, 06 Jun 2024 07:45:03 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240606__7h45</link>
