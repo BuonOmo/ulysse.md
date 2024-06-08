@@ -11,6 +11,14 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Adiós Klara</title>
+			<pubDate>Sat, 08 Jun 2024 09:42:12 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240608__adi_s_klara</link>
+			<guid>{{ site.url }}/globe#20240608__adi_s_klara</guid>
+			<description>&lt;p&gt;On prend la mer, une équipiere en moins, un équipier en plus&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Vu sur les Amériques</title>
 			<pubDate>Fri, 07 Jun 2024 09:12:55 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240606__vu_sur_les_am_riques</link>
