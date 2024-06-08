@@ -11,6 +11,30 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Dans un raffiot craquant</title>
+			<pubDate>Sat, 08 Jun 2024 20:52:57 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240608__dans_un_raffiot_craquant</link>
+			<guid>{{ site.url }}/globe#20240608__dans_un_raffiot_craquant</guid>
+			<description>&lt;p&gt;&lt;div class="sound" data-sound="crac"&gt;De la coque au pont...&lt;/div&gt;&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Heure de Paris</title>
+			<pubDate>Sat, 08 Jun 2024 13:16:00 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240608__heure_de_paris</link>
+			<guid>{{ site.url }}/globe#20240608__heure_de_paris</guid>
+			<description>&lt;p&gt;On règle l'horloge, je prépare le premier repas, toutes les voiles sont dehors.&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Sauvetage en mer</title>
+			<pubDate>Sat, 08 Jun 2024 11:31:47 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240608__sauvetage_en_mer</link>
+			<guid>{{ site.url }}/globe#20240608__sauvetage_en_mer</guid>
+			<description>&lt;p&gt;Un bateau à la dérive, on retourne au port pour les poser !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Adiós Klara</title>
 			<pubDate>Sat, 08 Jun 2024 09:42:12 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240608__adi_s_klara</link>
