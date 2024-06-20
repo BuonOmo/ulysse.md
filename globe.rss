@@ -11,6 +11,94 @@ layout: none
 		<atom:link href="{{ site.url }}/globe.rss" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Dissolution</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:26 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240619__dissolution</link>
+			<guid>{{ site.url }}/globe#20240619__dissolution</guid>
+			<description>&lt;p&gt;Je suis parti en navigation au moment de l'annonce, ça fait bizarre de l'apprendre seulement maintenant. Allez voter, le gouvernement, c'est plus important que le président. 🙏&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>SNCF</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:25 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240619__sncf</link>
+			<guid>{{ site.url }}/globe#20240619__sncf</guid>
+			<description>&lt;p&gt;Ça sent le début d'une nouvelle aventure...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Presque</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:24 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240618__presque</link>
+			<guid>{{ site.url }}/globe#20240618__presque</guid>
+			<description>&lt;p&gt;On est arrivé jusque là à la voile, mais le vent ne nous permet pas d'arriver au port. La SNSM est en route&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>On voit les côtes !</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:23 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240618__on_voit_les_c_tes_</link>
+			<guid>{{ site.url }}/globe#20240618__on_voit_les_c_tes_</guid>
+			<description>&lt;p&gt;Bon après y a encore du taffe, on arrive dans la rade de Brest sans moteur...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Dernière nuit</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:22 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240618__derni_re_nuit</link>
+			<guid>{{ site.url }}/globe#20240618__derni_re_nuit</guid>
+			<description>&lt;p&gt;Après un dernier dodo dans la machine à laver, je suis récompensé par un lever de soleil sur l'océan Atlantique. Chose rare pour qui vit dans l'hexagone !&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Dauphins qui brillent</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:22 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240617__dauphins_qui_brillent</link>
+			<guid>{{ site.url }}/globe#20240617__dauphins_qui_brillent</guid>
+			<description>&lt;p&gt;On les voit bien grâce au plancton bioluminescent. Depuis le temps que j'attendais de voir ça, et puis peut-être pour ma dernière nuit de quart...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>L'apprentissage de la patience</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:21 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240615__l_apprentissage_de_la_patience</link>
+			<guid>{{ site.url }}/globe#20240615__l_apprentissage_de_la_patience</guid>
+			<description>&lt;p&gt;Si près des côtes et pourtant si lent. Où est l'amphore d'Eole qui nous pousserait à bon port ?&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Panne-panne</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:20 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240615__panne_panne</link>
+			<guid>{{ site.url }}/globe#20240615__panne_panne</guid>
+			<description>&lt;p&gt;Moteur en panne, nous sommes si proches de l'arrivée pour moi, mais il faudra peut-être changer de plan...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Brume</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:19 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240612__brume</link>
+			<guid>{{ site.url }}/globe#20240612__brume</guid>
+			<description>&lt;p&gt;Il fait froid, le bateau est couvert d'humidité, on ne voit pas plus loin que deux mètres. Belle ambiance pour ce quart de nuit&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Petite bonite</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:18 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240610__petite_bonite</link>
+			<guid>{{ site.url }}/globe#20240610__petite_bonite</guid>
+			<description>&lt;p&gt;Enfin une pêche ! Et heureusement, le nouvel arrivant sait aussi tailler des filets, je peux retourner dormir avant mon quart, je préparerai le mi-cuit demain...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
+			<title>Pas de podcasts</title>
+			<pubDate>Thu, 20 Jun 2024 19:38:17 +0000</pubDate>
+			<link>{{ site.url }}/globe#20240609__pas_de_podcasts</link>
+			<guid>{{ site.url }}/globe#20240609__pas_de_podcasts</guid>
+			<description>&lt;p&gt;Mon téléphone a décidé de beuguer. Après le départ d'internet. Le voyage s'annonce plus introspectif que prévu...&lt;/p&gt;</description>
+		</item>
+		
+		<item>
 			<title>Dans un raffiot craquant</title>
 			<pubDate>Sat, 08 Jun 2024 20:52:57 +0000</pubDate>
 			<link>{{ site.url }}/globe#20240608__dans_un_raffiot_craquant</link>
