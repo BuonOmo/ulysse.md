@@ -1,0 +1,3 @@
+[submodule "markdown2pdf"]
+	path = markdown2pdf
+	url = git@github.com:BuonOmo/markdown2pdf.git
