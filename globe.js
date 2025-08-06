@@ -21,7 +21,7 @@ document.querySelectorAll('.sound').forEach((el) => {
 		container: el,
 		waveColor: 'hsl(219 14% 71%)',
 		progressColor: 'hsl(219 64% 71%)',
-		url: `https://sunico.hd.free.fr/sound/${soundId}`,
+		url: `/sounds/${soundId}.m4a`,
 		barWidth: 4,
 		barGap: 2,
 		barRadius: 4,
