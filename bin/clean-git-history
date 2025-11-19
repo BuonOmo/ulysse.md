@@ -2,7 +2,7 @@
 
 TMP_FILE=$(mktemp XXX.rb)
 trap "rm $TMP_FILE" EXIT
-revision='8f07ffa3b59e1c76916d246d008112c462e6db6d'
+revision='ef0146bbc70afc55604eb81ceca11109c9d6bd03'
 
 cat <<-RUBY > $TMP_FILE
 squashed = IO.

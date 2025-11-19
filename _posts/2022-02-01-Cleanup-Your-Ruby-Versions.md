@@ -59,3 +59,5 @@ $ rbenv uninstall --force 2.7.2
 
 The example I gave may seem pointless, however just check `du -sh ~/.rbenv` on
 your computer, you may gain up to 10G.
+
+Once all of this is done, you can run `gem cleanup` to finish the work!
