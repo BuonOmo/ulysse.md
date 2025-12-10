@@ -5,7 +5,7 @@ author: Ulysse
 ---
 
 Copy paste the code below in any console (or read it first). You can also use
-[whitchcraft](https://luciopaiva.com/witchcraft/) if you want this feature
+[witchcraft](https://luciopaiva.com/witchcraft/) if you want this feature
 everywhere. Or look at my [chrome-scripts](https://github.com/BuonOmo/chrome-scripts)
 for meaningful browser hacks.
 

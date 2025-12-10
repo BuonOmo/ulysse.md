@@ -6,4 +6,4 @@
 	from: Grenoble, Rhone-Alpe, France
 
 /* SITE */
-	last update: 2025-11-19
+	last update: 2026-01-07
