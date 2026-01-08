@@ -14,5 +14,5 @@ la procédure indiquée.
 # Appels
 
 Tout d'abord s'assurer d'avoir un compte bloctel, puis
-faire un signalement via le formulaire en ligne:
-https://www.bloctel.gouv.fr/creer-signalement
+faire un signalement via le formulaire accessible en ligne:
+[bloctel.gouv.fr/creer-signalement](https://www.bloctel.gouv.fr/creer-signalement)
