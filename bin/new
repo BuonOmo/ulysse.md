@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+
+title = ARGV[0] || gets.chomp
+
+root = File.expand_path("..", __dir__)
+
+title_file = title.gsub(/[^a-zA-Z0-9]/, "-").gsub(/-+/, "-").gsub(/^-/, "").gsub(/-$/, "")
+
+file = File.join(root, "_posts", "#{Time.now.strftime("%Y-%m-%d")}-#{title_file}.md")
+
+File.open(file, mode: "w") do |f|
+  f.puts <<~MD
+	---
+	layout: post
+	title: "#{title}"
+	author: Ulysse
+	meta:
+	  description: TODO
+	---
+	MD
+end
