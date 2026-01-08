@@ -1,11 +1,13 @@
 ---
 ---
 
+@use "sass:color"
+
 $background-color: #282c34
 $text-color: #abb2bf
 $comment-color: #7f848e
 $link-color: #61afef
-$link-hover-color: lighten($link-color, 20%)
+$link-hover-color: color.adjust($link-color, $lightness: 20%)
 
 $main-font: MonoLisa, 'JetBrains Mono', monospace, serif
 
@@ -45,7 +47,7 @@ $main-font: MonoLisa, 'JetBrains Mono', monospace, serif
 		src: url('/fonts/MonoLisa-#{$suffix}Italic.woff2') format('woff2')
 
 @mixin separator
-	border-top: 1px darken($text-color, 20%) solid
+	border-top: 1px color.adjust($text-color, $lightness: -20%) solid
 	margin-top: 1rem
 	margin-bottom: 1rem
 
