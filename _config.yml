@@ -12,3 +12,10 @@ exclude:
   - TODO.md
   - .github
   - globe.html.erb
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      author: Ulysse
